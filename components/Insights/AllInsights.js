@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import config from "../../config.json";
 
+const domain = typeof window !== "undefined" ? window.location.hostname : "";
+
 function LoadingDots() {
   return (
     <div className="inline-flex items-center text-black">
@@ -54,11 +56,26 @@ function AllInsights({
   const [isChangingArchive, setIsChangingArchive] = useState(false);
 
   const fetchData = async (year, pageNum = 1, append = false) => {
+    // Determine production mode based on current domain (like AllNews.js)
+    let server;
+    // Extract hostname from config URLs for comparison
+    const liveHostname = config.LIVE_SITE_URL.replace(/^https?:\/\//, '').replace(/^www\./, '');
+    const stagingHostname = config.STAGING_SITE_URL.replace(/^https?:\/\//, '').replace(/^www\./, '');
+    const currentHostname = domain.replace(/^www\./, '');
+
+    if (currentHostname === liveHostname || domain === config.LIVE_SITE_URL_WWW) {
+      server = config.LIVE_PRODUCTION_SERVER_ID;
+    } else if (currentHostname === stagingHostname) {
+      server = config.STAG_PRODUCTION_SERVER_ID;
+    } else {
+      server = config.STAG_PRODUCTION_SERVER_ID;
+    }
+
     const cat1 = 12;
     const cat2 = 13;
     const after = `${year}-01-01T00:00:00`;
     const before = `${year}-12-31T23:59:59`;
-    const url = `${config.SERVER_URL}posts?_embed&per_page=6&page=${pageNum}&categories=${cat1},${cat2}&after=${after}&before=${before}&status[]=publish&production_mode[]=${productionMode}`;
+    const url = `${config.SERVER_URL}posts?_embed&per_page=6&page=${pageNum}&categories=${cat1},${cat2}&after=${after}&before=${before}&status[]=publish&production_mode[]=${server}`;
 
     try {
       const response = await fetch(url, {
