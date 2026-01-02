@@ -2,7 +2,7 @@ import { Modal } from "flowbite-react";
 import { useState, useEffect, useRef } from "react";
 import CareerForm from "@/components/Careers/CareerForm";
 import InternshipForm from "@/components/Careers/InternshipForm";
-import Subscribe from "@/utils/HubSpotForm/Subscribe";
+import Subscribe from "@/components/Careers/SubscribeForm";
 import ContactPartner from "@/utils/HubSpotForm/ContactPartner";
 import { HiX } from "react-icons/hi";
 
