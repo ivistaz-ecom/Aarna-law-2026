@@ -6,6 +6,7 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
   const [loading, setLoading] = useState(false);
   const [shouldShow, setShouldShow] = useState(false);
   const [loadingText, setLoadingText] = useState("Loading");
+  const [error, setError] = useState("");
 
   useEffect(() => {
     // Disable body scroll when the popup is open
@@ -43,7 +44,7 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
         } else if (item?.slug) {
           window.location.href = `/publications/${item.slug}`;
         }
-      }, 2000); // Redirect after 2 seconds
+      }, 1000); // Redirect after 2 seconds
     } else {
       setShouldShow(true);
     }
@@ -51,9 +52,10 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(""); // Clear previous errors
 
     if (!formData.name || !formData.email) {
-      alert("Please fill in all fields");
+      setError("Please fill in all fields");
       return;
     }
 
@@ -64,12 +66,60 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
     formPayload.append("your-email", formData.email);
 
     try {
-      const response = await fetch(`${configData.PUBLICATION_USER_FORM}`, {
-        method: "POST",
-        body: formPayload,
-      });
+      // Check Zoho CRM first for duplicate email
+      // WHY: Validate email before proceeding with WordPress submission
+      try {
+        const zohoPayload = {
+          data: [
+            {
+              Name: formData.name.trim(),
+              Email: formData.email.trim(),
+            },
+          ],
+        };
 
-      if (response.ok) {
+        const zohoResponse = await fetch("/api/zoho/publications", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(zohoPayload),
+        });
+
+        const zohoData = await zohoResponse.json();
+
+        // Check if Zoho returned a duplicate email error
+        if (!zohoResponse.ok || zohoData.error) {
+          const duplicateField = zohoData.duplicateField;
+          const zohoErrorCode = zohoData.zohoErrorCode;
+
+          if (
+            duplicateField === "Email" ||
+            zohoErrorCode === "DUPLICATE_DATA"
+          ) {
+            setError(
+              zohoData.error ||
+                "This email address is already registered. Please use a different email address.",
+            );
+            setLoading(false);
+            return; // Stop here, don't proceed with WordPress
+          }
+        }
+      } catch (zohoError) {
+        // If Zoho check fails, log but continue (non-blocking)
+        console.error("Failed to check Zoho CRM:", zohoError);
+      }
+
+      // Send to WordPress/Parley (existing functionality)
+      const wordpressResponse = await fetch(
+        `${configData.PUBLICATION_USER_FORM}`,
+        {
+          method: "POST",
+          body: formPayload,
+        },
+      );
+
+      if (wordpressResponse.ok) {
         localStorage.setItem("publication_user_email", formData.email);
         localStorage.setItem(
           "publication_form_submission",
@@ -84,7 +134,8 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
         }
       }
     } catch (error) {
-      console.error("An error occurred. Please try again.");
+      setError("An error occurred. Please try again.");
+      console.error("An error occurred. Please try again.", error);
     } finally {
       setLoading(false);
     }
@@ -125,14 +176,27 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
           <input
             type="email"
             id="email"
-            className="w-full rounded border border-gray-300 px-3 py-2"
+            className={`w-full rounded border px-3 py-2 ${
+              error && error.includes("email")
+                ? "border-red-500 bg-red-50"
+                : "border-gray-300"
+            }`}
             value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
+            onChange={(e) => {
+              setFormData({ ...formData, email: e.target.value });
+              setError(""); // Clear error when user types
+            }}
             required
           />
+          {error && error.includes("email") && (
+            <p className="mt-1 text-xs text-red-600">{error}</p>
+          )}
         </div>
+        {error && !error.includes("email") && (
+          <div className="mb-4 rounded bg-red-50 p-3 text-sm text-red-800">
+            {error}
+          </div>
+        )}
         <div className="flex justify-between">
           <button
             type="submit"
