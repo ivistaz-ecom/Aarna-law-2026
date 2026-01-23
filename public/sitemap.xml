@@ -216,7 +216,6 @@
 <priority>0.64</priority>
 </url>
 <url>
- two spaces to indent each url element
   <loc>https://www.aarnalaw.com/insights/case-update-messer-griesheim-gmbh-v-goyal-mg-gases-private-limited</loc>
   <lastmod>2024-12-04T08:58:16+00:00</lastmod>
   <priority>0.64</priority>
@@ -1252,7 +1251,8 @@
     <lastmod>2024-12-04T08:58:16+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-  <url>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
     <lastmod>2024-12-04T08:58:16+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -1271,7 +1271,8 @@
     <lastmod>2024-12-04T08:58:16+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-  <url>https://www.aarnalaw.com/insights/cpa-and-flight-delays-in-india-consumer-rights-compensation-limits-and-complaint-process-under-the-consumer-protection-act-2019</loc>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/cpa-and-flight-delays-in-india-consumer-rights-compensation-limits-and-complaint-process-under-the-consumer-protection-act-2019</loc>
     <lastmod>2024-12-04T08:58:16+00:00</lastmod>
     <priority>0.64</priority>
   </url>
