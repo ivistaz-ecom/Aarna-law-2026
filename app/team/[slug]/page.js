@@ -77,7 +77,7 @@ export default function Page({ params }) {
       />
       <div className="mx-auto md:flex md:w-11/12 py-12 p-2">
         <div className="md:w-3/12 rounded-lg bg-gray-300 p-8">
-          <h3 className="pb-4 font-semibold text-custom-red">PRACTICE AREAS</h3>
+          <h2 className="pb-4 font-semibold text-custom-red">PRACTICE AREAS</h2>
           <span dangerouslySetInnerHTML={{ __html: practiceAreas }}></span>
         </div>
         <div className=" md:w-9/12 md:p-8 p-4">

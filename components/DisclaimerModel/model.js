@@ -11,7 +11,7 @@ const Model = () => {
         by advocates in any form or manner. By accessing this website,{" "}
         <a
           href="https://www.aarnalaw.com"
-          className="text-custom-red underline"
+          className="text-custom-red underline "
         >
           https://www.aarnalaw.com
         </a>
