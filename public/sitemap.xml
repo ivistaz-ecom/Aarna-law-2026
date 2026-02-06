@@ -1,1297 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-<loc>https://www.aarnalaw.com</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/about-us</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/practice-areas</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/industries</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/careers</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/contact-us</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/podcasts</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/privacy-policy</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/terms-of-use</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/disclaimer</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/aarna-news</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/publications</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/the-arbitration-and-conciliation-amendment-bill-2021</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/v-m-mathew-v-nhai-ors</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/the-future-v-amazon-story-so-far-2</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/amway-india-enterprises-ltd-v-ravindranath-rao-sindhia-anr-2</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/small-scale-industrial-manufacturers-association-regd-v-uoi</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/future-v-amazon-emergency-arbitrators-award-execution</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/pasl-v-ge-power-indian-parties-choosing-foreign-seat</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/simc-and-icsid-cooperation-agreement-2</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/interdigital-technology-corporation-v-xiaomi-corporation</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/comparative-analysis-of-the-conflict-between-insolvency-and-bankruptcy-laws-money-laundering-laws-for-attachment-of-properties</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/pre-package-insolvency-resolution-process</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/the-art-law-review-india-chapter-2021</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-steel-authority-of-india-limited-sail-v-jaldhi-overseas-pte-ltd-jopl</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/analysis-of-the-provisions-for-insolvency-process-against-personal-guarantors-under-the-code</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-m-s-imz-corporate-pvt-ltd-v-msd-telematics-pvt-ltd</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/amazon-com-nv-investment-holdings-llc-v-future-retail-ltd-and-ors</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-the-project-director-national-highways-no-45-e-and-220-national-highways-authority-of-india-v-m-hakeem-anr</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-updateorator-marketing-pvt-ltd-v-samtex-desinz-pvt-ltd</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/the-eus-accession-to-the-2019-convention-on-the-recognition-and-enforcement-of-foreign-judgments-in-civil-or-commercial-matters</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-updatekay-bouvet-engineering-ltd-vs-overseas-infrastructure-alliance</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/gemini-bay-transcription-pvt-ltd-v-integrated-sales-service-ltd-anr-2021-scc-online-sc-572</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/uncitral-expedited-arbitration-rules-2021</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-m-s-p-n-garg-engineers-contractors-v-chief-engineer-bhopal-zone-sultania-infantry-lines-bhopal</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-arcelor-mittal-nippon-steel-india-ltd-v-essar-bulk-terminal-ltd</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/achieving-net-zero-emissions-in-the-maritime-sector</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/insolvency-resolution-process-against-personal-guarantors</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-ebix-singapore-private-limited-and-ors-v-committee-of-creditors-of-educomp-solutions-limited-and-ors</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-future-v-amazonan-overview-of-recent-legal-developments</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/india-and-bilateral-investment-treaties-a-summary-of-the-recommendations-in-the-10th-report-of-the-committee-on-external-affairs-ministry-of-external-affairs</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.aarnalaw.com/insights/case-update-m-s-pathanjali-ayurved-ltd-anr-vs-arudra-engineers-pvt-ltd</loc>
-<lastmod>2024-12-04T08:58:16+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/case-update-messer-griesheim-gmbh-v-goyal-mg-gases-private-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/case-updatebank-of-baroda-vs-mbl-infrastructuredecided-on-18-january-2022-supreme-court-of-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-indias-new-draft-law-will-impact-cross-border-insolvencies</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/vishnu-oil-mill-pvt-ltd-v-union-of-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/vijay-kumar-ghai-v-pritpal-singh-babbar1</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/cti-future-corporation-v-ducgiang-chemical-detergent-powder-joint-stock-company</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/vidarbha-industries-power-ltd-vs-axis-bank-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/knit-pro-international-vs-state-of-nct-of-delhi-criminal-appeal-no-807-of-2022</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/essar-house-private-limited-v-arcellor-mittal-nippon-steel-india-limited-2022-scc-online-sc-1219</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/lic-v-sanjeev-builders-private-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/climate-change-and-business-solvency-risk-an-overview</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/decoding-5th-report-of-insolvency-law-committee-may-2022</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/emaar-india-limited-v-tarun-aggarwal-projects-llp</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/trans-sea-transport-b-v-v-lords-polymer-india-private-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/desh-raj-and-ors-v-rohtash-singh</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/world-phone-internet-services-pvt-ltd-vs-one-ott-entertainment-ltd</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/arunachala-gounder-vs-ponnuswamy</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/excel-engineering-ors-v-vivekmuralidhar-dabhade</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/why-corporate-governance-matters-for-early-stage-companies</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/cop-27-highlights-growth-in-climate-related-liabilities</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/challenges-bringing-claims-digital-currencies</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-will-collapse-silicon-valley-bank-affect-indian-companies</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/gujarat-benefits-collapse-silicon-valley-bank</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/india-must-embrace-the-benefits-of-an-open-legal-market</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/cti-future-corporation-v-ducgiang-chemical-detergent-powder-joint-stock-company-2</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-contributing-to-model-clauses-for-contracting-in-asia</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/arbitration-regimes-applicable-small-and-medium-businesses-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/world-ip-day-opportunity-celebrate-indian-women</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/challenging-unilateral-appointment-arbitrator</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/invocation-arbitration-unstamped-insufficiently-stamped-agreement</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/enabling-procedural-efficacies-parallel-isds-arbitrations</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/moser-baer-karamchari-union-thr-president-mahesh-chand-sharma-v-union-of-india-and-others</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/latest-developments-in-insolvency-and-bankruptcy-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/india-undertakes-review-fast-track-insolvencies</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/shibu-job-cheeran-corporate-debtor-v-ashok-velamur-seshadri-liquidator-archana-motors-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/emergency-arbitration-in-india-problem-enforcement</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/arbitrability-of-fraud</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/does-india-have-enough-insurance-coverage-nuclear-disaster</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-participates-siac-bengaluru-conference-2023</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/shreyas-jayasimha-speaks-on-cross-border-insolvency-for-smu-masterclass</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/shreyas-jayasimha-appointed-expert-committee</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-participates-in-inta-annual-meeting-2023-singapore</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/setting-a-strategy-to-tackle-counterfeits</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/anusha-madhusudhan-selected-for-judicial-fellowship-programme</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-role-of-arbitration-and-mediation-in-insolvency</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/fldg-guidelines-regulating-digital-lending</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/thank-you-for-joining-us</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/kotak-mahindra-bank-ltd-v-narendra-kumar-prajapat-manu-de-3533-2023</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/indias-nuclear-law-working-towards-a-more-inclusive-framework</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/protection-of-cultural-heritage-and-property</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/fame-game-why-need-more-clarity-on-celebrity-rights</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/elementor-18128</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/when-can-parties-raise-objections-on-jurisdiction</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/m-k-rajagopalan-v-dr-periasamy-palani-gounder</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/benefits-mediation-art-cultural-heritage-sector</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/women-in-leadership-vidya-rajarao-founder-fraudopedia</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/an-introduction-to-nft</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/macleods-pharmaceuticals-limited-vs-union-of-india-and-others</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/unlocking-digital-canvas-exploring-rights-transferred-sale-nfts</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-announces-new-partner</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/women-in-leadership-and-ip-nikita-jajodia-nourish-organic-foods</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/india-reforms-bankruptcy-code</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aircraft-lessors-greater-protection-indian-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/recover-foreign-award-debts-in-india-through-insolvency-proceedings</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/sanket-kumar-agarwal-anr-v-apg-logistics-private-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/paschimanchal-vidyut-vitran-nigam-limited-v-raman-ispat-private-limited-others</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/recent-developments-in-indian-insolvency-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/indian-parliament-approves-new-mediation-bill</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/treatment-of-non-compete-non-solicitation-covenants-in-the-eyes-of-the-courts-in-singapore-and-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/why-traditional-knowledge-needs-better-ip-protection</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-artificial-intelligence-can-assist-insolvency-practitioners</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/case-update-anupam-mittal-vs-people-interactive-india-pvt-ltd-and-others</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/new-regulations-offer-opportunity-for-fast-track-and-emergency-arbitrations</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/john-maxwell-morgan-v-mcmillan-investment-holdings-pty-ltd</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/parekh-plastichem-distributors-llp-vs-simplex-infrastructure-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/bharat-road-carrier-private-limited-v-rasna-private-limited</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/intellectual-property-in-cricket</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/women-in-leadership-and-ip-ms-stuti-agarwal-of-ontum-education</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/case-update-itc-limited-virginia-house-ors-v-britannia-industries-ltd</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/new-act-seeks-to-prevent-the-misuse-of-data-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/when-can-a-party-claim-confidentiality-for-an-arbitration</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-celebrates-10th-anniversary</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-final-is-final-a-recent-decision-by-indias-supreme-court-has-set-out-the-special-conditions-in-which-an-arbitral-award-can-be-reviewed-because-of-a-miscarriage-of-justice</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/supreme-courts-clarifies-the-meaning-of-a-financial-debt-in-insolvency-proceedings</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-role-of-an-executive-director</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/fintech-revolutionizing-lives-amid-regulatory-uncertainty</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/emerging-trends-in-insolvency-litigation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/a-companys-assets-cannot-be-targeted-once-it-has-gone-through-the-insolvency-process</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/does-copyright-exist-for-ai-generated-content</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/ai-criminal-liability-and-financial-crimes</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-union-budget-financial-year-2024-2025-the-aarna-law-perspective</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-mediation-is-revolutionizing-ip-disputes</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/wipo-unveils-new-treaty-on-genetic-resources-and-traditional-knowledge</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/google-loses-landmark-antitrust-case-over-search-monopoly</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/government-alerts-ip-applicants-about-fraudulent-activities</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-is-pleased-to-announce-the-appointment-of-meghna-talwar-as-partner</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/art-as-collateral-a-growing-trend-in-secured-lending</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/regulatory-intervention-in-the-indian-financial-sector-analyzing-the-rbis-actions-against-the-lending-practices-of-a-few-nbfcs</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/copyright-in-fashion-safeguarding-designers-creative-works</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/shein-and-temu-lock-horns-again-over-copyright-and-trade-secrets</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/understanding-copyright-in-the-context-of-nfts-and-digital-art-ownership</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/inherent-powers-of-the-nclt-nclat-lessons-from-the-supreme-court-ruling-in-the-byju-case</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/indian-constitution-reinforces-the-right-to-be-forgotten</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-crucial-role-of-indemnity-clauses-in-software-licensing-agreements</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-less-known-benefits-of-well-known-trademarks</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/women-in-leadership-and-ip-ms-nidhi-mahesh-of-we-storytellers</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/understanding-statutory-compliance-obligations-for-company-directors-under-the-companies-act-2013</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/new-free-trade-agreement-between-efta-and-india-offers-enhanced-ip-rights-for-business-owners</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/why-an-additional-director-can-bring-value-to-your-business</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/consumer-perception-is-crucial-in-determining-the-similarity-of-product-labels</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/why-independent-directors-can-help-strengthen-corporate-governance</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/how-co-owners-can-seek-division-of-jointly-held-property</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/group-of-companies-doctrine-when-non-signatories-are-bound-by-arbitration-agreements</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/updates-from-the-ai-safety-summit-and-the-way-ahead</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/new-market-entrants-must-be-wary-of-confusing-customers-through-their-trademarks</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/arbitration-clauses-are-not-valid-in-consumer-insurance</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/nominees-cannot-evade-the-rules-on-succession-to-retain-shares-in-mutual-funds</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/uk-supreme-court-delivers-blow-to-litigation-funders</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/non-payment-of-stamp-duty-does-not-invalidate-an-arbitration-agreement</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/parties-must-present-evidence-of-governing-law-to-prevent-the-default-application-of-indian-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/new-ruling-supports-third-party-funding-for-disputes</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/indias-ip-growth-wipo-2024-report-highlights-significant-advances</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/copyright-an-overview-of-definition-types-and-functionality</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/counterfeit-combat-strategies-for-protecting-fashion-brands</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/rbis-new-credit-score-rules</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/bolt-technology-v-ujoy-technology</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/commercial-exploitation-of-intellectual-property</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/challenging-the-limits-delhis-new-performance-licensing-regime-and-artists-rights</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/copyright-in-contemporary-art</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-is-pleased-to-announce-the-appointment-of-evneet-uppal-as-partner</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/evolving-regulatory-framework-for-cryptocurrencies-and-digital-assets</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/decriminalization-of-ip-jan-vishwas-act-2023</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/electronica-india-ltd-vs-electronica-hitech-machines-pvt-ltd</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/lcias-equality-diversity-and-inclusion-guidelines</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/siac-2025-rules-aarna-law-update</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/devolution-of-property-under-the-hindu-succession-act-1956</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/draft-digital-personal-data-protection-rules-2025</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-challenges-of-brand-spoofing-in-a-digital-era</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/review-of-the-banking-laws-amendment-bill</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/an-introduction-to-the-laws-around-antiques-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-welcomes-partner</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/a-comprehensive-legislative-framework-of-winding-up-and-liquidation-of-companies-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/eligibility-criteria-for-fast-track-cirp-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/when-can-parties-raise-objections-on-jurisdiction-in-international-arbitration</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/the-role-of-data-protection-in-fintech-companies-and-indian-regulations</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/a-framework-for-governance-and-regulatory-risk-mitigation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/insights/section-8-companies-empowering-non-profits-for-social-impact</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/automotive-industry</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/aviation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/financial-services</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/construction-engineering-infrastructure</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/corporate-advisory</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/direct-and-indirect-taxation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/industries/energy-oil-and-gas-and-nuclear-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-  <loc>https://www.aarnalaw.com/industries/environment</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/foreign-investment</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/about-us</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/healthcare</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/testimonials</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/it-iot-blockchain-and-ai</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/practice-areas</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/life-science-pharmaceuticals</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/industries</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/media-telecommunications</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/insights</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/retail</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/aarna-news</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/shipping-maritime-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/publications</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/space-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/podcasts</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/industries/sports-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/careers</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/practice-areas/risk-management-compliance</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/contact-us</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/practice-areas/corporate-advisory</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/privacy-policy</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/practice-areas/fraud-asset-tracing-enforcement</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://www.aarnalaw.com/terms-of-use</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/practice-areas/art-law</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/practice-areas/private-client-practice</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/practice-areas/bankruptcy-restructuring-and-insolvency</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/practice-areas/intellectual-property-2</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/practice-areas/pro-bono</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/practice-areas/trial-and-litigation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <loc>https://www.aarnalaw.com/practice-areas/corporate-advisory</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/practice-areas/domestic-arbitration-and-mediation</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/fraud-asset-tracing-enforcement</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/intellectual-property-2</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/practice-areas/international-dispute-resolution</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/practice-areas/real-estate-2</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <loc>https://www.aarnalaw.com/practice-areas/private-client-practice</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/practice-areas/private-international-law-disputes</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/pro-bono</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/real-estate-2</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/risk-management-compliance</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/practice-areas/trial-and-litigation</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/automotive-industry</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/aviation</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/construction-engineering-infrastructure</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/corporate-advisory</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/direct-and-indirect-taxation</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/energy-oil-and-gas-and-nuclear-law</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/environment</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/financial-services</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/foreign-investment</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/healthcare</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/it-iot-blockchain-and-ai</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/life-science-pharmaceuticals</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/media-telecommunications</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/retail</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/shipping-maritime-law</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/space-law</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/industries/sports-law</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/the-role-of-family-settlements-under-the-hindu-succession-act</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/sebis-side-pocketing-norms-and-the-political-economy-of-risk-in-indias-aif-market</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/indias-first-ever-olfactory-trademark-paving-the-way-ahead</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/gig-worker-strikes-in-india-labour-law-implications-and-compliance-risks-for-digital-platforms</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/insights/importance-of-personality-rights-as-a-form-of-intellectual-property</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/aarna-law-is-pleased-to-announce-the-appointment-of-meghna-talwar-as-partner</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/aarna-law-announces-new-partner</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/aarna-law-celebrates-10th-anniversary</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/thank-you-for-joining-us</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/publications/handbook-on-dpdp-compliances-incl-the-recent-dpdp-rules-2025</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/publications/the-art-law-review</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/investment-treaty-practice-in-india-2018</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/first-step-analysis-2020-arbitration-in-india</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/getting-the-deal-through-enforcing-and-challenging-arbitral-awards-in-india-arbitration-2020</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/getting-the-deal-through-the-test-of-seats-a-comparative-lens-over-the-proper-law-of-arbitration-agreements-in-india-and-singapore</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/an-extract-from-the-asset-tracing-and-recovery-review-8th-edition-2020</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/dispute-resolution-and-ma-and-criminalisation-of-civil-disputes-2020</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.aarnalaw.com/publications/essential-intelligence-fraud-asset-tracing-and-recovery-india-124-2021</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.aarnalaw.com/publications/getting-the-deal-through-arbitration-2021</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/publications/a-legacy-of-international-dispute-resolution</loc>
-  <lastmod>2024-12-04T08:58:16+00:00</lastmod>
+  <loc>https://www.aarnalaw.com/publications/essential-intelligence-fraud-asset-tracing-and-recovery-india-124-2021</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-  <url>
-    <loc>https://www.aarnalaw.com/publications/handbook-on-dpdp-compliances-incl-the-recent-dpdp-rules-2025</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/apoorva-guruprasad</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/spandana-ashwath</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/kamala-naganand</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/shreyas-jayasimha</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/meghna-talwar</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/evneet-kaur-uppal</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/when-can-parties-raise-objections-on-jurisdiction-in-international-arbitration</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/contracts-in-asia-model-clauses</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/cryptocurrency-fraud-legal-challenges-in-india</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/one-person-company-v-s-limited-liability-partnership</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/regulatory-disruption-are-banks-and-nbfcs-prepared-for-rbis-next-oversight-wave</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/the-rising-threat-is-your-cybersecurity-aml-framework-ready-for-ai-driven-financial-crime</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/the-china-plus-one-shift-and-indias-big-break</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.aarnalaw.com/insights/sebis-evolving-stance-on-gst-a-regulatory-shift-towards-holistic-compliance</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/defining-ai-deepfakes-and-voice-cloning-in-the-digital-age</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/indigo-flight-cancellations-what-indian-law-says-about-airline-obligations-and-passenger-rights</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/why-corporate-governance-matters-for-early-stage-companies</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
 <url>
-    <loc>https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-appointed-expert-committee</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/importance-of-personality-rights-as-a-form-of-intellectual-property</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/cpa-and-flight-delays-in-india-consumer-rights-compensation-limits-and-complaint-process-under-the-consumer-protection-act-2019</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.aarnalaw.com/insights/sebis-crackdown-on-finfluencers-regulations-and-enforcement</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
+  <loc>https://www.aarnalaw.com/publications/dispute-resolution-and-ma-and-criminalisation-of-civil-disputes-2020</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/women-in-leadership-and-ip-maya-viveks-journey-to-a-greener-future</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/women-in-leadership-and-ip-shalini-singh-on-crafting-unique-travel-experiences-and-protecting-innovation</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/fueling-families-with-feed-smart-a-conversation-with-sonali-saraogi-singh</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/women-in-leadership-and-ip-aarti-gupta</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/women-in-leadership-and-ip-lakshmi-trivedy-of-flexiele</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aarnalaw.com/podcasts/women-in-leadership-and-ip-sayee-deodhar-studio-arti</loc>
+  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
-  <url>
-    <loc>https://www.aarnalaw.com/insights/the-applicability-of-the-dpdp-act-in-hospitals-a-new-era-for-patient-data-protection</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
 
-  <url>
-    <loc>https://www.aarnalaw.com/insights/gig-worker-strikes-in-india-labour-law-implications-and-compliance-risks-for-digital-platforms</loc>
-    <lastmod>2024-12-04T08:58:16+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  
 </urlset>
