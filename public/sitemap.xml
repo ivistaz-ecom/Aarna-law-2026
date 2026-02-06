@@ -1252,7 +1252,8 @@
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-  <url>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/exploring-how-india-addresses-transparency-provenance-and-anti-money-laundering-compliance-in-the-art-market-today</loc>
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -1261,7 +1262,7 @@
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-<url>
+  <url>
     <loc>https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-appointed-expert-committee</loc>
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
