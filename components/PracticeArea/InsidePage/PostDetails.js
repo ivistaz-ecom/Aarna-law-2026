@@ -160,16 +160,17 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
             <hr className="my-4 border-t-2 border-red-500" />
             <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400 md:pr-10">
               {data.map((item, index) => (
-                <Link
-                  href={`/practice-areas/${item.slug}`}
-                  className={`flex border-b border-custom-red p-1 hover:text-custom-red ${item.slug === slug
-                    ? "font-semibold text-custom-red"
-                    : "text-black"
-                    }`}
-                  key={index}
-                >
-                  <p dangerouslySetInnerHTML={{ __html: getLocalizedTitle(item) }} />
-                </Link>
+                <li key={index}>
+                  <Link
+                    href={`/practice-areas/${item.slug}`}
+                    className={`flex border-b border-custom-red p-1 hover:text-custom-red ${item.slug === slug
+                      ? "font-semibold text-custom-red"
+                      : "text-black"
+                      }`}
+                  >
+                    <p dangerouslySetInnerHTML={{ __html: getLocalizedTitle(item) }} />
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
