@@ -250,6 +250,7 @@ export async function POST(request) {
         const payloadItem = {
           Name: item.Name?.trim(),
           Email: item.Email?.trim(),
+          Lead_Source: "Website"
         };
 
         // Handle Interests: convert string to array or keep as array

@@ -549,6 +549,7 @@ export async function POST(request) {
         Number_of_years_of_post_qualification_experience:
           item.Years_of_Experience || "", // Full Zoho field name
         // Note: File is attached separately after record creation
+        Lead_Source: "Website"
       })),
     };
 
