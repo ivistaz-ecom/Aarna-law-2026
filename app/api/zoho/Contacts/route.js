@@ -98,17 +98,17 @@ export async function GET() {
 
     return NextResponse.json({
         message: 'Zoho API route is accessible',
-        endpoint: '/api/zoho/leads',
+        endpoint: '/api/zoho/Contacts',
         method: 'POST',
         timestamp: new Date().toISOString(),
         oauthConfigured: hasRefreshToken && hasClientId && hasClientSecret,
-        zohoApiUrl: 'https://www.zohoapis.in/crm/v2/Leads'
+        zohoApiUrl: 'https://www.zohoapis.in/crm/v2/Contacts'
     });
 }
 
 export async function POST(request) {
     console.log('=== ZOHO API ROUTE CALLED ===');
-    console.log('📍 Route: /api/zoho/leads');
+    console.log('📍 Route: /api/zoho/Contacts');
     console.log('🕐 Timestamp:', new Date().toISOString());
 
     try {
@@ -148,11 +148,10 @@ export async function POST(request) {
                 Lead_Source: "Website"
             }))
         };
-
         console.log('📤 Sending to Zoho API:', JSON.stringify(payload, null, 2));
 
         // Zoho Leads API endpoint as specified
-        const zohoApiUrl = 'https://www.zohoapis.in/crm/v2/Leads';
+        const zohoApiUrl = 'https://www.zohoapis.in/crm/v2/Contacts';
         console.log('🌐 Zoho API URL:', zohoApiUrl);
         console.log('📋 Method: POST');
 
