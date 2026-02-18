@@ -248,6 +248,7 @@ export async function POST(request) {
       data: body.data.map((item) => ({
         Name: item.Name?.trim(),
         Email: item.Email?.trim(),
+        Lead_Source: "Website"
       })),
     };
 
