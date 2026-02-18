@@ -95,7 +95,7 @@ export default function ZohoContactForm() {
         const timer = setTimeout(() => controller.abort(), 10000);
 
         try {
-            const res = await fetch("/api/zoho/leads", {
+            const res = await fetch("/api/zoho/Contacts", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
