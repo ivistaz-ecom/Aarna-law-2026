@@ -6,7 +6,7 @@ import Script from "next/script";
 import { headers } from "next/headers";
 import { LanguageProvider } from "../app/context/LanguageContext";
 import dynamic from "next/dynamic";
-import ClarityInit from "../components/MicrosoftClarity/Microsoft";
+
 
 const DisclaimerModal = dynamic(
   () => import("../components/DisclaimerModel/DisclaimerModal"),
@@ -256,7 +256,6 @@ export default function RootLayout({
           strategy="afterInteractive"
           async
         />
-        <ClarityInit />
       </body>
     </html>
   );

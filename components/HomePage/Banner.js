@@ -28,13 +28,13 @@ export default function Banner() {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: '100%', height: '500px' }}
-          loading={isFirstBanner ? "eager" : "lazy"}
+          style={{ width: "100%", height: "500px" }}
+          loading="eager"
           priority={isFirstBanner}
           placeholder="blur"
           blurDataURL={banner.mobileBannerUrl}
         />
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 text-center text-white mt-40">
+        <div className="absolute inset-0 z-10 mt-40 flex flex-col items-center justify-center p-4 text-center text-white">
           <p className="text-4xl font-bold">{banner.bannerText}</p>
           <p className="py-8 text-xl">{banner.bannerPara}</p>
         </div>
@@ -48,13 +48,13 @@ export default function Banner() {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: '100%', height: '500px' }}
+          style={{ width: "100%", height: "500px" }}
           loading={isFirstBanner ? "eager" : "lazy"}
           priority={isFirstBanner}
           placeholder="blur"
           blurDataURL={banner.bannerUrl}
         />
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 text-center text-white pt-[200px]">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-4 pt-[200px] text-center text-white">
           <p className="text-4xl font-bold lg:text-4xl">{banner.bannerText}</p>
           <p className="py-8 text-xl lg:w-7/12">{banner.bannerPara}</p>
         </div>
