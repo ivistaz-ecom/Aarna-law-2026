@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import Banner from "@/components/Insights/InsidePage/Banner";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -200,20 +201,24 @@ export default function PodcastPost({ params }) {
           />
           <p className="py-4">Published: {formatDateString(date)}</p>
           {featureImage ? (
-            <div className="my-6">
-              <img
+            <div className="md:mt-6">
+              <Image
                 src={featureImage}
                 alt={title || "Podcast featured image"}
-                className="w-full h-[500px] object-cover rounded-lg border"
+                width={1200}
+                height={500}
+                className="w-full md:h-[600px] object-cover rounded-lg"
                 onError={(e) => {
                   console.error("Image failed to load:", featureImage);
-                  e.target.style.display = 'none';
+                  e.target.style.display = "none";
                 }}
-                onLoad={() => console.log("Image loaded successfully:", featureImage)}
+                onLoad={() =>
+                  console.log("Image loaded successfully:", featureImage)
+                }
               />
             </div>
           ) : (
-            <div className="w-full h-[400px] bg-gray-200 rounded-lg my-6 flex items-center justify-center">
+            <div className="w-full h-[400px] bg-gray-200 rounded-lg md:my-6 my-4 flex items-center justify-center">
               <p className="text-gray-500 text-lg">No featured image available</p>
             </div>
           )}
