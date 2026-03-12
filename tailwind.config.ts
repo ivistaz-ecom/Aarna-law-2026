@@ -1,5 +1,7 @@
 import flowbite from "flowbite-react/tailwind";
 import type { Config } from "tailwindcss";
+// @ts-ignore - no types
+const tailwindScrollbar = require("tailwind-scrollbar");
 
 const config: Config = {
   content: [
@@ -21,6 +23,7 @@ const config: Config = {
         "custom-blue": "#1E396A",
         "custom-red": "#E6331C",
         "custom-gray": "#4A4A4A",
+        "disclaimer-bg": "#EEEAE1",
       },
       backgroundColor: {
         "151C4A": "#151C4A",
@@ -33,6 +36,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [
+    flowbite.plugin(),
+    tailwindScrollbar({
+      nocompatible: true,
+      preferredStrategy: "pseudoelements",
+    }),
+  ],
 };
 export default config;

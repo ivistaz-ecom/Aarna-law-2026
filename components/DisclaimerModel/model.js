@@ -2,7 +2,7 @@ import React from "react";
 
 const Model = () => {
   return (
-    <div className="p-4">
+    <div className="">
       {/* <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Disclaimer
       </h2> */}
