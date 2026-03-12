@@ -29,7 +29,7 @@ function Testimonials() {
                   <p className="flex md:h-10 gap-2 py-2">{items.post}</p>
                   <p className="flex md:h-10 items-center gap-2 py-2">
                     {items.desingnation}
-                  </p>
+                  </p>  
                 </div>
                 {/* Right Side: Image */}
                 <div className="ml-4">
