@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Model from './model';
 
 const STORAGE_KEY = 'aarna_disclaimer_seen';
@@ -8,6 +8,8 @@ const STORAGE_KEY = 'aarna_disclaimer_seen';
 const DisclaimerModal = () => {
     const [showDisclaimer, setShowDisclaimer] = useState(false);
     const [mounted, setMounted] = useState(false);
+    const scrollRef = useRef(null);
+    const [thumbStyle, setThumbStyle] = useState({ height: '24px', top: '0px' });
 
     useEffect(() => {
         setMounted(true);
@@ -33,6 +35,31 @@ const DisclaimerModal = () => {
         window.location.href = 'https://www.google.com';
     };
 
+    const handleScroll = () => {
+        const el = scrollRef.current;
+        if (!el) return;
+        const { scrollTop, scrollHeight, clientHeight } = el;
+        if (scrollHeight <= clientHeight) {
+            setThumbStyle({ height: '0px', top: '0px' });
+            return;
+        }
+
+        const trackHeight = clientHeight;
+        const minThumbHeight = 24;
+        const thumbHeight = Math.max(
+            (clientHeight / scrollHeight) * trackHeight,
+            minThumbHeight
+        );
+        const maxThumbTop = trackHeight - thumbHeight;
+        const thumbTop =
+            (scrollTop / (scrollHeight - clientHeight)) * maxThumbTop;
+
+        setThumbStyle({
+            height: `${thumbHeight}px`,
+            top: `${thumbTop}px`,
+        });
+    };
+
     if (!mounted || !showDisclaimer) return null;
 
     return (
@@ -51,13 +78,29 @@ const DisclaimerModal = () => {
                         Disclaimer
                     </h3>
 
-                    {/* Scrollable text block - justified, dark text, visible scrollbar */}
-                    <div className="mb-4 max-h-[140px] overflow-y-scroll overflow-x-hidden px-5 md:text-justify text-gray-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-custom-red scrollbar-thumb-rounded-full dark:scrollbar-track-gray-600 dark:scrollbar-thumb-custom-red">
-                        <Model />
+                    {/* Scrollable text block - justified, dark text */}
+                    {/* Wrapped in relative container so we can render a custom "visible" scrollbar that moves with scroll */}
+                    <div className="relative mb-4">
+                        <div
+                            ref={scrollRef}
+                            onScroll={handleScroll}
+                            className="max-h-[140px] overflow-y-auto overflow-x-hidden px-5 md:text-justify text-gray-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 scrollbar-none"
+                        >
+                            <Model />
+                        </div>
+                        {/* Custom always-visible scrollbar indicator (desktop + mobile) */}
+                        <div className="pointer-events-none absolute right-1 top-2 bottom-2 w-1.5 rounded-full bg-gray-100 dark:bg-gray-600">
+                            {thumbStyle.height !== '0px' && (
+                                <div
+                                    className="absolute w-full rounded-full bg-custom-red"
+                                    style={thumbStyle}
+                                />
+                            )}
+                        </div>
                     </div>
 
-                    {/* Buttons - horizontal, left-aligned, gap between */}
-                    <div className="flex flex-wrap gap-4 ">
+                    {/* Buttons - horizontal, centered on mobile, left-aligned on larger screens */}
+                    <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
                         <button
                             onClick={handleAccept}
                             className="bg-custom-red px-6 py-1.5 text-base font-medium text-white transition-colors hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800"
