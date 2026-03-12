@@ -3,76 +3,75 @@
 import { useState, useEffect } from 'react';
 import Model from './model';
 
+const STORAGE_KEY = 'aarna_disclaimer_seen';
+
 const DisclaimerModal = () => {
-    const [showModal, setShowModal] = useState(false);
+    const [showDisclaimer, setShowDisclaimer] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        // Show modal every time on page load
-        setTimeout(() => setShowModal(true), 500);
+        setMounted(true);
     }, []);
 
-    // Prevent body scroll when modal is open
     useEffect(() => {
-        if (showModal) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'unset';
+        if (!mounted || typeof window === 'undefined') return;
+        const seen = localStorage.getItem(STORAGE_KEY);
+        if (!seen) {
+            setShowDisclaimer(true);
         }
-        return () => {
-            document.body.style.overflow = 'unset';
-        };
-    }, [showModal]);
+    }, [mounted]);
 
-    const handleAgree = () => {
-        // Just close the modal without storing consent
-        setShowModal(false);
+    const handleAccept = () => {
+        localStorage.setItem(STORAGE_KEY, 'accepted');
+        setShowDisclaimer(false);
     };
 
-    const handleDisagree = () => {
+    const handleDecline = () => {
+        localStorage.setItem(STORAGE_KEY, 'declined');
         window.location.href = 'https://www.google.com';
     };
 
-    if (!showModal) return null;
+    if (!mounted || !showDisclaimer) return null;
 
     return (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
-            {/* Backdrop */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+        <>
+            {/* Overlay: blocks clicks/links on page but allows page to scroll (no body overflow hidden) */}
+            <div
+                className="fixed inset-0 z-[9998] bg-black/20"
+                aria-hidden
+            />
 
-            {/* Modal Content */}
-            <div className="relative flex max-h-[90vh] w-full max-w-7xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl transition-all duration-300 ease-out dark:bg-gray-700">
-                {/* Modal Header */}
-                <div className="flex items-center justify-center border-b px-6 pb-4 pt-6 dark:border-gray-600">
-                    <h3 className="text-2xl font-semibold text-custom-red dark:text-custom-red">
+            {/* Disclaimer panel at bottom - reference layout: centered block, light beige background */}
+            <div className="fixed bottom-0 left-0 right-0 z-[9999] w-full border-t border-gray-200 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:bg-gray-800 dark:border-gray-700">
+                <div className="mx-auto w-full p-5">
+                    {/* Heading - top left, prominent */}
+                    <h3 className="mb-4 text-xl font-bold text-custom-red sm:text-2xl">
                         Disclaimer
                     </h3>
-                </div>
 
-                {/* Modal Body */}
-                <div
-                    className="overflow-y-auto p-6 text-gray-700 dark:text-gray-300"
-                    style={{ maxHeight: 'calc(90vh - 200px)' }}
-                >
-                    <Model />
-                </div>
+                    {/* Scrollable text block - justified, dark text, visible scrollbar */}
+                    <div className="mb-4 max-h-[140px] overflow-y-scroll overflow-x-hidden px-5 md:text-justify text-gray-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-custom-red scrollbar-thumb-rounded-full dark:scrollbar-track-gray-600 dark:scrollbar-thumb-custom-red">
+                        <Model />
+                    </div>
 
-                {/* Modal Footer */}
-                <div className="flex items-center justify-end gap-4 border-t bg-gray-50 px-6 py-4 dark:border-gray-600 dark:bg-gray-800">
-                    <button
-                        onClick={handleDisagree}
-                        className="rounded-lg border border-gray-300 bg-white px-6 py-2.5 text-base font-medium text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-                    >
-                        Disagree
-                    </button>
-                    <button
-                        onClick={handleAgree}
-                        className="rounded-lg border border-transparent bg-custom-red px-6 py-2.5 text-base font-medium text-white transition-colors duration-200 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
-                    >
-                        I Agree
-                    </button>
+                    {/* Buttons - horizontal, left-aligned, gap between */}
+                    <div className="flex flex-wrap gap-4 ">
+                        <button
+                            onClick={handleAccept}
+                            className="bg-custom-red px-6 py-1.5 text-base font-medium text-white transition-colors hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800"
+                        >
+                            Accept
+                        </button>
+                        <button
+                            onClick={handleDecline}
+                            className="bg-custom-red px-6 py-1.5 text-base font-medium text-white transition-colors hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800"
+                        >
+                            Decline
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
