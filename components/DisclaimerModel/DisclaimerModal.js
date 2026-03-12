@@ -16,7 +16,8 @@ const DisclaimerModal = () => {
     useEffect(() => {
         if (!mounted || typeof window === 'undefined') return;
         const seen = localStorage.getItem(STORAGE_KEY);
-        if (!seen) {
+        // Only hide disclaimer if the user has explicitly accepted
+        if (seen !== 'accepted') {
             setShowDisclaimer(true);
         }
     }, [mounted]);
@@ -27,7 +28,8 @@ const DisclaimerModal = () => {
     };
 
     const handleDecline = () => {
-        localStorage.setItem(STORAGE_KEY, 'declined');
+        // Treat decline as not having accepted; ensure modal shows again on return
+        localStorage.removeItem(STORAGE_KEY);
         window.location.href = 'https://www.google.com';
     };
 
