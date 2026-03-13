@@ -224,7 +224,7 @@ export default function PodcastPost({ params }) {
                 alt={title || "Podcast featured image"}
                 width={1200}
                 height={500}
-                className="w-full rounded-lg object-cover md:h-[600px]"
+                className="w-full rounded-lg object-contain md:h-[600px]"
                 onError={(e) => {
                   console.error("Image failed to load:", featureImage);
                   e.target.style.display = "none";
