@@ -33,12 +33,13 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
       }
 
       const response = await fetch(
-        `${configData.SERVER_URL}podcast?_embed&status[]=publish&production_mode[]=${server}&per_page=${PER_PAGE}&page=${pageNum}`
+        `${configData.SERVER_URL}podcast?_embed&status[]=publish&production_mode[]=${server}&per_page=${PER_PAGE}&page=${pageNum}`,
       );
 
       if (!response.ok) throw new Error("Failed to fetch data");
 
       const result = await response.json();
+      console.log(result);
 
       if (Array.isArray(result)) {
         const transformedData = result.map((item) => ({
@@ -75,7 +76,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
   };
 
   const filteredInsights = data.filter((d) =>
-    d.title.rendered.toLowerCase().includes(searchTerm.toLowerCase())
+    d.title.rendered.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   return (
@@ -94,7 +95,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
                   <Image
                     src={item.featured_image_url}
                     alt={item.title?.rendered || "Podcast Image"}
-                    className="w-full rounded-t-lg h-[350px] object-cover"
+                    className="h-[350px] w-full rounded-t-lg object-cover"
                     width={500}
                     height={300}
                   />
@@ -102,7 +103,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
               </div>
               <div className="p-5">
                 <p
-                  className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  className="mb-2 line-clamp-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
                   dangerouslySetInnerHTML={{ __html: item.title?.rendered }}
                 />
                 <p
@@ -126,8 +127,6 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
           </div>
         )}
 
-   
-   
         {hasMore && (
           <div className="col-span-1 mt-6 text-center sm:col-span-2">
             {isLoadingMore ? (

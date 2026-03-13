@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import ErrorPage from "@/components/404/page";
 import { play, pause, sound, mute } from "@/utils/icons";
+import VideoPlayer from "@/components/Podcasts/VideoPlayer";
 
 
 export default function PodcastPost({ params }) {
@@ -18,6 +19,7 @@ export default function PodcastPost({ params }) {
   const [featureImage, setFeatureImage] = useState(null);
   const [content, setContent] = useState(null);
   const [playerLink, setPlayerLink] = useState(null);
+  const [episodeType, setEpisodeType] = useState("audio");
   const [error, setError] = useState(false);
 
   // 🔑 For prev / next
@@ -125,7 +127,11 @@ export default function PodcastPost({ params }) {
             setFeatureImage(null);
           }
 
-          setPlayerLink(post.player_link || null);
+          const metaEpisodeType = post.meta?.episode_type;
+          setEpisodeType(metaEpisodeType || "audio");
+
+          // Prefer explicit media file from meta, fall back to player_link
+          setPlayerLink(post.meta?.audio_file || post.player_link || null);
         } else {
           setError(true);
         }
@@ -137,9 +143,9 @@ export default function PodcastPost({ params }) {
     fetchAll();
   }, [slug]);
 
-  // Setup audio refs
+  // Setup audio refs (audio episodes only)
   useEffect(() => {
-    if (!playerLink) return;
+    if (!playerLink || episodeType === "video") return;
 
     audioRefs.current[0] = new Audio();
     audioRefs.current[0].addEventListener("timeupdate", () => {
@@ -165,7 +171,7 @@ export default function PodcastPost({ params }) {
       audioRefs.current[0]?.pause();
       audioRefs.current[0].src = "";
     };
-  }, [playerLink]);
+  }, [playerLink, episodeType]);
 
   const formatDateString = (dateString) => {
     const date = new Date(dateString);
@@ -201,22 +207,22 @@ export default function PodcastPost({ params }) {
           />
           <p className="py-4">Published: {formatDateString(date)}</p>
           {featureImage ? (
-            <div className="md:mt-6">
-              <Image
-                src={featureImage}
-                alt={title || "Podcast featured image"}
-                width={1200}
-                height={500}
-                className="w-full md:h-[600px] object-cover rounded-lg"
-                onError={(e) => {
-                  console.error("Image failed to load:", featureImage);
-                  e.target.style.display = "none";
-                }}
-                onLoad={() =>
-                  console.log("Image loaded successfully:", featureImage)
-                }
-              />
-            </div>
+          <div className="md:mt-6">
+            <Image
+              src={featureImage}
+              alt={title || "Podcast featured image"}
+              width={1200}
+              height={500}
+              className="w-full md:h-[600px] object-cover rounded-lg"
+              onError={(e) => {
+                console.error("Image failed to load:", featureImage);
+                e.target.style.display = "none";
+              }}
+              onLoad={() =>
+                console.log("Image loaded successfully:", featureImage)
+              }
+            />
+          </div>
           ) : (
             <div className="w-full h-[400px] bg-gray-200 rounded-lg md:my-6 my-4 flex items-center justify-center">
               <p className="text-gray-500 text-lg">No featured image available</p>
@@ -232,8 +238,13 @@ export default function PodcastPost({ params }) {
           />
         </div>
 
+        {/* 🎥 Video Player */}
+        {playerLink && episodeType === "video" && (
+          <VideoPlayer src={playerLink} poster={featureImage} title={title} />
+        )}
+
         {/* 🎵 Audio Player */}
-        {playerLink && (
+        {playerLink && episodeType !== "video" && (
           <div className="my-6 rounded-lg border p-4 shadow">
             <div className="flex items-center space-x-4">
               {/* Play / Pause */}
