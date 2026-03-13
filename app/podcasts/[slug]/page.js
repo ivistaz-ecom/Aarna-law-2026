@@ -252,7 +252,11 @@ export default function PodcastPost({ params }) {
 
         {/* 🎥 Video Player */}
         {playerLink && episodeType === "video" && (
-          <VideoPlayer src={playerLink} poster={featureImage} />
+          <VideoPlayer
+            src={playerLink}
+            poster="/podcast/cover_img-video.png"
+            posterMobile="/podcast/podcast-img-mob.png"
+          />
         )}
 
         {/* 🎵 Audio Player */}

@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import { play } from "@/utils/icons";
 
-const VideoPlayer = ({ src, poster, title }) => {
+const VideoPlayer = ({ src, poster, posterMobile, title }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -24,20 +24,31 @@ const VideoPlayer = ({ src, poster, title }) => {
   return (
     <div className="my-6">
       <div
-        className="relative min-h-[300px] cursor-pointer overflow-hidden rounded-lg bg-black"
+        className="relative min-h-[150px] cursor-pointer overflow-hidden rounded-lg bg-black"
         onClick={handlePlayClick}
         onKeyDown={(e) => e.key === "Enter" && handlePlayClick()}
         role="button"
         tabIndex={0}
         aria-label={isPlaying ? "Pause" : "Play"}
       >
-        {/* Cover image - visible before video plays */}
-        {poster && !isPlaying && (
-          <img
-            src="/podcast/cover_img-video.png"
-            alt="Video cover"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
+        {/* Cover image - desktop vs mobile */}
+        {!isPlaying && (
+          <>
+            {poster && (
+              <img
+                src="/podcast/cover_img-video.png"
+                alt="Video cover"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            )}
+            {posterMobile && (
+              <img
+                src="/podcast/podcast-img-mob.png"
+                alt="Video cover"
+                className="absolute inset-0 h-full w-full object-cover md:hidden"
+              />
+            )}
+          </>
         )}
         <video
           ref={videoRef}
@@ -54,7 +65,7 @@ const VideoPlayer = ({ src, poster, title }) => {
         </video>
         {!isPlaying && (
           <div
-            className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/30 transition hover:bg-black/40"
+            className="absolute inset-0 hidden items-center justify-center rounded-lg bg-black/30 transition hover:bg-black/40 md:flex"
             aria-hidden
           >
             <span className="flex size-16 items-center justify-center rounded-full bg-white/90 text-3xl text-[#E6331C] shadow-lg">
