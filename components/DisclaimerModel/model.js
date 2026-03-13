@@ -2,11 +2,11 @@ import React from "react";
 
 const Model = () => {
   return (
-    <div className="">
+    <div className="p-4">
       {/* <h2 className="text-2xl font-semibold text-gray-800 mb-4">
         Disclaimer
       </h2> */}
-      <p className="text-gray-700 mb-6">
+      <p className="mb-6 text-gray-700">
         The Bar Council of India does not permit solicitation or advertisement
         by advocates in any form or manner. By accessing this website,{" "}
         <a
@@ -18,7 +18,7 @@ const Model = () => {
         , you acknowledge and confirm the following:
       </p>
 
-      <ul className="list-disc pl-6 space-y-3 text-gray-700">
+      <ul className="list-disc space-y-3 pl-6 text-gray-700">
         <li>
           You are accessing the Aarna Law website of your own accord to obtain
           information about the Firm, its members, and areas of practice.
@@ -69,8 +69,15 @@ const Model = () => {
         <li>
           This website uses cookies to enhance user experience. By continuing to
           use this site, you consent to our use of cookies as outlined in our
-          Privacy Policy. Please read our <a className="text-custom-red underline" href="/privacy-policy">Privacy Policy</a> and <a className="text-custom-red underline" href="/terms-of-use">Terms of Use</a> to
-          understand how we collect, use, and protect your data.
+          Privacy Policy. Please read our{" "}
+          <a className="text-custom-red underline" href="/privacy-policy">
+            Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a className="text-custom-red underline" href="/terms-of-use">
+            Terms of Use
+          </a>{" "}
+          to understand how we collect, use, and protect your data.
         </li>
         <li>
           This website and all its content are provided “as is,” without any
@@ -85,11 +92,10 @@ const Model = () => {
         </li>
       </ul>
 
-      <p className="text-gray-700 mt-6">
-        By clicking{" "}
-        <span className="font-semibold">“I Agree”</span> or by continuing to use
-        this website, you acknowledge that you have read, understood, and
-        accepted the terms of this Disclaimer.
+      <p className="mt-6 text-gray-700">
+        By clicking <span className="font-semibold">“I Agree”</span> or by
+        continuing to use this website, you acknowledge that you have read,
+        understood, and accepted the terms of this Disclaimer.
       </p>
     </div>
   );
