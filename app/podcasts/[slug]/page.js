@@ -9,7 +9,6 @@ import ErrorPage from "@/components/404/page";
 import { play, pause, sound, mute } from "@/utils/icons";
 import VideoPlayer from "@/components/Podcasts/VideoPlayer";
 
-
 export default function PodcastPost({ params }) {
   const { slug } = params;
   const router = useRouter();
@@ -85,7 +84,7 @@ export default function PodcastPost({ params }) {
     const fetchAll = async () => {
       try {
         const res = await fetch(
-          `https://docs.aarnalaw.com/wp-json/wp/v2/podcast?_embed&per_page=100`
+          `https://docs.aarnalaw.com/wp-json/wp/v2/podcast?_embed&per_page=100`,
         );
         const data = await res.json();
         setAllPodcasts(data);
@@ -96,29 +95,40 @@ export default function PodcastPost({ params }) {
         if (index !== -1) {
           const post = data[index];
           console.log("Full post data:", post);
-          console.log("Featured media data:", post._embedded?.["wp:featuredmedia"]);
+          console.log(
+            "Featured media data:",
+            post._embedded?.["wp:featuredmedia"],
+          );
           console.log("ACF data:", post.acf);
 
           setTitle(post.title?.rendered || post.slug);
           setDate(post.date);
           setContent(
             post.content?.rendered ||
-            post.excerpt?.rendered ||
-            post.acf?.description ||
-            "<p>No description available.</p>"
+              post.excerpt?.rendered ||
+              post.acf?.description ||
+              "<p>No description available.</p>",
           );
 
           // Improved featured image handling
           const featuredMedia = post._embedded?.["wp:featuredmedia"]?.[0];
           if (post.episode_featured_image) {
-            console.log("Episode featured image URL:", post.episode_featured_image);
+            console.log(
+              "Episode featured image URL:",
+              post.episode_featured_image,
+            );
             setFeatureImage(post.episode_featured_image);
           } else if (featuredMedia?.source_url) {
             console.log("Featured image URL:", featuredMedia.source_url);
             setFeatureImage(featuredMedia.source_url);
           } else if (featuredMedia?.media_details?.sizes?.medium?.source_url) {
-            console.log("Medium size image URL:", featuredMedia.media_details.sizes.medium.source_url);
-            setFeatureImage(featuredMedia.media_details.sizes.medium.source_url);
+            console.log(
+              "Medium size image URL:",
+              featuredMedia.media_details.sizes.medium.source_url,
+            );
+            setFeatureImage(
+              featuredMedia.media_details.sizes.medium.source_url,
+            );
           } else if (post.acf?.featured_image) {
             console.log("ACF featured image:", post.acf.featured_image);
             setFeatureImage(post.acf.featured_image);
@@ -189,8 +199,9 @@ export default function PodcastPost({ params }) {
       "NOV",
       "DEC",
     ];
-    return `${date.getDate()} ${monthAbbreviations[date.getMonth()]
-      } ${date.getFullYear()}`;
+    return `${date.getDate()} ${
+      monthAbbreviations[date.getMonth()]
+    } ${date.getFullYear()}`;
   };
 
   if (error) return <ErrorPage />;
@@ -198,37 +209,38 @@ export default function PodcastPost({ params }) {
 
   return (
     <>
-      <div className="px-4 md:w-[70%] w-full mx-auto">
+      <div className="mx-auto w-full px-4 md:w-[70%]">
         <div className="">
           <div className="h-[200px]" />
           <h1
-            className="py-4 lg:text-4xl text-2xl font-bold tracking-wide text-black"
+            className="py-4 text-2xl font-bold tracking-wide text-black lg:text-4xl"
             dangerouslySetInnerHTML={{ __html: title }}
           />
           <p className="py-4">Published: {formatDateString(date)}</p>
           {featureImage ? (
-          <div className="md:mt-6">
-            <Image
-              src={featureImage}
-              alt={title || "Podcast featured image"}
-              width={1200}
-              height={500}
-              className="w-full md:h-[600px] object-cover rounded-lg"
-              onError={(e) => {
-                console.error("Image failed to load:", featureImage);
-                e.target.style.display = "none";
-              }}
-              onLoad={() =>
-                console.log("Image loaded successfully:", featureImage)
-              }
-            />
-          </div>
+            <div className="md:mt-6">
+              <Image
+                src={featureImage}
+                alt={title || "Podcast featured image"}
+                width={1200}
+                height={500}
+                className="w-full rounded-lg object-cover md:h-[600px]"
+                onError={(e) => {
+                  console.error("Image failed to load:", featureImage);
+                  e.target.style.display = "none";
+                }}
+                onLoad={() =>
+                  console.log("Image loaded successfully:", featureImage)
+                }
+              />
+            </div>
           ) : (
-            <div className="w-full h-[400px] bg-gray-200 rounded-lg md:my-6 my-4 flex items-center justify-center">
-              <p className="text-gray-500 text-lg">No featured image available</p>
+            <div className="my-4 flex h-[400px] w-full items-center justify-center rounded-lg bg-gray-200 md:my-6">
+              <p className="text-lg text-gray-500">
+                No featured image available
+              </p>
             </div>
           )}
-
         </div>
 
         <div className=" pt-5">
@@ -240,7 +252,7 @@ export default function PodcastPost({ params }) {
 
         {/* 🎥 Video Player */}
         {playerLink && episodeType === "video" && (
-          <VideoPlayer src={playerLink} poster={featureImage} title={title} />
+          <VideoPlayer src={playerLink} poster={featureImage} />
         )}
 
         {/* 🎵 Audio Player */}
@@ -290,12 +302,13 @@ export default function PodcastPost({ params }) {
           </div>
         )}
 
-
         {/* ✅ Prev / Next buttons */}
         <div className="mt-6 flex justify-between">
           {currentIndex > 0 && (
             <button
-              onClick={() => router.push(`/podcasts/${allPodcasts[currentIndex - 1].slug}`)}
+              onClick={() =>
+                router.push(`/podcasts/${allPodcasts[currentIndex - 1].slug}`)
+              }
               className="bg-custom-red px-4 py-2 text-white transition hover:bg-red-700"
             >
               ← Previous Podcast
@@ -303,8 +316,10 @@ export default function PodcastPost({ params }) {
           )}
           {currentIndex < allPodcasts.length - 1 && (
             <button
-              onClick={() => router.push(`/podcasts/${allPodcasts[currentIndex + 1].slug}`)}
-              className="bg-custom-red px-4 py-2 text-white transition hover:bg-red-700 ml-auto"
+              onClick={() =>
+                router.push(`/podcasts/${allPodcasts[currentIndex + 1].slug}`)
+              }
+              className="ml-auto bg-custom-red px-4 py-2 text-white transition hover:bg-red-700"
             >
               Next Podcast →
             </button>
