@@ -14,18 +14,18 @@ function Testimonials() {
 
   return (
     <>
-      <div className="container mx-auto py-12">
-        <div className="grid gap-10 lg:grid-cols-3">
+      <div className="mx-auto w-full py-12 lg:container">
+        <div className="grid gap-10 px-4 lg:grid-cols-3 lg:px-0">
           {translations.testimonialDetails.map((items, index) => (
             <div
-              className="flex h-full flex-col rounded-lg bg-white shadow-lg"
+              className="mx-auto flex h-full w-full max-w-[380px] flex-col rounded-lg bg-white shadow-lg lg:max-w-none"
               key={index}
             >
               {/* Top Section: Info and Image */}
               <div className="flex items-center p-6">
                 {/* Left Side: Text */}
                 <div className="min-w-0 flex-1">
-                  <h2 className="flex h-12 items-center  text-ellipsis whitespace-nowrap text-lg font-bold">
+                  <h2 className="flex h-12 items-center overflow-hidden text-ellipsis whitespace-nowrap text-lg font-bold">
                     {items.name}
                   </h2>
                   <p className="flex h-10 items-center gap-2">{items.post}</p>
