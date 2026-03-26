@@ -144,7 +144,7 @@ const en = {
       `,
     },
     {
-      imageUrl: "/testimonials/daim.png",
+      imageUrl: "/testimonials/daimler.jpg",
       name: " Vinay Bhagwan",
       post: "General Counsel",
       desingnation: "Daimler Trucks India",
