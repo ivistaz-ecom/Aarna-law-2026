@@ -166,7 +166,7 @@ const en = {
     },
 
     {
-      imageUrl: "/testimonials/Logo-3.png",
+      imageUrl: "/testimonials/mam.jpg",
       name: "Aashika Abraham",
       post: "Founder",
       desingnation: "Mammamiya",
