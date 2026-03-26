@@ -100,17 +100,7 @@ export const testimonials = [
       "Their internal calling for justice strengthens their practice and this comes through in their commitment to find legal solutions and settlements at the earliest.",
     `,
   },
-  {
-    id: 11,
-    imageUrl: "/testimonials/one_paper.jpeg",
-    name: "Kunal Shah",
-    post: "OnePaper Research Analysts Private Limited",
-    desingnation: "",
-    desc: "“ We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.”",
-    fullTestimonial: `We are pleased to share that OnePaper is entirely satisfied with the services provided by Aarna Law. Vidhisha, Punti, and the entire team demonstrated exceptional skill and dedication in addressing our needs. Their efforts and timely assistance played a crucial role in achieving a favourable order for our matter.,
-      "We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.",
-      "Thank you once again for your support."`,
-  },
+  
   {
     id: 12,
     imageUrl: "/testimonials/novalite.jpg",

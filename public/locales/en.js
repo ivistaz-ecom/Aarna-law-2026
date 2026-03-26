@@ -45,7 +45,7 @@ const en = {
     contactUs: "Contact Us",
   },
 
-  // About Us 
+  // About Us
   aboutTitle: {
     aboutName: "About Us",
   },
@@ -53,7 +53,8 @@ const en = {
   //About Us and Home Page
   whatWeDo: {
     title: "What We Do",
-    headline: "We are an award-winning team of lawyers with a global perspective.",
+    headline:
+      "We are an award-winning team of lawyers with a global perspective.",
     para1:
       "Aarna Law was founded with a steadfast commitment to delivering quality-driven, value-based legal services, fostering deep and enduring relationships with those we serve. We dedicate time and effort to understanding our clients’ businesses and commercial objectives, enabling us to craft solutions that are both contextually relevant and strategically sound.",
     para2:
@@ -62,7 +63,8 @@ const en = {
 
   ourLegacy: {
     legacyTitle: "Our Legacy",
-    legacyHeadline: "Across varied domains, industries and international borders, our legal services and solutions maintain the highest standards of integrity and confidentiality.",
+    legacyHeadline:
+      "Across varied domains, industries and international borders, our legal services and solutions maintain the highest standards of integrity and confidentiality.",
     legacyPara:
       "Above all, our award-winning practice is founded on the enduring relationships we cultivate with every client. The legal and commercial advice we provide reflects this conscious understanding of our client's business interests.",
   },
@@ -81,14 +83,18 @@ const en = {
     jayasimhaTitle: "JAYASIMHA FOUNDATION",
     jayasimhaPara1:
       "Established in memory of Late Justice R Jayasimha Babu (1942-2015), the Jayasimha Foundation carries forward an illustrious legacy rooted in the pursuit of excellence through a spirit of service.",
-    jayasimhaPara2: "The foundation embodies the guiding principles of integrity, courage and discipline that exemplified Justice Jayasimha Babu.",
-    jayasimhaPara3: "Through his distinguished appointments as Judge of the High Court of Madras, and earlier of the High Court of Karnataka, Justice Jayasimha Babu delivered widely cited judgments on constitutional law, company and commercial law, and taxation. Further, his astute approach to conflict resolution as an arbitrator in domestic and international disputes was widely regarded in high esteem.",
-    jayasimhaPara4: "A connoisseur of Carnatic, Hindustani and Western classical music, Justice Babu was keen on encouraging and empowering young talents in the law.",
+    jayasimhaPara2:
+      "The foundation embodies the guiding principles of integrity, courage and discipline that exemplified Justice Jayasimha Babu.",
+    jayasimhaPara3:
+      "Through his distinguished appointments as Judge of the High Court of Madras, and earlier of the High Court of Karnataka, Justice Jayasimha Babu delivered widely cited judgments on constitutional law, company and commercial law, and taxation. Further, his astute approach to conflict resolution as an arbitrator in domestic and international disputes was widely regarded in high esteem.",
+    jayasimhaPara4:
+      "A connoisseur of Carnatic, Hindustani and Western classical music, Justice Babu was keen on encouraging and empowering young talents in the law.",
   },
 
   joinTeam: {
     joinTeamTitle: "Would You Like To Join Our Team?",
-    joinTeamPara: "We are an innovative organisation that empowers one another to grow and thrive. Integrity, efficiency, teamwork, and altruism are the cornerstones of our boutique practice.",
+    joinTeamPara:
+      "We are an innovative organisation that empowers one another to grow and thrive. Integrity, efficiency, teamwork, and altruism are the cornerstones of our boutique practice.",
     joinTeamOpening: "View Current Openings",
   },
 
@@ -98,36 +104,38 @@ const en = {
 
   aboutPartner: {
     aboutPartnerTitle: "PARTNERS",
-    aboutPartnerPara: "The expertise of our accomplished team anchors our practice in thought leadership, mentorship, and the pursuit of excellence...",
+    aboutPartnerPara:
+      "The expertise of our accomplished team anchors our practice in thought leadership, mentorship, and the pursuit of excellence...",
   },
 
-  // Testimonials 
+  // Testimonials
   testmonialBannerTitle: {
     testmonialBannerName: "Testimonials",
   },
 
   testimonialDetails: [
     {
-
-      imageUrl: "/testimonials/powerplay.png",
-      name: "Naveen Reddy",
-      post: "Powerplay",
-      desingnation: "",
-      desc: "“Aarna law has supported me in all my legal needs from drafting employee agreement to commercial agreements.”",
-      fullTestimonial: `Aarna law has supported me in all my legal needs from drafting employee agreement to commercial agreements. All business-related issue were addressed and resolved by them with ease and attention to detail. They are the people I turn to for all my legal requirements.",`,
+      imageUrl: "/testimonials/op.png",
+      name: "Kunal Shah",
+      post: "",
+      desingnation: "OnePaper Research Analysts Private Limited",
+      desc: "“ We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.”",
+      fullTestimonial: `We are pleased to share that OnePaper is entirely satisfied with the services provided by Aarna Law. Vidhisha, Punti, and the entire team demonstrated exceptional skill and dedication in addressing our needs. Their efforts and timely assistance played a crucial role in achieving a favourable order for our matter.,
+        "We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.",
+        "Thank you once again for your support."`,
     },
+
     {
-      imageUrl: "/testimonials/dummy-white.png",
-      name: "Pawan Jain",
-      post: "VP",
-      desingnation: "Finance",
-      desc: "“ They showed a high degree of commitment to the work and respectful of deadlines and expectations.”",
-      fullTestimonial: `Ms Kamala and her entire team is uber professional in their approach and open to feedback at all times. They showed a high degree of commitment to the work and respectful of deadlines and expectations. It was indeed a pleasure to work with them and we look forward to work with them in future.,
+      imageUrl: "/testimonials/client-fabric.png",
+      name: "Pallavi Rao and Arun Kiezpadathil",
+      post: "Founders",
+      desingnation: "Client Fabric Tech Ltd. ",
+      desc: "“ We found Aarna law after a global search and are thrilled that we did. ”",
+      fullTestimonial: `We have been on the hunt for a law firm that was personable, capable, responsive and understood our business and Aarna law has been all of those things and more for us. We found Aarna law after a global search and are thrilled that we did.,
       `,
     },
-
     {
-      imageUrl: "/testimonials/og_healthcare.jpg",
+      imageUrl: "/testimonials/og.png",
       name: "Tony Hales",
       post: "CEO",
       desingnation: "OG Healthcare",
@@ -136,7 +144,7 @@ const en = {
       `,
     },
     {
-      imageUrl: "/testimonials/daimler.jpg",
+      imageUrl: "/testimonials/daim.png",
       name: " Vinay Bhagwan",
       post: "General Counsel",
       desingnation: "Daimler Trucks India",
@@ -149,25 +157,16 @@ const en = {
     `,
     },
     {
-      imageUrl: "/testimonials/client_fabric.jpg",
-      name: "Pallavi Rao and Arun Kiezpadathil",
-      post: "Founders",
-      desingnation: "Client Fabric Tech Ltd. ",
-      desc: "“ We found Aarna law after a global search and are thrilled that we did. ”",
-      fullTestimonial: `We have been on the hunt for a law firm that was personable, capable, responsive and understood our business and Aarna law has been all of those things and more for us. We found Aarna law after a global search and are thrilled that we did.,
-      `,
-    },
-    {
-      imageUrl: "/testimonials/dummy-white.png",
-      name: "Pranav Nahar",
+      imageUrl: "/testimonials/power.png",
+      name: "Naveen Reddy",
       post: "",
-      desingnation: "Entrepreneur",
-      desc: "“Their client servicing and legal expertise was very professional. It was a pleasure working with them.”",
-      fullTestimonial: `Manjushree and the team at Aarna Law were given a mandate to find the most optimised and regulatory compatible structure to conduct our real estate fintech experience. They handled the mandate with clarity and detail. What impressed us that we had many doubts and queries that we persisted with and they patiently worked through all the details we requested. Their client servicing and legal expertise was very professional. It was a pleasure working with them.,
-    `,
+      desingnation: "Powerplay",
+      desc: "“Aarna law has supported me in all my legal needs from drafting employee agreement to commercial agreements.”",
+      fullTestimonial: `Aarna law has supported me in all my legal needs from drafting employee agreement to commercial agreements. All business-related issue were addressed and resolved by them with ease and attention to detail. They are the people I turn to for all my legal requirements.",`,
     },
+
     {
-      imageUrl: "/testimonials/mamma-miya.jpg",
+      imageUrl: "/testimonials/Logo-3.png",
       name: "Aashika Abraham",
       post: "Founder",
       desingnation: "Mammamiya",
@@ -177,26 +176,33 @@ const en = {
     `,
     },
     {
-      imageUrl: "/testimonials/one_paper.jpeg",
-      name: "Kunal Shah",
-      post: "OnePaper Research Analysts Private Limited",
-      desingnation: "",
-      desc: "“ We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.”",
-      fullTestimonial: `We are pleased to share that OnePaper is entirely satisfied with the services provided by Aarna Law. Vidhisha, Punti, and the entire team demonstrated exceptional skill and dedication in addressing our needs. Their efforts and timely assistance played a crucial role in achieving a favourable order for our matter.,
-        "We greatly appreciate the team’s hard work and commitment to delivering satisfactory results.",
-        "Thank you once again for your support."`,
-
-    },
-    {
-      imageUrl: "/testimonials/novalite.jpg",
+      imageUrl: "/testimonials/nov.png",
       name: "Mukesh Shah",
-      post: "Novalite limited",
-      desingnation: "",
+      post: "",
+      desingnation: "Novalite limited",
       desc: "“ The experience was nothing short of exceptional. Mr. Jayasimha and his team demonstrated an outstanding level of professionalism, expertise, and dedication.”",
       fullTestimonial: `We at Novalite Limited had the pleasure of working with Aarna Law, and specifically with Mr. Shreyas Jayasimha , on several complex legal matters. The experience was nothing short of exceptional. Mr. Jayasimha and his team demonstrated an outstanding level of professionalism, expertise, and dedication.,
         "What truly sets Aarna Law apart is their holistic approach to legal services. They not only guide you through the legal formalities with precision but also provide invaluable advisory and consultation that aligns seamlessly with our business lifestyle. Their ability to understand our unique needs and tailor their services accordingly made all the difference.",
         "We are extremely grateful for the support and insight provided by Mr. Jayasimha and the entire Aarna Law team. They have been more than just legal advisors; they have been true partners in our business journey.",
         "Thank you, Aarna Law, for your unwavering commitment to excellence. We look forward to continuing our collaboration in the future.",
+      `,
+    },
+    {
+      imageUrl: "",
+      name: "Pranav Nahar",
+      post: "Entrepreneur",
+      desingnation: "",
+      desc: "“Their client servicing and legal expertise was very professional. It was a pleasure working with them.”",
+      fullTestimonial: `Manjushree and the team at Aarna Law were given a mandate to find the most optimised and regulatory compatible structure to conduct our real estate fintech experience. They handled the mandate with clarity and detail. What impressed us that we had many doubts and queries that we persisted with and they patiently worked through all the details we requested. Their client servicing and legal expertise was very professional. It was a pleasure working with them.,
+    `,
+    },
+    {
+      imageUrl: "",
+      name: "Pawan Jain",
+      post: "VP",
+      desingnation: "Finance",
+      desc: "“ They showed a high degree of commitment to the work and respectful of deadlines and expectations.”",
+      fullTestimonial: `Ms Kamala and her entire team is uber professional in their approach and open to feedback at all times. They showed a high degree of commitment to the work and respectful of deadlines and expectations. It was indeed a pleasure to work with them and we look forward to work with them in future.,
       `,
     },
   ],
@@ -208,7 +214,8 @@ const en = {
     legacyHeadline1: "Founded on over nine decades of commitment and service",
     legacyPara1:
       "Across varied domains, industries, and international borders, our legal services and solutions are tailor-made to represent our clients’ best interests without compromising on our principles of natural law, justice, and compassion.",
-    legacyPara2: "We counsel domestic, foreign, and diasporic clients on a range of issues. From minimizing regulatory, financial, and legal risk to navigating highly specialized areas of national and international law, we advise with uncompromising integrity.",
+    legacyPara2:
+      "We counsel domestic, foreign, and diasporic clients on a range of issues. From minimizing regulatory, financial, and legal risk to navigating highly specialized areas of national and international law, we advise with uncompromising integrity.",
   },
 
   ourServicesTitle: {
@@ -257,7 +264,6 @@ const en = {
     {
       name: "Regulatory disputes",
     },
-
   ],
 
   trackRecord: {
@@ -270,19 +276,23 @@ const en = {
 
   //Practice Area Main Heading
   practiceAreaHeading: {
-    practiceAreaHeading: "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+    practiceAreaHeading:
+      "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
   },
 
   practiceAreaPara1: {
-    practiceAreaPara1: " Over the years, Aarna law has earned a distinguished reputation as a trusted advisor. The long-standing relationships we have cultivated stand as a testament to our deep understanding of the legal landscape, our resourcefulness, and our ability to provide pragmatic, results-driven counsel.",
+    practiceAreaPara1:
+      " Over the years, Aarna law has earned a distinguished reputation as a trusted advisor. The long-standing relationships we have cultivated stand as a testament to our deep understanding of the legal landscape, our resourcefulness, and our ability to provide pragmatic, results-driven counsel.",
   },
   practiceAreaPara2: {
-    practiceAreaPara2: "We offer a comprehensive range of legal services, each complementing the other, allowing us to adopt a holistic, cross-disciplinary perspective on every matter we undertake. Our core practice areas encompass corporate, commercial, and regulatory advisory, equity and debt financing, mergers and acquisitions, and dispute resolution.",
+    practiceAreaPara2:
+      "We offer a comprehensive range of legal services, each complementing the other, allowing us to adopt a holistic, cross-disciplinary perspective on every matter we undertake. Our core practice areas encompass corporate, commercial, and regulatory advisory, equity and debt financing, mergers and acquisitions, and dispute resolution.",
   },
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "Our progressive practice provides expert assistance to clients across industry.",
+    industriesHeading:
+      "Our progressive practice provides expert assistance to clients across industry.",
   },
   industrieslistTitle: {
     industrieslist: "INDUSTRIES WE SERVE",
@@ -293,7 +303,5 @@ const en = {
   network: {
     networkTitle: " A Network of Lawyers Around The World",
   },
-
 };
 export default en;
-
