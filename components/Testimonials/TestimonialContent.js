@@ -18,14 +18,14 @@ function Testimonials() {
         <div className="grid gap-10 px-4 lg:grid-cols-3 lg:px-0">
           {translations.testimonialDetails.map((items, index) => (
             <div
-              className="mx-auto flex h-full w-full max-w-[380px] flex-col rounded-lg bg-white shadow-lg lg:max-w-none"
+              className="mx-auto flex h-full w-full max-w-[340px] flex-col rounded-lg bg-white shadow-lg lg:max-w-none"
               key={index}
             >
               {/* Top Section: Info and Image */}
               <div className="flex items-center p-6">
                 {/* Left Side: Text */}
                 <div className="min-w-0 flex-1">
-                  <h2 className="flex h-12 items-center overflow-hidden text-ellipsis whitespace-nowrap text-lg font-bold">
+                  <h2 className="flex h-12 items-center overflow-hidden text-ellipsis whitespace-nowrap text-lg  font-bold">
                     {items.name}
                   </h2>
                   <p className="flex h-10 items-center gap-2">{items.post}</p>
@@ -35,7 +35,7 @@ function Testimonials() {
                 </div>
                 {/* Right Side: Image — transparent default; 3D lift only on hover */}
                 {items.imageUrl && (
-                  <div className="group ml-4 mr-5 mt-[50px] flex size-[96px] shrink-0 items-center justify-center rounded-full border border-red-400/70 bg-red-50/35 p-4 shadow-[0_8px_20px_-14px_rgba(239,68,68,0.45)] backdrop-blur-sm [perspective:520px]">
+                  <div className="group ml-4  mr-2 mt-[50px] flex size-[96px] shrink-0 items-center justify-center rounded-full border border-red-400/70 bg-red-50/35 p-4 shadow-[0_8px_20px_-14px_rgba(239,68,68,0.45)] backdrop-blur-sm [perspective:520px] md:mr-5">
                     <div className="overflow-hidden rounded-2xl bg-transparent">
                       <Image
                         src={items.imageUrl}
