@@ -1,6 +1,12 @@
 // Import statements remain unchanged
 "use client";
-import React, { useRef, useState, useEffect, useCallback, useContext } from "react";
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useCallback,
+  useContext,
+} from "react";
 import Credentials from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
@@ -8,7 +14,6 @@ import Image from "next/image";
 import configData from "../../config.json";
 import { LanguageContext } from "../../app/context/LanguageContext";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-
 export default function Partners() {
   const sliderRef = useRef(null);
   const [data, setData] = useState([]); // Initialize data state with an empty array
@@ -19,17 +24,30 @@ export default function Partners() {
 
   const { translations } = useContext(LanguageContext);
 
-
   const fetchContent = useCallback(async () => {
     setLoading(true);
     try {
       let server;
-      if (domain === `${configData.LIVE_SITE_URL}`) {
-        server = `${configData.LIVE_PRODUCTION_SERVER_ID}`;
-      } else if (domain === `${configData.STAGING_SITE_URL}`) {
-        server = `${configData.STAG_PRODUCTION_SERVER_ID}`;
+      // Match against hostnames (window.location.hostname), not full URLs
+      const liveHostname = configData.LIVE_SITE_URL.replace(
+        /^https?:\/\//,
+        "",
+      ).replace(/^www\./, "");
+      const stagingHostname = configData.STAGING_SITE_URL.replace(
+        /^https?:\/\//,
+        "",
+      ).replace(/^www\./, "");
+      const currentHostname = domain.replace(/^www\./, "");
+
+      if (
+        currentHostname === liveHostname ||
+        domain === configData.LIVE_SITE_URL_WWW
+      ) {
+        server = configData.LIVE_PRODUCTION_SERVER_ID;
+      } else if (currentHostname === stagingHostname) {
+        server = configData.STAG_PRODUCTION_SERVER_ID;
       } else {
-        server = `${configData.STAG_PRODUCTION_SERVER_ID}`;
+        server = configData.STAG_PRODUCTION_SERVER_ID;
       }
 
       const practiceAreaResponse = await fetch(
@@ -104,7 +122,7 @@ export default function Partners() {
     <div className="bg-bgDark3 py-14">
       <div className="text-center">
         <p className="mb-4 text-2xl font-bold tracking-wider text-custom-red">
-          {/* PARTNERS */}  {translations.aboutPartner.aboutPartnerTitle}
+          {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}
         </p>
         <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1200px] md:text-center md:text-3xl">
           {/* The expertise of our accomplished team anchors our practice in thought
@@ -112,7 +130,7 @@ export default function Partners() {
 
           {translations.aboutPartner.aboutPartnerPara}
         </p>
-        <div className="mx-auto container gap-4 px-4 md:px-0">
+        <div className="container mx-auto gap-4 px-4 md:px-0">
           <Credentials
             ref={sliderRef}
             responsive={responsive}
@@ -148,7 +166,7 @@ export default function Partners() {
                     {item.acf?.designation || "Designation not available"}
                   </p>
                   <p
-                    className="line-clamp-2 text-center text-base text-gray-700 leading-tight mb-2"
+                    className="mb-2 line-clamp-2 text-center text-base leading-tight text-gray-700"
                     dangerouslySetInnerHTML={{
                       __html: item.acf?.description || "",
                     }}
