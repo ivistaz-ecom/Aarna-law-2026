@@ -1,9 +1,7 @@
 import React from "react";
 import Banner from "@/components/ContactUs/Banner";
 import Address from "@/components/ContactUs/Address";
-import ContactUs from "@/components/ContactUs/ContactForm";
-import ZohoContactForm from "@/components/ContactUs/ZohoContactForm";
-import Testimonials from "@/components/ContactUs/Testimonials";
+import ContactUsSection from "@/components/ContactUs/ContactUsSection";
 
 export const metadata = {
   title: "Get in Touch with Aarna Law | Boutique Law Firm",
@@ -14,12 +12,11 @@ export const metadata = {
     canonical: "/contact-us",
   },
   openGraph: {
-    title:
-      "Get in Touch with Aarna Law | Boutique Law Firm",
+    title: "Get in Touch with Aarna Law | Boutique Law Firm",
     description:
       "Contact us, a Bangalore-based law firm, for legal assistance and guidance.",
     url: "/contact-us",
-    images: "/contactUs/ContactBanner.jpg"
+    images: "/contactUs/ContactBanner.jpg",
   },
 };
 
@@ -27,10 +24,8 @@ function page() {
   return (
     <>
       <Banner />
-      {/* <Testimonials /> */}
-      <Address />
-      {/* <ContactUs /> */}
-      <ZohoContactForm />
+      <ContactUsSection />
+      <Address variant="contact" />
     </>
   );
 }

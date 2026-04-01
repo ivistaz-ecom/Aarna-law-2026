@@ -1,9 +1,17 @@
 "use client";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { LanguageContext } from "../../app/context/LanguageContext";
+import { mapEmbedUrlNetwork } from "@/utils/data";
 
-function OurNetwork() {
-  const { language, translations } = useContext(LanguageContext);
+function OurNetwork({
+  embedUrl = mapEmbedUrlNetwork,
+  showHeading = true,
+  mapBarTitle = "Aarna Law — Our network",
+  iframeTitle = "Aarna Law office network map",
+  /** Contact page: same embed, framed with entrance animation + soft ongoing motion. */
+  animatedPresentation = false,
+}) {
+  const { translations } = useContext(LanguageContext);
   const mapRef = useRef(null);
   const [showMap, setShowMap] = useState(false);
   const [mapInteractive, setMapInteractive] = useState(false);
@@ -17,7 +25,7 @@ function OurNetwork() {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (mapRef.current) {
@@ -35,25 +43,66 @@ function OurNetwork() {
     setMapInteractive(false);
   };
 
+  const frameClass = animatedPresentation
+    ? "relative mx-auto w-full max-w-6xl overflow-hidden rounded-2xl shadow-[0_20px_50px_-18px_rgba(28,56,106,0.45)] ring-1 ring-[#1C386A]/20 our-network-map-frame"
+    : "w-full";
+  const mapAreaClass =
+    animatedPresentation && showMap
+      ? "our-network-map-enter"
+      : "";
+  const ambientClass =
+    animatedPresentation && showMap ? "our-network-map-ambient" : "";
+
   return (
     <>
       <style>
-        {
-          `.qqvbed-p83tee-V1ur5d {
+        {`
+          .qqvbed-p83tee-V1ur5d {
             text-transform: capitalize !important;
-          }`
-        }
+          }
+          @keyframes ourNetworkMapEnter {
+            from {
+              opacity: 0;
+              transform: translateY(28px) scale(0.985);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0) scale(1);
+            }
+          }
+          .our-network-map-enter {
+            animation: ourNetworkMapEnter 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          }
+          @keyframes ourNetworkMapAmbient {
+            0%, 100% { box-shadow: 0 20px 50px -18px rgba(28, 56, 106, 0.4); }
+            50% { box-shadow: 0 24px 56px -14px rgba(238, 60, 35, 0.22); }
+          }
+          .our-network-map-frame.our-network-map-ambient {
+            animation: ourNetworkMapAmbient 5s ease-in-out infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .our-network-map-enter,
+            .our-network-map-frame.our-network-map-ambient {
+              animation: none !important;
+              opacity: 1;
+              transform: none;
+              box-shadow: 0 20px 50px -18px rgba(28, 56, 106, 0.35);
+            }
+          }
+        `}
       </style>
 
-      <div className="mx-auto container px-4 md:px-0">
-        <p className="pb-8 pt-12 text-center text-xl font-semibold text-custom-blue md:text-2xl">
-          {translations.network.networkTitle}
-        </p>
+      <div className="container mx-auto px-4 md:px-0">
+        {showHeading ? (
+          <p className="pb-8 pt-12 text-center text-xl font-semibold text-custom-blue md:text-2xl">
+            {translations.network.networkTitle}
+          </p>
+        ) : null}
 
-        <div className="w-full bg-gray-800 py-1 text-white">
-          <p className="p-4 font-semibold">Aarna Law - Our Networks</p>
+        <div className={`bg-gray-800 py-1 text-white ${frameClass} ${ambientClass}`}>
+          <p className="p-4 font-semibold">{mapBarTitle}</p>
 
-          <div className="relative w-full overflow-hidden" ref={mapRef}>
+          <div className={`relative w-full overflow-hidden ${mapAreaClass}`} ref={mapRef}>
             {showMap ? (
               <div
                 className="relative h-[600px] w-full"
@@ -61,28 +110,28 @@ function OurNetwork() {
                 onMouseLeave={disableMapInteraction}
               >
                 <iframe
-                  src="https://www.google.com/maps/d/embed?mid=1VcQJ5rncecjuzGEyGAVCekUkRYoLUpQ&ehbc=2E312F"
+                  src={embedUrl}
                   width="100%"
                   height="600"
-                  className="border-0 mt-[-61px]"
-                  title="Aarna Law Office Network Map"
+                  className="mt-[-61px] border-0"
+                  title={iframeTitle}
                   loading="lazy"
                   style={{
                     pointerEvents: mapInteractive ? "auto" : "none",
                   }}
-                ></iframe>
+                />
 
                 {!mapInteractive && (
                   <>
                     <div className="absolute inset-0 z-10 cursor-pointer bg-transparent" />
-                    <div className="absolute text-center bottom-14 left-1/2 z-20 -translate-x-1/2 rounded-md bg-black/30 md:px-4 py-2 px-2 text-sm text-white shadow-md border">
+                    <div className="absolute bottom-14 left-1/2 z-20 -translate-x-1/2 rounded-md border bg-black/30 px-2 py-2 text-center text-sm text-white shadow-md md:px-4">
                       🖱️ Click to interact with map
                     </div>
                   </>
                 )}
               </div>
             ) : (
-              <div className="h-[600px] w-full flex items-center justify-center bg-gray-300 text-gray-600">
+              <div className="flex h-[600px] w-full items-center justify-center bg-gray-300 text-gray-600">
                 Loading map...
               </div>
             )}
