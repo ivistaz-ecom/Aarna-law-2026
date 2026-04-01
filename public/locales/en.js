@@ -70,7 +70,7 @@ const en = {
   },
 
   founderMessage: {
-    founderTitle: "MESSAGE FROM OUR FOUNDERS",
+    founderTitle: "Message From Our Founders",
     founderPara:
       "We are very grateful for having had the privilege of serving clients across industries, small medium and large, and to have been on the counsel for the Republic of India. We humbly acknowledge the blessings and tall shoulders of previous generations. The deep values they have instilled continue to inspire us to create a platform that brings out the best versions of our selves collectively, while we seek to serve our clients and further the cause of justice",
     founderName1: "Kamlla Nagganand",
@@ -80,7 +80,7 @@ const en = {
   },
 
   jayasimhaFoundation: {
-    jayasimhaTitle: "JAYASIMHA FOUNDATION",
+    jayasimhaTitle: "Jayasimha Foundation",
     jayasimhaPara1:
       "Established in memory of Late Justice R Jayasimha Babu (1942-2015), the Jayasimha Foundation carries forward an illustrious legacy rooted in the pursuit of excellence through a spirit of service.",
     jayasimhaPara2:
@@ -103,7 +103,7 @@ const en = {
   },
 
   aboutPartner: {
-    aboutPartnerTitle: "PARTNERS",
+    aboutPartnerTitle: "Partners",
     aboutPartnerPara:
       "The expertise of our accomplished team anchors our practice in thought leadership, mentorship, and the pursuit of excellence...",
   },
@@ -277,7 +277,7 @@ const en = {
   //Practice Area Main Heading
   practiceAreaHeading: {
     practiceAreaHeading:
-      "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+      "Our Dynamic Team Provides Experienced Counsel on a Diverse Range of Practice Areas.",
   },
 
   practiceAreaPara1: {

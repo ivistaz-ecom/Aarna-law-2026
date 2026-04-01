@@ -6,14 +6,14 @@ export default function OurLegacy() {
   const { translations } = useContext(LanguageContext);
 
   return (
-    <div className="mx-auto grid container lg:grid-cols-2 py-12 gap-8 px-4 md:px-0">
+    <div className="container mx-auto grid gap-8 px-4 py-12 md:px-0 lg:grid-cols-2">
       {/* Text Section */}
-      <div className="order-2 flex items-center justify-center lg:order-1 min-h-[400px] lg:min-h-[500px]">
+      <div className="order-2 flex min-h-[400px] items-center justify-center lg:order-1 lg:min-h-[500px]">
         <div className="flex flex-col justify-center p-2 lg:pe-5">
-          <h2 className="text-2xl font-bold uppercase text-custom-blue lg:mt-0 mt-4">
+          <h2 className="mt-4 text-2xl  font-bold text-custom-blue lg:mt-0">
             {translations.ourLegacy.legacyTitle}
           </h2>
-          <h3 className="py-2 text-2xl lg:text-[32px] md:leading-10 font-semibold text-custom-red md:mt-0">
+          <h3 className="py-2 text-2xl font-semibold text-custom-red md:mt-0 md:leading-10 lg:text-[32px]">
             {translations.ourLegacy.legacyHeadline}
           </h3>
           <p className="py-2 text-custom-gray md:mt-0">
@@ -23,12 +23,12 @@ export default function OurLegacy() {
       </div>
 
       {/* Image Section */}
-      <div className="order-1 flex items-center justify-center lg:order-2 min-h-[400px] lg:min-h-[500px]">
+      <div className="order-1 flex min-h-[400px] items-center justify-center lg:order-2 lg:min-h-[500px]">
         <Image
           src="/aboutUs/OurLegacy.png"
           width={500}
           height={500}
-          className="w-full h-full max-h-[600px] object-cover"
+          className="h-full max-h-[600px] w-full object-cover"
           alt="Our Legacy"
           loading="lazy"
         />

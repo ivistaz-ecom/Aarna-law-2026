@@ -20,6 +20,8 @@ export default function Partners() {
   const [data, setData] = useState([]); // Initialize data state with an empty array
   const [loading, setLoading] = useState(true); // Loading state for skeleton
   const [page, setPage] = useState(100);
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef(null);
 
   const domain = typeof window !== "undefined" ? window.location.hostname : "";
 
@@ -78,24 +80,48 @@ export default function Partners() {
     fetchContent();
   }, [page, fetchContent]);
 
+  // Only autoplay/scroll the carousel when this section is in the viewport.
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.2 },
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 4,
-      slidesToSlide: 4,
+      // Keep 4 cards visible, but advance only 1 card at a time.
+      slidesToSlide: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
-      slidesToSlide: 4,
+      // Keep 4 cards visible, but advance only 1 card at a time.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      // Single card visible; advance 1 per interaction.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      // Single card visible; advance 1 per interaction.
+      slidesToSlide: 1,
     },
   };
 
@@ -120,7 +146,7 @@ export default function Partners() {
   );
 
   return (
-    <div className="bg-bgDark3 py-14">
+    <div className="bg-bgDark3 py-14" ref={sectionRef}>
       <div className="text-center">
         <p className="mb-4 text-2xl font-bold tracking-wider text-custom-red">
           {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}
@@ -138,7 +164,7 @@ export default function Partners() {
             showDots={false}
             infinite={true}
             autoPlaySpeed={3000}
-            autoPlay={true}
+            autoPlay={inView}
             itemClass="p-1"
             keyBoardControl={true}
             // removeArrowOnDeviceType={["tablet", "mobile"]}

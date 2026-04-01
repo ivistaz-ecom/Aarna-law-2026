@@ -100,7 +100,7 @@ export const testimonials = [
       "Their internal calling for justice strengthens their practice and this comes through in their commitment to find legal solutions and settlements at the earliest.",
     `,
   },
-  
+
   {
     id: 12,
     imageUrl: "/testimonials/novalite.jpg",
@@ -165,6 +165,16 @@ export const legalLinks = [
   { name: "Terms of Use", href: "/terms-of-use" },
   // { name: "Disclaimer", href: "/disclaimer" },
 ];
+
+/** Shown in the Contact Us section (form, email, primary phone). */
+export const contactUsPrimary = {
+  email: "info@aarnalaw.com",
+  phone: "+91 80 2356 6792",
+};
+
+/** Multi-office map (e.g. home / network view). */
+export const mapEmbedUrlNetwork =
+  "https://www.google.com/maps/d/embed?mid=1VcQJ5rncecjuzGEyGAVCekUkRYoLUpQ&ehbc=2E312F";
 
 export const practiceArea = [
   { name: "ART LAW", imgUrl: "/PracticeArea/Art-Law.jpg" },
@@ -260,6 +270,7 @@ export const contactAddress = [
   {
     location: "BENGALURU",
     address: "No. 5, 2nd Main Road, Vyalikaval, Bengaluru 560003",
+    cardMapType: "satellite",
     phone: "+91 80 2356 6792",
     direction: "https://maps.app.goo.gl/77m912JkanSnmHD66",
   },
@@ -267,6 +278,7 @@ export const contactAddress = [
     location: "NEW DELHI",
     address:
       "Flat No. 704, 6th floor, Tower 13th, Commonwealth Games Village Apartments, New Delhi - 110092",
+    cardMapType: "satellite",
     // phone: "+91 11 4350 5878",
     direction: "https://maps.app.goo.gl/2C2vpoYLV3NZSEZLA",
   },
@@ -275,8 +287,10 @@ export const contactAddress = [
     location: "MUMBAI",
     address:
       "225, 2nd Floor, Trade Centre, Bandra Kurla Complex, Mumbai 400051",
+    cardMapType: "satellite",
     // phone: "+022 4077 9109",
     direction:
       "https://www.google.com/maps/place/AARNA+LAW+LLP/@19.071377,72.8683523,17z/data=!4m10!1m2!2m1!1sAarna+Law,+2nd+Floor+%E2%80%93+225,+Trade+Centre,+BKC,+Bandra+East,+Mumbai+-+400051!3m6!1s0x3be7c978c0a74db7:0xa396de467594668f!8m2!3d19.068488!4d72.8702805!15sCk1BYXJuYSBMYXcsIDJuZCBGbG9vciDigJMgMjI1LCBUcmFkZSBDZW50cmUsIEJLQywgQmFuZHJhIEVhc3QsIE11bWJhaSAtIDQwMDA1MZIBDmxlZ2FsX3NlcnZpY2Vz4AEA!16s%2Fg%2F11wmz9s7z0?hl=en&entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
+

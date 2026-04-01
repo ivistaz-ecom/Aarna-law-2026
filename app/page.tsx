@@ -51,7 +51,12 @@ const OurCredentials = dynamic(
     ssr: false,
   },
 );
-const OurNetwork = dynamic(() => import("../components/HomePage/OurNetwork"), {
+const ContactUsSection = dynamic(
+  () => import("@/components/ContactUs/ContactUsSection"),
+  { ssr: false },
+);
+
+const OurLocations = dynamic(() => import("@/components/ContactUs/Address"), {
   ssr: false,
 });
 
@@ -137,7 +142,9 @@ export default async function Home() {
       <Testimonials />
       <TrackRecords />
       <OurCredentials />
-      <OurNetwork />
+
+      <OurLocations />
+      <ContactUsSection />
     </>
   );
 }
