@@ -107,16 +107,18 @@ const Testimonials = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="shrink-0">
-                    <Image
-                      src={item.imageUrl}
-                      width={56}
-                      height={56}
-                      className="rounded-full object-cover"
-                      alt={item.name}
-                      loading="lazy"
-                    />
-                  </div>
+                  {item?.imageUrl ? (
+                    <div className="shrink-0">
+                      <Image
+                        src={item.imageUrl}
+                        width={56}
+                        height={56}
+                        className="rounded-full object-cover"
+                        alt={item?.name || "testimonial"}
+                        loading="lazy"
+                      />
+                    </div>
+                  ) : null}
                 </div>
                 <div className="mt-3">
                   <p className="line-clamp-2 text-sm text-custom-gray md:text-base">
