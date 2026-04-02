@@ -54,7 +54,7 @@ const en = {
   whatWeDo: {
     title: "What We Do",
     headline:
-      "We are an award-winning team of lawyers with a global perspective.",
+      "We are an award-winning team of lawyers with a global perspective",
     para1:
       "Aarna Law was founded with a steadfast commitment to delivering quality-driven, value-based legal services, fostering deep and enduring relationships with those we serve. We dedicate time and effort to understanding our clients’ businesses and commercial objectives, enabling us to craft solutions that are both contextually relevant and strategically sound.",
     para2:
@@ -64,7 +64,7 @@ const en = {
   ourLegacy: {
     legacyTitle: "Our Legacy",
     legacyHeadline:
-      "Across varied domains, industries and international borders, our legal services and solutions maintain the highest standards of integrity and confidentiality.",
+      "Across varied domains, industries and international borders, our legal services and solutions maintain the highest standards of integrity and confidentiality",
     legacyPara:
       "Above all, our award-winning practice is founded on the enduring relationships we cultivate with every client. The legal and commercial advice we provide reflects this conscious understanding of our client's business interests.",
   },
@@ -99,7 +99,7 @@ const en = {
   },
 
   aboutPracticeAreaTitle: {
-    aboutPracticeAreaName: "Practice Area",
+    aboutPracticeAreaName: "Practice Areas",
   },
 
   aboutPartner: {
@@ -213,7 +213,7 @@ const en = {
     legacyTitle1: "Our Legacy",
     legacyHeadline1: "Founded on over nine decades of commitment and service",
     legacyPara1:
-      "Across varied domains, industries, and international borders, our legal services and solutions are tailor-made to represent our clients’ best interests without compromising on our principles of natural law, justice, and compassion.",
+      "Across varied domains, industries, and international borders, our legal services and solutions are tailor-made to represent our clients’ best interests without compromising on our principles of natural law, justice, and compassion",
     legacyPara2:
       "We counsel domestic, foreign, and diasporic clients on a range of issues. From minimizing regulatory, financial, and legal risk to navigating highly specialized areas of national and international law, we advise with uncompromising integrity.",
   },
@@ -295,10 +295,10 @@ const en = {
       "Our progressive practice provides expert assistance to clients across industry.",
   },
   industrieslistTitle: {
-    industrieslist: "INDUSTRIES WE SERVE",
+    industrieslist: "Industries We Serve",
   },
   contactOurExpertsTitle: {
-    contactOurExperts: "CONTACT OUR EXPERTS",
+    contactOurExperts: "Contact Our Experts",
   },
   network: {
     networkTitle: " A Network of Lawyers Around The World",

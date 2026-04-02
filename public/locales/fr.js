@@ -53,7 +53,7 @@ const en = {
     //About Us and Home Page
     whatWeDo: {
       title: "Ce que nous faisons",
-      headline: "Nous sommes un cabinet de résolution des litiges primé, doté d'une perspective internationale. ",
+      headline: "Nous sommes un cabinet de résolution des litiges primé, doté d'une perspective internationale ",
       para1:
         "Aarna Law a été fondé avec un engagement indéfectible à fournir des services juridiques de qualité, axés sur la valeur, tout en cultivant des relations profondes et durables avec nos clients. Nous consacrons du temps et des efforts à comprendre les activités et les objectifs commerciaux de nos clients, ce qui nous permet d’élaborer des solutions à la fois pertinentes dans leur contexte et solides sur le plan stratégique. ",
       para2:
@@ -62,7 +62,7 @@ const en = {
   
     ourLegacy: {
       legacyTitle: "Notre héritage ",
-      legacyHeadline: "À travers divers domaines, industries et frontières internationales, nos services et solutions juridiques maintiennent les normes les plus élevées d'intégrité et de confidentialité. ",
+      legacyHeadline: "À travers divers domaines, industries et frontières internationales, nos services et solutions juridiques maintiennent les normes les plus élevées d'intégrité et de confidentialité",
       legacyPara:
         "Par-dessus tout, notre cabinet primé repose sur les relations durables que nous cultivons avec chacun de nos clients. Les conseils juridiques et commerciaux que nous offrons reflètent cette compréhension consciente des intérêts commerciaux de nos clients ",
     },

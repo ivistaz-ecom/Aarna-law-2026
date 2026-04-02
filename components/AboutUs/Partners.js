@@ -146,7 +146,7 @@ export default function Partners() {
   );
 
   return (
-    <div className="bg-bgDark3 py-14" ref={sectionRef}>
+    <div className="bg-[#082049] py-14" ref={sectionRef}>
       <div className="text-center">
         <p className="mb-4 text-2xl font-bold tracking-wider text-custom-red">
           {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}

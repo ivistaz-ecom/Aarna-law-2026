@@ -56,7 +56,7 @@ function PracticeLists() {
     <div>
       <div className="mx-auto container py-12 px-4 md:px-0">
         <p className="py-4 text-center font-bold text-gray-500">
-          CAREERS AT AARNA LAW
+          Careers at Aarna Law
         </p>
         <p className="mx-auto text-center text-3xl lg:w-8/12">
           Be a part of a dynamic law practice with an <br />
@@ -71,7 +71,7 @@ function PracticeLists() {
           Multinational Companies, Niche Start-ups, and Individual Interests.
         </p>
         <p className="py-6 font-semibold text-custom-blue">
-          RECRUITMENT FOR LEGAL AND ADMINISTRATIVE PROFESSIONALS
+          Recruitment for Legal and Administrative Professionals
         </p>
         <p>
           We are always interested to hear from professionals with international
