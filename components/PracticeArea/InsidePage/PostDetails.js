@@ -17,7 +17,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
     const answer = details?.acf?.[`faqs_description_${i}`];
     if (question && answer) {
       faqs.push({ question, answer });
-    } 
+    }
   }
 
   useEffect(() => {
@@ -64,7 +64,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
                   ? item.acf.gujarati_title
                   : language === "fr" && item.acf?.french_title
                     ? item.acf.french_title
-                  : item.title?.rendered || '';
+                    : item.title?.rendered || '';
   };
 
   const getLocalizedDescription = () => {
@@ -84,7 +84,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
                   ? details.acf.gujarati_description
                   : language === "fr" && details?.acf?.french_description
                     ? details.acf.french_description
-                  : details?.acf?.description || '';
+                    : details?.acf?.description || '';
   };
 
   const description = getLocalizedDescription();
@@ -98,6 +98,14 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
             // padding-left: 20px;
             padding-bottom: 10px;
           }
+
+          h3.flex-1.text-md.font-semibold.mr-3.text-black {
+          color: black !important;
+          padding-bottom: 0px !important;
+          font-weight: 600 !important;
+          font-size: 16px !important;
+}
+
         `}
       </style>
 
@@ -108,8 +116,8 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
             {description && (
               <div dangerouslySetInnerHTML={{ __html: description }} />
             )}
-               {/* Faqs */}
-          {faqs.length > 0 && <Faq faqs={faqs} />}
+            {/* Faqs */}
+            {faqs.length > 0 && <Faq faqs={faqs} />}
           </div>
         </div>
 
@@ -145,7 +153,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
           {partnersData?.partnerNames?.length > 0 && (
             <div className="flex w-full justify-center">
               <ContactModal
-                btnName="CONTACT PARTNER"
+                btnName="Contact Partner"
                 textColor="text-black"
                 modalTitle={titleText}
                 btnType="contactPartner"
@@ -156,7 +164,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
 
           {/* Quick Links */}
           <div className="w-full md:p-2 p-5 pt-10">
-            <h2 className="font-bold md:pt-5">Quick Links</h2>
+            <h2 className="font-bold md:pt-5">Quick Links:</h2>
             <hr className="my-4 border-t-2 border-red-500" />
             <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400 md:pr-10">
               {data.map((item, index) => (

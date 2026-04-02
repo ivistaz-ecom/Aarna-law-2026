@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Faq = ({ faqs = [] }) => {
+const Faq = ({ faqs = [], className = "" }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const contentRefs = useRef([]);
 
@@ -52,7 +52,7 @@ const Faq = ({ faqs = [] }) => {
   
 
   return (
-    <div className="max-w-4xl container mx-auto py-4 md:px-0">
+    <div className={`max-w-4xl container mx-auto py-4 md:px-0 ${className}`.trim()}>
       {faqs.length > 0 && (
         <h2 className="text-2xl pb-5">Frequently Asked Questions</h2>
       )}
@@ -66,7 +66,7 @@ const Faq = ({ faqs = [] }) => {
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center text-left"
             >
-              <h3 className="flex-1 text-md font-semibold mr-3">
+              <h3 className="flex-1 text-md font-semibold mr-3 text-black">
                 {faq.question}
               </h3>
               <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center">

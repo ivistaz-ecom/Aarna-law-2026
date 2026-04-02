@@ -49,22 +49,22 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
 
   const getLocalizedTitle = (item) => {
     return language === "ta" && item.acf.tamil_title
-                  ? item.acf.tamil_title
-                  : language === "kn" && item.acf.kannada_title
-                    ? item.acf.kannada_title
-                    : language === "te" && item.acf.telugu_title
-                      ? item.acf.telugu_title
-                      : language === "hi" && item.acf.hindi_title
-                        ? item.acf.hindi_title
-                        : language === "ml" && item.acf.malayalam_title
-                          ? item.acf.malayalam_title
-                          : language === "mr" && item.acf.marathi_title
-                            ? item.acf.marathi_title
-                            : language === "gu" && item.acf.gujarati_title
-                              ? item.acf.gujarati_title
-                              : language === "fr" && item.acf?.french_title
-                                ? item.acf.french_title
-                              : item.title.rendered; // Default to English titl
+      ? item.acf.tamil_title
+      : language === "kn" && item.acf.kannada_title
+        ? item.acf.kannada_title
+        : language === "te" && item.acf.telugu_title
+          ? item.acf.telugu_title
+          : language === "hi" && item.acf.hindi_title
+            ? item.acf.hindi_title
+            : language === "ml" && item.acf.malayalam_title
+              ? item.acf.malayalam_title
+              : language === "mr" && item.acf.marathi_title
+                ? item.acf.marathi_title
+                : language === "gu" && item.acf.gujarati_title
+                  ? item.acf.gujarati_title
+                  : language === "fr" && item.acf?.french_title
+                    ? item.acf.french_title
+                    : item.title.rendered; // Default to English titl
   };
 
   const getLocalizedDescription = () => {
@@ -84,7 +84,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
                   ? details.acf.gujarati_description
                   : language === "fr" && details?.acf?.french_description
                     ? details.acf.french_description
-                  : details?.acf?.description || '';
+                    : details?.acf?.description || '';
   };
 
   const description = getLocalizedDescription();
@@ -100,6 +100,13 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
           .inner-content li {
             // padding-top: 10px;
           }
+          h3.flex-1.text-md.font-semibold.mr-3.text-black {
+          color: black !important;
+          padding-bottom: 0px !important;
+          font-weight: 600 !important;
+          font-size: 16px !important;
+}
+
         `}
       </style>
 
@@ -148,7 +155,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
           {partnersData?.partnerNames?.length > 0 && (
             <div className="flex w-full justify-center">
               <ContactModal
-                btnName="CONTACT PARTNER"
+                btnName="Contact Partner"
                 textColor="text-black"
                 modalTitle={titleText}
                 btnType="contactPartner"
@@ -159,7 +166,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
 
           {/* Quick Links */}
           <div className="w-full md:p-2 p-5 pt-10">
-            <h2 className="font-bold md:pt-5">Quick Links</h2>
+            <h2 className="font-bold md:pt-5">Quick Links:</h2>
             <hr className="my-4 border-t-2 border-red-500" />
             <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400 md:pr-10">
               {data.map((item, index) => (
