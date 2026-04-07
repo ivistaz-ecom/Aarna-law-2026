@@ -199,7 +199,7 @@ function AllInsights({
                   <p className="pb-4 text-xs text-gray-500">
                     {formatDateString(item.date)}
                   </p>
-                  <Link href={`/insights/${item.slug}`} className="text-red-500">
+                  <Link href={`/insights/${item.slug}`} className="font-semibold text-custom-red">
                     Read more
                   </Link>
                 </div>
@@ -214,7 +214,7 @@ function AllInsights({
                 ) : (
                   <button
                     onClick={loadMore}
-                    className="bg-custom-red px-4 py-2 text-white hover:bg-red-600 active:bg-red-700"
+                    className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
                     disabled={isChangingArchive}
                   >
                     Load More

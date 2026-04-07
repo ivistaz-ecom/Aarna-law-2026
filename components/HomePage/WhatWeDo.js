@@ -45,7 +45,7 @@ const WhatWeDo = () => {
           <h2 className="text-2xl font-bold text-custom-red mt-6 lg:mt-0 pb-2">
             {translations.ourLegacy1.legacyTitle1}
           </h2>
-          <h3 className="py-4 text-2xl font-semibold text-custom-blue lg:text-[32px] md:leading-10">
+          <h3 className="mb-4 text-2xl font-semibold text-custom-blue lg:text-[34px] md:leading-10">
             {translations.ourLegacy1.legacyHeadline1}
           </h3>
           <p className="text-custom-gray">{translations.ourLegacy1.legacyPara1}</p>
@@ -60,7 +60,7 @@ const WhatWeDo = () => {
         <div className=" flex items-center justify-center min-h-[400px] lg:min-h-[500px] order-1 lg:order-2">
           <Image
             src="/whatWeDo/Our_legacy.jpg"
-            width={500} 
+            width={500}
             height={500}
             className="w-full h-full max-h-[600px] object-cover"
             alt="Our Legacy"

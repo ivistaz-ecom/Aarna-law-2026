@@ -6,7 +6,14 @@ import Subscribe from "@/components/Careers/SubscribeForm";
 import ContactPartner from "@/utils/HubSpotForm/ContactPartner";
 import { HiX } from "react-icons/hi";
 
-function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
+function ModalContact({
+  btnName,
+  textColor,
+  modalTitle,
+  modalTitleColor = "text-gray-900",
+  btnType,
+  id,
+}) {
   const [openModal, setOpenModal] = useState(false);
   const modalRef = useRef(null);
 
@@ -38,9 +45,7 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
   return (
     <>
       <button
-        className={`border border-custom-red bg-transparent p-2 text-lg font-semibold text-custom-blue 
-          transition-colors duration-300 hover:bg-custom-blue hover:text-white
-          md:px-6 md:text-base`}
+        className={`border border-custom-red px-6 py-2 text-base text-custom-red md:px-4 md:py-1.5 md:hover:bg-custom-red md:hover:text-white lg:px-6 lg:py-2`}
         onClick={() => setOpenModal(true)}
       >
         {btnName}
@@ -58,7 +63,7 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
           {/* Modal Header */}
           <div className="flex items-center justify-between border-b px-6 pb-2 pt-6 dark:border-gray-600">
             <div
-              className="text-xl font-semibold text-gray-900 dark:text-white"
+              className={`text-xl font-semibold ${modalTitleColor} dark:text-white`}
               dangerouslySetInnerHTML={{ __html: modalTitle }}
             />
             <button

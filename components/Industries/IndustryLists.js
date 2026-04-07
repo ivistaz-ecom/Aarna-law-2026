@@ -10,10 +10,10 @@ function IndustryLists({ data = [], loading = true }) {
   return (
     <div>
       <div className="mx-auto container py-12 px-4 md:px-0">
-        <p className="py-4 text-center font-bold text-gray-500">
+        <p className="py-4 text-center font-bold text-custom-blue text-xl">
           {translations.industrieslistTitle.industrieslist}
         </p>
-        <p className="mx-auto text-center text-3xl lg:w-8/12">
+        <p className="mx-auto text-center md:text-3xl text-lg lg:w-8/12">
           {translations.industriesHeading.industriesHeading}
         </p>
         <div className="grid gap-4 pt-12 lg:grid-cols-4">
