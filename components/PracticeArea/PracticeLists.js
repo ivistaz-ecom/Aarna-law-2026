@@ -12,7 +12,7 @@ function PracticeLists({ data = [], loading = true }) {
       {/* <p className="py-4 text-center font-bold text-gray-500">
         {translations.practiceAreasTitle.practiceAreas}
       </p> */}
-      <p className="mx-auto text-center text-3xl lg:w-8/12">
+      <p className="text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px] mx-auto w-8/12 text-center">
         {translations.practiceAreaHeading.practiceAreaHeading}
       </p>
       <p className="py-5 text-justify">

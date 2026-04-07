@@ -148,6 +148,12 @@ const nextConfig = {
       },
 
       //Podcasts
+      
+      {
+        source: "/podcasts/enforcement-of-arbitral-awards-across-jurisdictions-james-hosking-on-enforcement-in-the-united-states-podcast-series",
+        destination: "/podcasts/cross-border-enforcement-an-arbitration-deep-dive-with-mr-james-hosking-ep-1",
+        permanent: true,
+      },
       {
         source: "/podcast/making-mediation-work-for-india-part-1",
         destination: "/podcasts/making-mediation-work-for-india-part-1",

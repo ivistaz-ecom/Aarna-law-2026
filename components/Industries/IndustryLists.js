@@ -10,13 +10,13 @@ function IndustryLists({ data = [], loading = true }) {
   return (
     <div>
       <div className="mx-auto container py-12 px-4 md:px-0">
-        <p className="py-4 text-center font-bold text-custom-blue text-xl">
+        <p className="py-4 text-center font-bold text-custom-red text-2xl">
           {translations.industrieslistTitle.industrieslist}
         </p>
-        <p className="mx-auto text-center md:text-3xl text-lg lg:w-8/12">
+        <p className="text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px] mx-auto w-8/12 text-center">
           {translations.industriesHeading.industriesHeading}
         </p>
-        <div className="grid gap-4 pt-12 lg:grid-cols-4">
+        <div className="grid gap-4 pt-8 lg:grid-cols-4">
           {loading && (!data || data.length === 0)
             ? [...Array(12)].map((_, index) => (
               <div key={index} className="animate-pulse">
