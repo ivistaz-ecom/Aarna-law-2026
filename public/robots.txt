@@ -1,4 +1,5 @@
 User-agent: *
 Allow: 
 Disallow: /cgi-bin/
+Disallow: https://www.aarnalaw.com/podcasts/enforcement-of-arbitral-awards-across-jurisdictions-james-hosking-on-enforcement-in-the-united-states-podcast-series
 Sitemap: https://www.aarnalaw.com/sitemap.xml
