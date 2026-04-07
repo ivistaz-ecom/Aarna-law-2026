@@ -269,7 +269,7 @@ const mr = {
 
   //Practice Area Main Heading
   practiceAreaHeading: {
-    practiceAreaHeading: "आमची गतिशील टीम विविध प्रॅक्टिस क्षेत्रांमध्ये अनुभवी सल्ला प्रदान करते. ",
+    practiceAreaHeading: "आमची गतिशील टीम विविध प्रॅक्टिस क्षेत्रांमध्ये अनुभवी सल्ला प्रदान करते ",
   },
 
   practiceAreaPara1: {
@@ -281,7 +281,7 @@ const mr = {
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "आमची प्रगतीशील पद्धत उद्योगातील ग्राहकांना तज्ञांची मदत प्रदान करते. ",
+    industriesHeading: "आमची प्रगतीशील पद्धत उद्योगातील ग्राहकांना तज्ञांची मदत प्रदान करते",
   },
   industrieslistTitle: {
     industrieslist: "आम्ही सेवा देत असलेले उद्योग ",

@@ -110,7 +110,7 @@ export default function Address({ variant = "default" }) {
           <>
             <h2
               id="our-locations-heading"
-              className="mb-3 border-b-2 border-[#EE3C23] pb-[15px] text-left text-[26px] font-semibold leading-normal tracking-[1.6px] text-[#1C386A]"
+              className="mb-3 border-b-2 border-custom-blue pb-[15px] text-left text-[26px] font-semibold leading-normal tracking-[1.6px] text-custom-red"
             >
               Our Locations
             </h2>

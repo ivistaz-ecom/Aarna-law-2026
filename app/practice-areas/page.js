@@ -10,7 +10,7 @@ export const revalidate = 60;
 export const metadata = {
   title: "Experienced Legal Services| Aarna Law Practice Areas",
   description:
-    "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+    "Our dynamic team provides experienced counsel on a diverse range of practice areas",
   metadataBase: new URL("https://www.aarnalaw.com"),
   alternates: {
     canonical: "/practice-area",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Experienced Legal Services| Aarna Law Practice Areas",
     description:
-      "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+      "Our dynamic team provides experienced counsel on a diverse range of practice areas",
     url: "https://www.aarnalaw.com/practice-area",
     images: "/PracticeArea/PracticeAreas.png",
   },
