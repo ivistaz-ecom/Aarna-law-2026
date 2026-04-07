@@ -113,7 +113,7 @@ function OurNetwork({
                   src={embedUrl}
                   width="100%"
                   height="600"
-                  className="mt-[-61px] border-0"
+                  className="mt-[-71px] border-0"
                   title={iframeTitle}
                   loading="lazy"
                   style={{

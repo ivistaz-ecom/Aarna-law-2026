@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { contactAddress, mapEmbedUrlNetwork } from "@/utils/data";
 import { location, direction } from "@/utils/icons";
 import OurNetwork from "../HomePage/OurNetwork";
+import { LanguageContext } from "../../app/context/LanguageContext";
+import { useContext } from "react";
 
 /**
  * Our Locations: map + office addresses + directions (separate from Contact Us form).
@@ -10,6 +14,7 @@ import OurNetwork from "../HomePage/OurNetwork";
  * @param {"default"|"contact"} [props.variant="default"] — contact page uses animated map presentation
  */
 export default function Address({ variant = "default" }) {
+  const { translations } = useContext(LanguageContext);
   const showOfficeCards = variant === "contact";
   const animatedMap = variant === "contact";
   const useContactCardMaps = variant === "contact";
@@ -111,13 +116,13 @@ export default function Address({ variant = "default" }) {
             </h2>
             {renderOfficeCards(contactAddress)}
 
-            <h3 className="mb-6 mt-8 text-center text-[22px] font-semibold leading-normal tracking-[0.08em] text-[#1C386A] md:text-[24px]">
-              A Network of Lawyers Around The World
+            <h3 className="mb-6 mt-8 text-center text-[22px] font-semibold leading-normal tracking-[0.08em] text-custom-red md:text-[24px]">
+            {translations.network.networkTitle}
             </h3>
           </>
         ) : (
-          <h3 className="mb-6 mt-2 text-center text-[22px] font-semibold leading-normal tracking-[0.08em] text-[#1C386A] md:text-[24px]">
-            A Network of Lawyers Around The World
+          <h3 className="mb-6 mt-2 text-center text-[22px] font-semibold leading-normal tracking-[0.08em] text-custom-red md:text-[24px]">
+            {translations.network.networkTitle}
           </h3>
         )}
 

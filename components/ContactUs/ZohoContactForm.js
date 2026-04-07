@@ -231,11 +231,10 @@ export default function ZohoContactForm({
               value={formData.First_Name}
               onChange={handleChange}
               required
-              className={`w-full rounded border px-3 py-2 ${
-                submitStatus?.fieldErrors?.First_Name
-                  ? "border-red-500 bg-red-50"
-                  : "border-gray-300"
-              }`}
+              className={`w-full rounded border px-3 py-2 ${submitStatus?.fieldErrors?.First_Name
+                ? "border-red-500 bg-red-50"
+                : "border-gray-300"
+                }`}
             />
             {submitStatus?.fieldErrors?.First_Name && (
               <p className="mt-1 text-sm text-red-600">
@@ -256,11 +255,10 @@ export default function ZohoContactForm({
               value={formData.Last_Name}
               onChange={handleChange}
               required
-              className={`w-full rounded border px-3 py-2 ${
-                submitStatus?.fieldErrors?.Last_Name
-                  ? "border-red-500 bg-red-50"
-                  : "border-gray-300"
-              }`}
+              className={`w-full rounded border px-3 py-2 ${submitStatus?.fieldErrors?.Last_Name
+                ? "border-red-500 bg-red-50"
+                : "border-gray-300"
+                }`}
             />
             {submitStatus?.fieldErrors?.Last_Name && (
               <p className="mt-1 text-sm text-red-600">
@@ -285,12 +283,11 @@ export default function ZohoContactForm({
               value={formData.Email}
               onChange={handleChange}
               required
-              className={`w-full rounded border px-3 py-2 ${
-                submitStatus?.duplicateField === "Email" ||
+              className={`w-full rounded border px-3 py-2 ${submitStatus?.duplicateField === "Email" ||
                 submitStatus?.fieldErrors?.Email
-                  ? "border-red-500 bg-red-50 ring-2 ring-red-200"
-                  : "border-gray-300"
-              }`}
+                ? "border-red-500 bg-red-50 ring-2 ring-red-200"
+                : "border-gray-300"
+                }`}
             />
             {submitStatus?.fieldErrors?.Email && (
               <p className="mt-1 text-sm text-red-600">
@@ -323,12 +320,11 @@ export default function ZohoContactForm({
               pattern="[0-9]*"
               inputMode="numeric"
               placeholder="Enter 10 digit mobile number"
-              className={`w-full rounded border px-3 py-2 ${
-                submitStatus?.duplicateField === "Mobile" ||
+              className={`w-full rounded border px-3 py-2 ${submitStatus?.duplicateField === "Mobile" ||
                 submitStatus?.fieldErrors?.Mobile
-                  ? "border-red-500 bg-red-50 ring-2 ring-red-200"
-                  : "border-gray-300"
-              }`}
+                ? "border-red-500 bg-red-50 ring-2 ring-red-200"
+                : "border-gray-300"
+                }`}
             />
             {submitStatus?.fieldErrors?.Mobile && (
               <p className="mt-1 text-sm text-red-600">
@@ -358,11 +354,10 @@ export default function ZohoContactForm({
             value={formData.Message}
             onChange={handleChange}
             required
-            className={`w-full rounded border px-3 py-2 ${
-              submitStatus?.fieldErrors?.Message
-                ? "border-red-500 bg-red-50"
-                : "border-gray-300"
-            }`}
+            className={`w-full rounded border px-3 py-2 ${submitStatus?.fieldErrors?.Message
+              ? "border-red-500 bg-red-50"
+              : "border-gray-300"
+              }`}
           />
           {submitStatus?.fieldErrors?.Message && (
             <p className="mt-1 text-sm text-red-600">
@@ -411,7 +406,7 @@ export default function ZohoContactForm({
             type="submit"
             disabled={loading}
             aria-busy={loading}
-            className="rounded bg-custom-blue px-6 py-2 font-semibold text-white disabled:opacity-60"
+            className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>

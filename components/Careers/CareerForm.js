@@ -638,7 +638,7 @@ export default function CareerForm({ id }) {
             type="submit"
             disabled={loading}
             aria-busy={loading}
-            className="w-full rounded bg-custom-blue px-6 py-2 font-semibold text-white transition-colors hover:bg-custom-red disabled:opacity-60"
+            className="w-full rounded border border-custom-red px-6 py-2 text-base text-custom-red md:px-4 md:py-1.5 md:hover:bg-custom-red md:hover:text-white lg:px-6 lg:py-2"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>

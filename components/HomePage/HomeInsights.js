@@ -131,8 +131,8 @@ export default function HomeInsights({ initialInsights = [] }) {
               : insightsData.map((item, index) => (
                 <div key={item.id} className="w-full">
                   <div className="lg:ms-5 lg:p-4 md:ms-3 md:p-3">
-                    <div className="group relative my-auto h-[450px] w-full flex-col border border-gray-200 bg-white shadow transition-colors duration-300 dark:border-gray-700 dark:bg-gray-800 md:hover:bg-custom-red md:hover:text-white lg:flex lg:h-[620px] md:h-[500px] md:flex">
-                      <div className="relative h-[200px] w-full overflow-hidden bg-gray-200 md:h-[220px] lg:h-[280px]">
+                    <div className="group relative my-auto h-[450px] w-full flex-col border border-gray-200 bg-white shadow transition-colors duration-300 dark:border-gray-700 dark:bg-gray-800 md:hover:bg-custom-red md:hover:text-white lg:flex lg:h-[550px] md:h-[500px] md:flex">
+                      <div className="relative h-[200px] w-full overflow-hidden bg-gray-200 md:h-[220px] lg:h-[250px]">
                         <Image
                           src={item.imageUrl}
                           alt={item.title}
@@ -144,7 +144,7 @@ export default function HomeInsights({ initialInsights = [] }) {
                       </div>
                       <div className="flex grow flex-col items-start p-5 text-black transition-colors duration-300 md:group-hover:text-white md:p-4">
                         <p
-                          className="mb-3 line-clamp-2 max-h-[4.5rem] min-h-12 overflow-hidden text-lg font-semibold text-custom-blue transition-colors duration-300 md:text-xl md:mb-2 md:min-h-10 lg:text-2xl lg:group-hover:text-white"
+                          className="line-clamp-2 min-h-14 overflow-hidden text-lg font-semibold text-custom-blue transition-colors duration-300 md:text-xl md:mb-2 md:min-h-16 lg:text-2xl lg:group-hover:text-white"
                           dangerouslySetInnerHTML={{ __html: item.title }}
                         />
                         {item.desc && (
@@ -155,7 +155,7 @@ export default function HomeInsights({ initialInsights = [] }) {
                         )}
                         <Link
                           href={`/insights/${item.slug}`}
-                          className="absolute bottom-0 left-[35%] m-5 mx-auto block border border-custom-red p-2 text-custom-red transition-colors duration-300 hover:bg-white hover:text-black md:left-4 md:m-4 md:px-4 md:text-sm lg:left-5 lg:mx-0 lg:px-6 lg:group-hover:bg-white lg:group-hover:text-black"
+                          className="absolute bottom-0 left-[35%] m-5 mx-auto block border border-custom-red p-2 text-custom-red transition-colors duration-300 hover:bg-white hover:text-custom-red md:left-4 md:m-4 md:px-4 md:text-sm lg:left-5 lg:mx-0 lg:px-6 lg:group-hover:bg-custom-red lg:group-hover:text-white lg:group-hover:border-white"
                         >
                           View Article
                         </Link>
@@ -169,9 +169,9 @@ export default function HomeInsights({ initialInsights = [] }) {
           <div className="mt-6 flex justify-center md:-ms-10 ms-1 lg:-ms-20">
             <Link
               href="/insights"
-              className="border border-custom-blue px-6 py-2 text-custom-blue md:hover:bg-custom-blue md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
+              className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base cursor-pointer"
             >
-              View all
+              View All
             </Link>
           </div>
         </div>

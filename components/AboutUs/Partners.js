@@ -148,12 +148,10 @@ export default function Partners() {
   return (
     <div className="bg-[#082049] py-14" ref={sectionRef}>
       <div className="text-center">
-        <p className="mb-4 text-2xl font-bold tracking-wider text-custom-red">
+        <h3 className="mb-4 text-3xl font-bold tracking-wider text-custom-red">
           {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}
-        </p>
-        <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1200px] md:text-center md:text-3xl">
-          {/* The expertise of our accomplished team anchors our practice in thought
-          leadership, mentorship, and the pursuit of excellence... */}
+        </h3>
+        <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1000px] md:text-center md:text-2xl pb-2">
 
           {translations.aboutPartner.aboutPartnerPara}
         </p>
@@ -201,7 +199,8 @@ export default function Partners() {
 
                   <Link
                     href={`/team/${item.slug}`}
-                    className="mt-2 inline-block rounded bg-custom-red px-4 py-2 text-white hover:bg-red-800"
+                    className="mt-5 inline-block border border-custom-red px-4 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base cursor-pointer"
+                    // className="mt-5 border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base cursor-pointer"
                   >
                     Read More
                   </Link>

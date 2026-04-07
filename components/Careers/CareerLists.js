@@ -55,10 +55,10 @@ function PracticeLists() {
   return (
     <div>
       <div className="mx-auto container py-12 px-4 md:px-0">
-        <p className="py-4 text-center font-bold text-gray-500">
+        <p className="py-4 text-center font-bold text-custom-blue text-xl">
           Careers at Aarna Law
         </p>
-        <p className="mx-auto text-center text-3xl lg:w-8/12">
+        <p className="mx-auto text-center md:text-3xl text-lg lg:w-8/12">
           Be a part of a dynamic law practice with an <br />
           international outlook
         </p>
@@ -157,6 +157,7 @@ function PracticeLists() {
                 btnName="Apply Now"
                 textColor="text-custom-red"
                 modalTitle="Current Openings"
+                modalTitleColor="text-custom-red"
                 btnType="career"
                 id="career"
               />
@@ -204,6 +205,7 @@ function PracticeLists() {
             btnName="Apply Now"
             textColor="text-custom-red"
             modalTitle="Internships"
+            modalTitleColor="text-custom-red"
             btnType="internships"
             id="internships"
           />
