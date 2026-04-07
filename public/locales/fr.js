@@ -269,7 +269,7 @@ const en = {
   
     //Practice Area Main Heading
     practiceAreaHeading: {
-      practiceAreaHeading: "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+      practiceAreaHeading: "Notre équipe dynamique fournit des conseils expérimentés sur une large gamme de domaines de pratique",
     },
   
     practiceAreaPara1: {
@@ -281,7 +281,7 @@ const en = {
   
     //Industries Main Heading
     industriesHeading: {
-      industriesHeading: "Notre pratique progressive fournit une assistance experte à nos clients dans divers secteurs. ",
+      industriesHeading: "Notre pratique progressive fournit une assistance experte à nos clients dans divers secteurs",
     },
     industrieslistTitle: {
       industrieslist: "SECTEURS QUE NOUS SERVONS ",

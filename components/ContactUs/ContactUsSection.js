@@ -22,7 +22,7 @@ export default function ContactUsSection() {
       <div className="container mx-auto px-4 md:px-0">
         <h2
           id="contact-us-heading"
-          className="mb-4 border-b-2 border-[#EE3C23] pb-[15px] text-left text-[26px] font-semibold leading-normal tracking-[1.6px] text-[#1C386A]"
+          className="mb-4 border-b-2 border-custom-blue pb-[15px] text-left text-[26px] font-semibold leading-normal tracking-[1.6px] text-custom-red"
         >
           Contact Us
         </h2>

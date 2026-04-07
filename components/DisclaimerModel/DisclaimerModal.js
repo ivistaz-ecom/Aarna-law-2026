@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Model from './model';
 
 const STORAGE_KEY = 'aarna_disclaimer_seen';
+const DISCLAIMER_EXPIRY_MS = 24 * 60 * 60 * 1000; // 24 hours
 
 const DisclaimerModal = () => {
     const [showDisclaimer, setShowDisclaimer] = useState(false);
@@ -17,15 +18,34 @@ const DisclaimerModal = () => {
 
     useEffect(() => {
         if (!mounted || typeof window === 'undefined') return;
-        const seen = localStorage.getItem(STORAGE_KEY);
-        // Only hide disclaimer if the user has explicitly accepted
-        if (seen !== 'accepted') {
+        const storedValue = localStorage.getItem(STORAGE_KEY);
+        let hasValidAcceptance = false;
+
+        if (storedValue) {
+            try {
+                const parsed = JSON.parse(storedValue);
+                const acceptedAt = parsed?.acceptedAt;
+                if (typeof acceptedAt === 'number') {
+                    hasValidAcceptance =
+                        Date.now() - acceptedAt < DISCLAIMER_EXPIRY_MS;
+                }
+            } catch (_error) {
+                hasValidAcceptance = false;
+            }
+        }
+
+        // Show disclaimer if no acceptance exists or the 24-hour window expired.
+        if (!hasValidAcceptance) {
             setShowDisclaimer(true);
+            localStorage.removeItem(STORAGE_KEY);
         }
     }, [mounted]);
 
     const handleAccept = () => {
-        localStorage.setItem(STORAGE_KEY, 'accepted');
+        localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify({ acceptedAt: Date.now() })
+        );
         setShowDisclaimer(false);
     };
 

@@ -275,7 +275,7 @@ const ta = {
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "நமது முற்போக்கான நடைமுறை தொழில் துறை சார்ந்தவர்களுக்கு நிபுணத்துவ உதவிகளை வழங்குகிறது. ",
+    industriesHeading: "நமது முற்போக்கான நடைமுறை தொழில் துறை சார்ந்தவர்களுக்கு நிபுணத்துவ உதவிகளை வழங்குகிறது ",
   },
   industrieslistTitle: {
     industrieslist: "நாம் செய்யும் தொழில்கள் ",

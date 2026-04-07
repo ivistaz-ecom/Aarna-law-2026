@@ -264,7 +264,7 @@ const kn = {
 
   //Practice Area Main Heading
   practiceAreaHeading: {
-    practiceAreaHeading: "ನಮ್ಮ ಸಕ್ರಿಯ ತಂಡ ವಿವಿಧ ಪ್ರ್ಯಾಕ್ಟಿಸ್ ಪ್ರದೇಶಗಳಲ್ಲಿ ಅನುಭವಿ ಸಲಹೆಯನ್ನು ನೀಡುತ್ತದೆ.",
+    practiceAreaHeading: "ನಮ್ಮ ಸಕ್ರಿಯ ತಂಡ ವಿವಿಧ ಪ್ರ್ಯಾಕ್ಟಿಸ್ ಪ್ರದೇಶಗಳಲ್ಲಿ ಅನುಭವಿ ಸಲಹೆಯನ್ನು ನೀಡುತ್ತದೆ",
   },
 
   practiceAreaPara1: {
@@ -276,7 +276,7 @@ const kn = {
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "ನಮ್ಮ ಪ್ರಗತಿಶೀಲ ಅಭ್ಯಾಸವು ಉದ್ಯಮದಾದ್ಯಂತ ಗ್ರಾಹಕರಿಗೆ ತಜ್ಞ ಸಹಾಯವನ್ನು ಒದಗಿಸುತ್ತದೆ. ",
+    industriesHeading: "ನಮ್ಮ ಪ್ರಗತಿಶೀಲ ಅಭ್ಯಾಸವು ಉದ್ಯಮದಾದ್ಯಂತ ಗ್ರಾಹಕರಿಗೆ ತಜ್ಞ ಸಹಾಯವನ್ನು ಒದಗಿಸುತ್ತದೆ",
   },
   industrieslistTitle: {
     industrieslist: "ನಾವು ಸೇವೆ ಸಲ್ಲಿಸುವ ಉದ್ಯಮಗಳು ",

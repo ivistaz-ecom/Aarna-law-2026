@@ -44,7 +44,7 @@ function OurNetwork({
   };
 
   const frameClass = animatedPresentation
-    ? "relative mx-auto w-full max-w-6xl overflow-hidden rounded-2xl shadow-[0_20px_50px_-18px_rgba(28,56,106,0.45)] ring-1 ring-[#1C386A]/20 our-network-map-frame"
+    ? "relative mx-auto w-full overflow-hidden container shadow-[0_20px_50px_-18px_rgba(28,56,106,0.45)] ring-1 ring-[#1C386A]/20 our-network-map-frame"
     : "w-full";
   const mapAreaClass =
     animatedPresentation && showMap
@@ -113,7 +113,7 @@ function OurNetwork({
                   src={embedUrl}
                   width="100%"
                   height="600"
-                  className="mt-[-71px] border-0"
+                  className="mt-[-61px] border-0"
                   title={iframeTitle}
                   loading="lazy"
                   style={{

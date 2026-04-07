@@ -269,7 +269,7 @@ const en = {
 
   //Practice Area Main Heading
   practiceAreaHeading: {
-    practiceAreaHeading: "અમારી ગતિશીલ ટીમ વિવિધ વ્યવસાય ક્ષેત્રોમાં અનુભવ ધરાવતી સલાહ આપે છે.",
+    practiceAreaHeading: "અમારી ગતિશીલ ટીમ વિવિધ વ્યવસાય ક્ષેત્રોમાં અનુભવ ધરાવતી સલાહ આપે છે",
   },
 
   practiceAreaPara1: {
@@ -281,7 +281,7 @@ const en = {
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "અમારી આગવી અને આગેકૂચ કરતી પ્રેક્ટિસ વિવિધ ઉદ્યોગો જેઓ સાથે સંબંધિત હોય છે, તે તમામમાં ક્લાયન્ટ્સને નિષ્ણાત માર્ગદર્શન અને સહાય આપે છે.",
+    industriesHeading: "અમારી આગવી અને આગેકૂચ કરતી પ્રેક્ટિસ વિવિધ ઉદ્યોગો જેઓ સાથે સંબંધિત હોય છે, તે તમામમાં ક્લાયન્ટ્સને નિષ્ણાત માર્ગદર્શન અને સહાય આપે છે",
   },
   industrieslistTitle: {
     industrieslist: "અમે જે ઉદ્યોગોમાં સેવા આપીએ છીએ",

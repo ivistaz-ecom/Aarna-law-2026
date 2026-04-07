@@ -269,7 +269,7 @@ const te = {
 
   //Practice Area Main Heading
   practiceAreaHeading: {
-    practiceAreaHeading: "మా చురుకైన బృందం విభిన్న అభ్యాస ప్రాంతాలలో అనుభవజ్ఞులైన సలహాలను అందిస్తుంది. ",
+    practiceAreaHeading: "మా చురుకైన బృందం విభిన్న అభ్యాస ప్రాంతాలలో అనుభవజ్ఞులైన సలహాలను అందిస్తుంది ",
   },
 
   practiceAreaPara1: {
@@ -281,7 +281,7 @@ const te = {
 
   //Industries Main Heading
   industriesHeading: {
-    industriesHeading: "మా పురోగమించే ప్రాక్టీస్ పరిశ్రమ అంతటా క్లయింట్లకు నిపుణుల సహాయాన్ని అందిస్తుంది.",
+    industriesHeading: "మా పురోగమించే ప్రాక్టీస్ పరిశ్రమ అంతటా క్లయింట్లకు నిపుణుల సహాయాన్ని అందిస్తుంది",
   },
   industrieslistTitle: {
     industrieslist: "మేము సేవలందించే పరిశ్రమలు",
