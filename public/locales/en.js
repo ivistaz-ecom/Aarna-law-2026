@@ -54,7 +54,7 @@ const en = {
   whatWeDo: {
     title: "What We Do",
     headline:
-      "We are an award-winning team of lawyers with a global perspective",
+      "We Are an Award-Winning Team of Lawyers With a Global Perspective",
     para1:
       "Aarna Law was founded with a steadfast commitment to delivering quality-driven, value-based legal services, fostering deep and enduring relationships with those we serve. We dedicate time and effort to understanding our clients’ businesses and commercial objectives, enabling us to craft solutions that are both contextually relevant and strategically sound.",
     para2:
@@ -64,7 +64,7 @@ const en = {
   ourLegacy: {
     legacyTitle: "Our Legacy",
     legacyHeadline:
-      "Across varied domains, industries and international borders, our legal services and solutions maintain the highest standards of integrity and confidentiality",
+      "Across Varied Domains, Industries and International Borders, Our Legal Services and Solutions Maintain the Highest Standards of Integrity and Confidentiality",
     legacyPara:
       "Above all, our award-winning practice is founded on the enduring relationships we cultivate with every client. The legal and commercial advice we provide reflects this conscious understanding of our client's business interests.",
   },
@@ -211,7 +211,7 @@ const en = {
 
   ourLegacy1: {
     legacyTitle1: "Our Legacy",
-    legacyHeadline1: "Founded on over nine decades of commitment and service",
+    legacyHeadline1: "Founded on Over Nine Decades of Commitment and Service",
     legacyPara1:
       "Across varied domains, industries, and international borders, our legal services and solutions are tailor-made to represent our clients’ best interests without compromising on our principles of natural law, justice, and compassion",
     legacyPara2:
@@ -292,7 +292,7 @@ const en = {
   //Industries Main Heading
   industriesHeading: {
     industriesHeading:
-      "Our progressive practice provides expert assistance to clients across industry",
+      "Our Progressive Practice Provides Expert Assistance to Clients Across Industry",
   },
   industrieslistTitle: {
     industrieslist: "Industries We Serve",

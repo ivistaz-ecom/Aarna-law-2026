@@ -59,8 +59,8 @@ function PracticeLists() {
           Careers at Aarna Law
         </p>
         <p className=" text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px] mx-auto w-8/12 text-center">
-          Be a part of a dynamic law practice with an <br />
-          international outlook
+        Be a Part of a Dynamic Law Practice With an <br />
+        International Outlook
         </p>
 
         <p className="pt-6">

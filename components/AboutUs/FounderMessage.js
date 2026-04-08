@@ -19,7 +19,7 @@ function FounderMessage() {
             loading="lazy"
           />
         </div>
-        <h3 className="pb-4 text-xl font-bold text-custom-blue lg:text-2xl">
+        <h3 className="pb-4 text-2xl font-bold text-custom-blue lg:text-3xl">
           {translations.founderMessage.founderTitle}
         </h3>
       </div>
@@ -49,7 +49,7 @@ function FounderMessage() {
             loading="lazy"
           />
         </div>
-        <h3 className="hidden pb-4 text-xl font-bold text-custom-blue lg:block lg:text-2xl">
+        <h3 className="hidden pb-4 text-xl font-semibold text-custom-blue lg:block lg:text-3xl">
           {translations.founderMessage.founderTitle}
         </h3>
 

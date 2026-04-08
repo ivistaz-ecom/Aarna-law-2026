@@ -13,7 +13,7 @@ export default function OurLegacy() {
           <h2 className="mt-4 text-2xl  font-bold text-custom-red lg:mt-0">
             {translations.ourLegacy.legacyTitle}
           </h2>
-          <h3 className="py-2 text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px]">
+          <h3 className="py-2 text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-3xl">
             {translations.ourLegacy.legacyHeadline}
           </h3>
           <p className="py-2 text-custom-gray md:mt-0">
