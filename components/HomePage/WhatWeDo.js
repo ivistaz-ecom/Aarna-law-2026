@@ -25,7 +25,7 @@ const WhatWeDo = () => {
           <h2 className="text-2xl font-bold text-custom-red mt-6 lg:mt-0 pb-2">
             {translations.whatWeDo.title}
           </h2>
-          <h3 className="mb-4 text-2xl font-semibold text-custom-blue lg:text-[34px] md:leading-10">
+          <h3 className="mb-4 text-2xl font-semibold text-custom-blue lg:text-[32px] md:leading-10">
             {translations.whatWeDo.headline}
           </h3>
           <p className="text-custom-gray">{translations.whatWeDo.para1}</p>
@@ -45,7 +45,7 @@ const WhatWeDo = () => {
           <h2 className="text-2xl font-bold text-custom-red mt-6 lg:mt-0 pb-2">
             {translations.ourLegacy1.legacyTitle1}
           </h2>
-          <h3 className="mb-4 text-2xl font-semibold text-custom-blue lg:text-[34px] md:leading-10">
+          <h3 className="mb-4 text-2xl font-semibold text-custom-blue lg:text-[32px] md:leading-10">
             {translations.ourLegacy1.legacyHeadline1}
           </h3>
           <p className="text-custom-gray">{translations.ourLegacy1.legacyPara1}</p>

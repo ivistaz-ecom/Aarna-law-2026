@@ -148,7 +148,7 @@ export default function Partners() {
   return (
     <div className="bg-[#082049] py-14" ref={sectionRef}>
       <div className="text-center">
-        <h3 className="mb-4 text-3xl font-bold tracking-wider text-custom-red">
+        <h3 className="mb-4 md:text-3xl text-2xl font-bold tracking-wider text-custom-red">
           {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}
         </h3>
         <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1000px] md:text-center md:text-2xl pb-2">
