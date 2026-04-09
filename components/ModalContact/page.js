@@ -13,6 +13,7 @@ function ModalContact({
   modalTitleColor = "text-gray-900",
   btnType,
   id,
+  componentProps = {},
 }) {
   const [openModal, setOpenModal] = useState(false);
   const modalRef = useRef(null);
@@ -77,7 +78,7 @@ function ModalContact({
           {/* Modal Body */}
           <div className="overflow-y-auto p-6" style={{ flex: "1 1 auto" }}>
             {SelectedComponent ? (
-              <SelectedComponent id={id} />
+              <SelectedComponent id={id} {...componentProps} />
             ) : (
               <p>Component not found</p>
             )}
