@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { HiX } from "react-icons/hi";
 import configData from "../../../config.json";
 
-const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
+const PublicationPopupForm = ({ onSubmit, item, onClose, embedded = false }) => {
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [loading, setLoading] = useState(false);
   const [shouldShow, setShouldShow] = useState(false);
@@ -153,8 +154,20 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
   if (!shouldShow) return null;
 
   return (
-    <div className="w-full max-w-md rounded-lg bg-white p-6 md:w-1/4 lg:m-0">
-      <h2 className="mb-4 text-xl font-semibold">Enter Your Details</h2>
+    <div className={embedded ? "w-full" : "w-full max-w-md rounded-lg bg-white p-6 md:w-1/4 lg:m-0"}>
+      {!embedded && (
+        <div className="-mx-6 -mt-6 mb-6 flex items-center justify-between border-b border-gray-200 ">
+          <h2 className="text-xl font-semibold">Enter Your Details</h2>
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-gray-500 hover:text-gray-700"
+            aria-label="Close popup"
+          >
+            <HiX className="h-6 w-6" />
+          </button>
+        </div>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="mb-2 block text-sm font-medium" htmlFor="name">
@@ -197,20 +210,13 @@ const PublicationPopupForm = ({ onSubmit, item, onClose }) => {
             {error}
           </div>
         )}
-        <div className="flex justify-between">
+        <div className="flex">
           <button
             type="submit"
-            className="rounded bg-red-500 px-4 py-2 text-white"
+            className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
             disabled={loading}
           >
             {loading ? "Submitting..." : "Submit"}
-          </button>
-          <button
-            type="button"
-            className="rounded bg-gray-500 px-4 py-2 text-white"
-            onClick={onClose} // Close the popup on click
-          >
-            Close
           </button>
         </div>
       </form>
