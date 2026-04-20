@@ -13,6 +13,8 @@ export default function ZohoContactForm({
   showHeading = true,
   /** Omit outer container + heading — for use inside ContactUsSection */
   embedded = false,
+  /** Render without card styling — useful inside modals */
+  plain = false,
 }) {
   const [formData, setFormData] = useState(initial);
   const [loading, setLoading] = useState(false);
@@ -215,7 +217,7 @@ export default function ZohoContactForm({
   };
 
   const formBlock = (
-    <div className="rounded-lg bg-white p-8 shadow-lg">
+    <div className={plain ? "" : "rounded-lg bg-white p-8 shadow-lg"}>
       <form onSubmit={handleSubmit} className="space-y-6" noValidate>
         <div className="grid gap-6 md:grid-cols-2">
           <div>

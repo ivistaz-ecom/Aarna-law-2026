@@ -158,6 +158,7 @@ function PracticeAreaPostDetails({ details = {}, partnersData = {}, slug, titleT
                 modalTitle={titleText}
                 btnType="contactPartner"
                 id="contactPartner"
+                componentProps={{ embedded: true, showHeading: false, plain: true }}
               />
             </div>
           )}

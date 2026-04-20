@@ -4,6 +4,8 @@ import Link from "next/link";
 import configData from "../../config.json";
 import PublicationPopupForm from "../../utils/Forms/PublicationForms/PublicationPopupForm";
 import { useRouter } from "next/navigation";
+import { Modal } from "flowbite-react";
+import { HiX } from "react-icons/hi";
 
 function AllInsights({ searchTerm, initialData = [] }) {
   const [data, setData] = useState(initialData);
@@ -150,28 +152,17 @@ function AllInsights({ searchTerm, initialData = [] }) {
                 }}
               ></p>
               {item.acf.publication_url ? (
-                <>
-                  {showForm ? (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 bg-opacity-50">
-                      <PublicationPopupForm
-                        onSubmit={handleFormSubmit}
-                        onClose={handleCloseForm}
-                        item={selectedItem}
-                      />
-                    </div>
-                  ) : (
-                    <Link
-                      href="#"
-                      className="font-semibold text-custom-red"
-                      onClick={() => {
-                        setShowForm(true);
-                        setSelectedItem(item);
-                      }}
-                    >
-                      Read more
-                    </Link>
-                  )}
-                </>
+                <Link
+                  href="#"
+                  className="font-semibold text-custom-red"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowForm(true);
+                    setSelectedItem(item);
+                  }}
+                >
+                  Read more
+                </Link>
               ) : (
                 <Link
                   href={`/publications/${item.slug}`}
@@ -205,6 +196,31 @@ function AllInsights({ searchTerm, initialData = [] }) {
           No more details available
         </div>
       )}
+
+      <Modal show={showForm} onClose={handleCloseForm} position="center">
+        <div className="relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow dark:bg-gray-700 md:w-[700px]">
+          <div className="flex items-center justify-between border-b px-6 pb-2 pt-6 dark:border-gray-600">
+            <div className="text-xl font-semibold text-gray-900 dark:text-white">
+              Enter Your Details
+            </div>
+            <button
+              onClick={handleCloseForm}
+              className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
+              aria-label="Close popup"
+            >
+              <HiX className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="overflow-y-auto p-6" style={{ flex: "1 1 auto" }}>
+            <PublicationPopupForm
+              onSubmit={handleFormSubmit}
+              onClose={handleCloseForm}
+              item={selectedItem}
+              embedded={true}
+            />
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }

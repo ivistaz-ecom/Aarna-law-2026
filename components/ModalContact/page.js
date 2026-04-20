@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import CareerForm from "@/components/Careers/CareerForm";
 import InternshipForm from "@/components/Careers/InternshipForm";
 import Subscribe from "@/components/Careers/SubscribeForm";
-import ContactPartner from "@/utils/HubSpotForm/ContactPartner";
+import ZohoContactForm from "@/components/ContactUs/ZohoContactForm";
 import { HiX } from "react-icons/hi";
 
 function ModalContact({
@@ -22,7 +22,7 @@ function ModalContact({
     career: CareerForm,
     internships: InternshipForm,
     subscribe: Subscribe,
-    contactPartner: ContactPartner,
+    contactPartner: ZohoContactForm,
   };
 
   const SelectedComponent = componentMap[btnType] || null;
@@ -46,7 +46,7 @@ function ModalContact({
   return (
     <>
       <button
-        className={`border border-custom-red px-6 py-2 text-base text-custom-red md:px-4 md:py-1.5 md:hover:bg-custom-red md:hover:text-white lg:px-6 lg:py-2`}
+        className={`border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base`}
         onClick={() => setOpenModal(true)}
       >
         {btnName}
@@ -76,7 +76,10 @@ function ModalContact({
           </div>
 
           {/* Modal Body */}
-          <div className="overflow-y-auto p-6" style={{ flex: "1 1 auto" }}>
+          <div
+            className="overflow-y-auto p-6 [&_button[type='submit']]:!inline-flex [&_button[type='submit']]:!w-auto [&_button[type='submit']]:!rounded-none"
+            style={{ flex: "1 1 auto" }}
+          >
             {SelectedComponent ? (
               <SelectedComponent id={id} {...componentProps} />
             ) : (
