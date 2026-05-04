@@ -26,12 +26,23 @@ export const metadata = {
 
 // Utility to determine productionMode based on domain
 function getProductionModeFromHost(hostname) {
-  const isLiveDomain =
-    hostname === config.LIVE_SITE_URL || hostname === config.LIVE_SITE_URL_WWW;
+  const normalizedHostname = hostname.replace(/^www\./, "");
+  const liveHostname = config.LIVE_SITE_URL.replace(/^https?:\/\//, "").replace(
+    /^www\./,
+    ""
+  );
+  const stagingHostname = config.STAGING_SITE_URL.replace(
+    /^https?:\/\//,
+    ""
+  ).replace(/^www\./, "");
 
-  return isLiveDomain
-    ? config.LIVE_PRODUCTION_SERVER_ID
-    : config.STAG_PRODUCTION_SERVER_ID;
+  const isLiveDomain = normalizedHostname === liveHostname;
+  const isStagingDomain = normalizedHostname === stagingHostname;
+
+  if (isLiveDomain) return config.LIVE_PRODUCTION_SERVER_ID;
+  if (isStagingDomain) return config.STAG_PRODUCTION_SERVER_ID;
+
+  return config.STAG_PRODUCTION_SERVER_ID;
 }
 
 // Fetch practice areas based on production mode
@@ -62,7 +73,7 @@ export default async function PracticeAreaPage() {
   const hostname = headersList.get("host")?.replace(/^www\./, "") ?? "";
   const productionMode = getProductionModeFromHost(hostname);
 
-  const practiceAreas = await getPracticeAreas(productionMode, 1, 13);
+  const practiceAreas = await getPracticeAreas(productionMode, 1, 15);
 
   return (
     <>
