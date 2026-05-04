@@ -26,23 +26,12 @@ export const metadata = {
 
 // Utility to determine productionMode based on domain
 function getProductionModeFromHost(hostname) {
-  const normalizedHostname = hostname.replace(/^www\./, "");
-  const liveHostname = config.LIVE_SITE_URL.replace(/^https?:\/\//, "").replace(
-    /^www\./,
-    ""
-  );
-  const stagingHostname = config.STAGING_SITE_URL.replace(
-    /^https?:\/\//,
-    ""
-  ).replace(/^www\./, "");
+  const isLiveDomain =
+    hostname === config.LIVE_SITE_URL || hostname === config.LIVE_SITE_URL_WWW;
 
-  const isLiveDomain = normalizedHostname === liveHostname;
-  const isStagingDomain = normalizedHostname === stagingHostname;
-
-  if (isLiveDomain) return config.LIVE_PRODUCTION_SERVER_ID;
-  if (isStagingDomain) return config.STAG_PRODUCTION_SERVER_ID;
-
-  return config.STAG_PRODUCTION_SERVER_ID;
+  return isLiveDomain
+    ? config.LIVE_PRODUCTION_SERVER_ID
+    : config.STAG_PRODUCTION_SERVER_ID;
 }
 
 // Fetch practice areas based on production mode
