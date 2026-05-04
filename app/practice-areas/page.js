@@ -26,20 +26,35 @@ export const metadata = {
 
 // Utility to determine productionMode based on domain
 function getProductionModeFromHost(hostname) {
-  const isLiveDomain =
-    hostname === config.LIVE_SITE_URL || hostname === config.LIVE_SITE_URL_WWW;
+  const normalizeHost = (value = "") => {
+    const rawValue = value.trim();
+    let parsedHost = rawValue;
 
-  return isLiveDomain
-    ? config.LIVE_PRODUCTION_SERVER_ID
-    : config.STAG_PRODUCTION_SERVER_ID;
+    try {
+      parsedHost = new URL(rawValue).hostname;
+    } catch {
+      parsedHost = rawValue.split(":")[0];
+    }
+
+    return parsedHost.replace(/^www\./, "").toLowerCase();
+  };
+
+  const currentHost = normalizeHost(hostname);
+  const liveHost = normalizeHost(config.LIVE_SITE_URL);
+  const stagingHost = normalizeHost(config.STAGING_SITE_URL);
+  const isLiveDomain = currentHost === liveHost;
+  const isStagingDomain = currentHost === stagingHost;
+
+  if (isLiveDomain) return config.LIVE_PRODUCTION_SERVER_ID;
+  if (isStagingDomain) return config.STAG_PRODUCTION_SERVER_ID;
+
+  return config.STAG_PRODUCTION_SERVER_ID;
 }
-
 // Fetch practice areas based on production mode
-async function getPracticeAreas(productionMode, page = 1, perPage = 13) {
+async function getPracticeAreas(productionMode, page = 1, perPage = 15) {
   if (!productionMode) return [];
 
   const url = `${config.SERVER_URL}practice-areas?status[]=publish&production_mode[]=${productionMode}&per_page=${perPage}&page=${page}`;
-
   try {
     const res = await fetch(url, {
       next: { revalidate: 60 },
