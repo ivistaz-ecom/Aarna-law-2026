@@ -4,18 +4,18 @@
 
 const en = {
   menu: {
-    about: "About Us",
-    thefirm: "The Firm",
-    testimonials: "Testimonials",
-    practiceareas: "Practice Areas",
-    industries: "Industries",
-    newsinsights: "News & Insights",
-    insights: "Insights",
-    aarnanews: "Aarna News",
-    publications: "Publications",
-    podcasts: "Podcasts",
-    careers: "Careers",
-    contactus: "Contact Us",
+    // about: "About Us",
+    // thefirm: "The Firm",
+    // testimonials: "Testimonials",
+    // practiceareas: "Practice Areas",
+    // industries: "Industries",
+    // newsinsights: "News & Insights",
+    // insights: "Insights",
+    // aarnanews: "Aarna News",
+    // publications: "Publications",
+    // podcasts: "Podcasts",
+    // careers: "Careers",
+    // contactus: "Contact Us",
   },
 
   // Banner Titles

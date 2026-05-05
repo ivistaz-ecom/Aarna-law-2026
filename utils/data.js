@@ -13,7 +13,7 @@ export const HeaderMenu = [
     menu: "News & Insights",
     subMenu: [
       { name: "Insights", slug: "/insights" },
-      { name: "Aarna News", slug: "/aarna-news" },
+      // { name: "Aarna News", slug: "/aarna-news" },
       { name: "Publications", slug: "/publications" },
       { name: "Podcasts", slug: "/podcasts" },
     ],

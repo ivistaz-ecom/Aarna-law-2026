@@ -148,7 +148,7 @@ const nextConfig = {
       },
 
       //Podcasts
-      
+
       {
         source: "/podcasts/enforcement-of-arbitral-awards-across-jurisdictions-james-hosking-on-enforcement-in-the-united-states-podcast-series",
         destination: "/podcasts/cross-border-enforcement-an-arbitration-deep-dive-with-mr-james-hosking-ep-1",
@@ -200,49 +200,49 @@ const nextConfig = {
       {
         source: "/insights/shreyas-jayasimha-appointed-expert-committee",
         destination:
-          "/aarna-news/shreyas-jayasimha-appointed-expert-committee",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/aarna-law-participates-in-inta-annual-meeting-2023-singapore",
         destination:
-          "/aarna-news/aarna-law-participates-in-inta-annual-meeting-2023-singapore",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/aarna-law-participates-siac-bengaluru-conference-2023",
         destination:
-          "/aarna-news/aarna-law-participates-siac-bengaluru-conference-2023",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore",
         destination:
-          "/aarna-news/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes",
         destination:
-          "/aarna-news/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition",
         destination:
-          "/aarna-news/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/aarna-law-welcomes-partner",
         destination:
-          "/aarna-news/aarna-law-welcomes-partner",
+          "/",
         permanent: true,
       },
       {
         source: "/insights/anusha-madhusudhan-selected-for-judicial-fellowship-programme",
         destination:
-          "/aarna-news/anusha-madhusudhan-selected-for-judicial-fellowship-programme",
+          "/",
         permanent: true,
       },
       {
@@ -1069,91 +1069,91 @@ const nextConfig = {
       {
         source: "/aarna-law-is-pleased-to-announce-the-appointment-of-meghna-talwar-as-partner",
         destination:
-          "/aarna-news/aarna-law-is-pleased-to-announce-the-appointment-of-meghna-talwar-as-partner",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-brings-on-board-an-experienced-compliance-professional-and-qualified-lawyer-from-standard-chartered-bank",
         destination:
-          "/aarna-news/aarna-law-brings-on-board-an-experienced-compliance-professional-and-qualified-lawyer-from-standard-chartered-bank",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-announces-new-partner",
         destination:
-          "/aarna-news/aarna-law-announces-new-partner",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-celebrates-10th-anniversary",
         destination:
-          "/aarna-news/aarna-law-celebrates-10th-anniversary",
+          "/",
         permanent: true,
       },
       {
         source: "/thank-you-for-joining-us",
         destination:
-          "/aarna-news/thank-you-for-joining-us",
+          "/",
         permanent: true,
       },
       {
         source: "/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes",
         destination:
-          "/aarna-news/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes",
+          "/",
         permanent: true,
       },
       {
         source: "/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition",
         destination:
-          "/aarna-news/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition",
+          "/",
         permanent: true,
       },
       {
         source: "/anusha-madhusudhan-selected-for-judicial-fellowship-programme",
         destination:
-          "/aarna-news/anusha-madhusudhan-selected-for-judicial-fellowship-programme",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-participates-in-inta-annual-meeting-2023-singapore",
         destination:
-          "/aarna-news/aarna-law-participates-in-inta-annual-meeting-2023-singapore",
+          "/",
         permanent: true,
       },
       {
         source: "/shreyas-jayasimha-appointed-expert-committee",
         destination:
-          "/aarna-news/shreyas-jayasimha-appointed-expert-committee",
+          "/",
         permanent: true,
       },
       {
         source: "/shreyas-jayasimha-speaks-on-cross-border-insolvency-for-smu-masterclass",
         destination:
-          "/aarna-news/shreyas-jayasimha-speaks-on-cross-border-insolvency-for-smu-masterclass",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-participates-siac-bengaluru-conference-2023",
         destination:
-          "/aarna-news/aarna-law-participates-siac-bengaluru-conference-2023",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore",
         destination:
-          "/aarna-news/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-contributing-to-model-clauses-for-contracting-in-asia",
         destination:
-          "/aarna-news/aarna-law-contributing-to-model-clauses-for-contracting-in-asia",
+          "/",
         permanent: true,
       },
       {
         source: "/aarna-law-welcomes-partner-apoorva-guruprasad",
         destination:
-          "/aarna-news/aarna-law-welcomes-partner-apoorva-guruprasad",
+          "/",
         permanent: true,
       },
       {
@@ -1172,6 +1172,90 @@ const nextConfig = {
         source: "/group-of-companies-doctrine-when-non-signatories-are-bound-by-arbitration-agreements",
         destination:
           "/insights/group-of-companies-doctrine-when-non-signatories-are-bound-by-arbitration-agreements",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-announces-new-partner",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-celebrates-10th-anniversary",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/thank-you-for-joining-us",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/anusha-madhusudhan-selected-for-judicial-fellowship-programme",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-participates-in-inta-annual-meeting-2023-singapore",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/shreyas-jayasimha-appointed-expert-committee",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/shreyas-jayasimha-speaks-on-cross-border-insolvency-for-smu-masterclass",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-participates-siac-bengaluru-conference-2023",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-contributing-to-model-clauses-for-contracting-in-asia",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news/aarna-law-welcomes-partner",
+        destination:
+          "/",
+        permanent: true,
+      },
+      {
+        source: "/aarna-news",
+        destination:
+          "/",
         permanent: true,
       },
 

@@ -2,4 +2,17 @@ User-agent: *
 Allow: 
 Disallow: /cgi-bin/
 Disallow: https://www.aarnalaw.com/podcasts/enforcement-of-arbitral-awards-across-jurisdictions-james-hosking-on-enforcement-in-the-united-states-podcast-series
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-announces-new-partner
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-celebrates-10th-anniversary
+Disallow: https://www.aarnalaw.com/aarna-news/thank-you-for-joining-us
+Disallow: https://www.aarnalaw.com/aarna-news/international-trade-shipping-commodity-arbitration-arbitrability-of-corporate-disputes
+Disallow: https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-speaks-at-net-zero-warriors-entrepreneurs-driving-energy-transition
+Disallow: https://www.aarnalaw.com/aarna-news/anusha-madhusudhan-selected-for-judicial-fellowship-programme
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-participates-in-inta-annual-meeting-2023-singapore
+Disallow: https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-appointed-expert-committee
+Disallow: https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-speaks-on-cross-border-insolvency-for-smu-masterclass
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-participates-siac-bengaluru-conference-2023
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-hosts-singapore-international-arbitration-centre-in-bangalore
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-contributing-to-model-clauses-for-contracting-in-asia
+Disallow: https://www.aarnalaw.com/aarna-news/aarna-law-welcomes-partner
 Sitemap: https://www.aarnalaw.com/sitemap.xml
