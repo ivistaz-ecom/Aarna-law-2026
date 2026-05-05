@@ -70,7 +70,7 @@ const NavBar = () => {
         </div>
 
         <nav className="absolute z-50 mt-20 w-full border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
-          <div className="md:px-5 flex items-center flex-wrap justify-between px-4 md:px-0 py-1 nav-menu">
+          <div className="md:px-5 flex items-center flex-wrap justify-between px-4 py-1 nav-menu">
             <div className="">
               <Link href="/" className="flex items-center">
                 <Image

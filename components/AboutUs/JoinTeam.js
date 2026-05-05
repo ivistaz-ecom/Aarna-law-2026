@@ -15,10 +15,10 @@ export default function JoinTeam() {
         {translations.joinTeam.joinTeamPara}  
         </p>
       </div>
-      <div className="md:mt-5 pt-8 lg:pt-0 font-semibold">
+      <div className="md:mt-5 pt-8 lg:pt-0 ">
         <Link
           href="/careers"
-          className="border border-custom-red bg-white px-8 py-3 text-custom-blue transition-colors duration-300 hover:bg-custom-blue hover:text-white "
+          className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
         >
           {translations.joinTeam.joinTeamOpening} 
         </Link>

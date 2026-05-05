@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Testimonials() {
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
-  const { language, translations } = useContext(LanguageContext); 
+  const { language, translations } = useContext(LanguageContext);
 
   const handleOpenModal = (testimonial) => {
     setSelectedTestimonial(testimonial);
@@ -14,34 +14,40 @@ function Testimonials() {
 
   return (
     <>
-      <div className="mx-auto container py-12">
-        <div className="grid gap-10 lg:grid-cols-3">
+      <div className="mx-auto w-full py-12 lg:container">
+        <div className="grid gap-10 px-4 lg:grid-cols-3 lg:px-0">
           {translations.testimonialDetails.map((items, index) => (
             <div
-              className="flex flex-col rounded-lg bg-white shadow-lg"
+              className="mx-auto flex h-full w-full max-w-[340px] flex-col rounded-lg bg-white shadow-lg lg:max-w-none"
               key={index}
             >
               {/* Top Section: Info and Image */}
               <div className="flex items-center p-6">
                 {/* Left Side: Text */}
-                <div className="flex-1">
-                  <h2 className="flex md:h-12 text-lg font-bold">{items.name}</h2>
-                  <p className="flex md:h-10 gap-2 py-2">{items.post}</p>
-                  <p className="flex md:h-10 items-center gap-2 py-2">
+                <div className="min-w-0 flex-1">
+                  <h2 className="flex h-12 items-center overflow-hidden text-ellipsis whitespace-nowrap text-lg  font-bold">
+                    {items.name}
+                  </h2>
+                  <p className="flex h-10 items-center gap-2">{items.post}</p>
+                  <p className="flex h-10 items-center gap-2">
                     {items.desingnation}
                   </p>
                 </div>
-                {/* Right Side: Image */}
-                <div className="ml-4">
-                  <Image
-                    src={items.imageUrl}
-                    width={90}
-                    height={90}
-                    className="rounded-full object-cover"
-                    alt={items.name}
-                    loading="lazy"
-                  />
-                </div>
+                {/* Right Side: Image — transparent default; 3D lift only on hover */}
+                {items.imageUrl && (
+                  <div className="group ml-4  mr-2 mt-[50px] flex size-[96px] shrink-0 items-center justify-center rounded-full border border-red-400/70 bg-red-50/35 p-4 shadow-[0_8px_20px_-14px_rgba(239,68,68,0.45)] backdrop-blur-sm [perspective:520px] md:mr-5">
+                    <div className="overflow-hidden rounded-2xl bg-transparent">
+                      <Image
+                        src={items.imageUrl}
+                        width={90}
+                        height={90}
+                        className="h-[74px] w-[74px]  object-contain ring-0"
+                        alt={items.name}
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Bottom Section: Full Width Testimonial */}
@@ -49,9 +55,9 @@ function Testimonials() {
                 <p className="line-clamp-4 text-gray-700">
                   {items.fullTestimonial.slice(0, 150)}...
                 </p>
-                <div className="flex justify-start pt-4">
+                <div className="mt-auto flex justify-start pt-4">
                   <button
-                    className="text-custom-red font-medium"
+                    className="font-medium text-custom-red"
                     onClick={() => handleOpenModal(items)}
                   >
                     {translations.readMore || "Read more"}

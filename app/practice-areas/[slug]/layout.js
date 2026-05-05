@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
     metadataBase: new URL("https://www.aarnalaw.com/"),
     openGraph: {
       url: `https://www.aarnalaw.com/practice-area/${params.slug}`,
-      title: post?.acf?.meta_title || "Practice Area",
+      title: post?.acf?.meta_title || "Practice Areas",
       description: post?.acf?.meta_description || "",
       images:
         post?.acf?.mobile_banner?.url
@@ -73,7 +73,7 @@ export async function generateMetadata({ params }) {
                 url: post.acf.mobile_banner.url,
                 width: 800,
                 height: 600,
-                alt: post.acf.meta_title || "Practice Area",
+                alt: post.acf.meta_title || "Practice Areas",
               },
             ]
           : [
@@ -81,7 +81,7 @@ export async function generateMetadata({ params }) {
                 url: "/aarnalaw_new_banner.jpg",
                 width: 800,
                 height: 600,
-                alt: "Practice Area",
+                alt: "Practice Areas",
               },
             ],
     },

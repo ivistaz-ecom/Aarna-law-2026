@@ -33,12 +33,13 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
       }
 
       const response = await fetch(
-        `${configData.SERVER_URL}podcast?_embed&status[]=publish&production_mode[]=${server}&per_page=${PER_PAGE}&page=${pageNum}`
+        `${configData.SERVER_URL}podcast?_embed&status[]=publish&production_mode[]=${server}&per_page=${PER_PAGE}&page=${pageNum}`,
       );
 
       if (!response.ok) throw new Error("Failed to fetch data");
 
       const result = await response.json();
+      console.log(result);
 
       if (Array.isArray(result)) {
         const transformedData = result.map((item) => ({
@@ -75,7 +76,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
   };
 
   const filteredInsights = data.filter((d) =>
-    d.title.rendered.toLowerCase().includes(searchTerm.toLowerCase())
+    d.title.rendered.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   return (
@@ -94,7 +95,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
                   <Image
                     src={item.featured_image_url}
                     alt={item.title?.rendered || "Podcast Image"}
-                    className="w-full rounded-t-lg h-[300px] object-cover"
+                    className="h-[350px] w-full rounded-t-lg object-cover"
                     width={500}
                     height={300}
                   />
@@ -102,7 +103,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
               </div>
               <div className="p-5">
                 <p
-                  className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  className="mb-2 line-clamp-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
                   dangerouslySetInnerHTML={{ __html: item.title?.rendered }}
                 />
                 <p
@@ -126,8 +127,6 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
           </div>
         )}
 
-   
-   
         {hasMore && (
           <div className="col-span-1 mt-6 text-center sm:col-span-2">
             {isLoadingMore ? (
@@ -135,7 +134,7 @@ function AllPodCasts({ searchTerm, initialData = [] }) {
             ) : (
               <button
                 onClick={loadMore}
-                className="bg-custom-red px-4 py-2 text-white hover:bg-red-600 active:bg-red-700"
+                className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
                 disabled={isLoadingMore}
               >
                 Load More

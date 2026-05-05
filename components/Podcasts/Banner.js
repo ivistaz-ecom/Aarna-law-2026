@@ -1,5 +1,5 @@
-"use client"
-import React, { useContext, useEffect, useState } from 'react';
+"use client";
+import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../app/context/LanguageContext";
 
 export default function Banner({ title }) {
@@ -29,23 +29,22 @@ export default function Banner({ title }) {
   };
 
   return (
-    
     // <div
     //   className="relative md:bg-[url('/insights/InsightsBanner.jpg')] bg-[url('/insights/InsightsMobileBanner.jpg')] bg-cover bg-center"
     //   style={{ height: "550px" }}
     // >
     <div
-      className="relative md:bg-[url('/insights/PodcastDesktop.jpg')] bg-[url('/insights/PodcastMobileBanner.jpg')] md:bg-cover md:bg-bottom bg-top"
+      className="relative bg-[url('/insights/PodcastMobileBanner.jpg')] bg-top md:bg-[url('/insights/PodcastDesktop.jpg')] md:bg-cover md:bg-bottom"
       style={{ height: "550px" }}
-     >
+    >
       <div
-        className="absolute flex w-full items-center justify-center  md:mt-0 mt-20"
+        className="absolute mt-20 flex w-full items-center  justify-center md:mt-0"
         style={{
           top: navHeight ? `${(550 - navHeight) / 1.8 + navHeight}px` : "50%",
-          transform: "translateY(-50%)"
+          transform: "translateY(-50%)",
         }}
       >
-        <h1 className="md:text-3xl text-2xl font-bold text-white bg-black/50 px-4 py-5">
+        <h1 className="bg-black/50 px-4 py-5 text-2xl font-bold text-white md:text-[36px]">
           {getTitle()}
           {/* Or use translations if needed:
               {translations.podcastsTitle.podcasts}

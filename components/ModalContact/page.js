@@ -3,10 +3,18 @@ import { useState, useEffect, useRef } from "react";
 import CareerForm from "@/components/Careers/CareerForm";
 import InternshipForm from "@/components/Careers/InternshipForm";
 import Subscribe from "@/components/Careers/SubscribeForm";
-import ContactPartner from "@/utils/HubSpotForm/ContactPartner";
+import ZohoContactForm from "@/components/ContactUs/ZohoContactForm";
 import { HiX } from "react-icons/hi";
 
-function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
+function ModalContact({
+  btnName,
+  textColor,
+  modalTitle,
+  modalTitleColor = "text-gray-900",
+  btnType,
+  id,
+  componentProps = {},
+}) {
   const [openModal, setOpenModal] = useState(false);
   const modalRef = useRef(null);
 
@@ -14,7 +22,7 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
     career: CareerForm,
     internships: InternshipForm,
     subscribe: Subscribe,
-    contactPartner: ContactPartner,
+    contactPartner: ZohoContactForm,
   };
 
   const SelectedComponent = componentMap[btnType] || null;
@@ -38,9 +46,7 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
   return (
     <>
       <button
-        className={`border border-custom-red bg-transparent p-2 text-lg font-semibold text-custom-blue 
-          transition-colors duration-300 hover:bg-custom-blue hover:text-white
-          md:px-6 md:text-base`}
+        className={`border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base`}
         onClick={() => setOpenModal(true)}
       >
         {btnName}
@@ -58,7 +64,7 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
           {/* Modal Header */}
           <div className="flex items-center justify-between border-b px-6 pb-2 pt-6 dark:border-gray-600">
             <div
-              className="text-xl font-semibold text-gray-900 dark:text-white"
+              className={`text-xl font-semibold ${modalTitleColor} dark:text-white`}
               dangerouslySetInnerHTML={{ __html: modalTitle }}
             />
             <button
@@ -70,9 +76,12 @@ function ModalContact({ btnName, textColor, modalTitle, btnType, id }) {
           </div>
 
           {/* Modal Body */}
-          <div className="overflow-y-auto p-6" style={{ flex: "1 1 auto" }}>
+          <div
+            className="overflow-y-auto p-6 [&_button[type='submit']]:!inline-flex [&_button[type='submit']]:!w-auto [&_button[type='submit']]:!rounded-none"
+            style={{ flex: "1 1 auto" }}
+          >
             {SelectedComponent ? (
-              <SelectedComponent id={id} />
+              <SelectedComponent id={id} {...componentProps} />
             ) : (
               <p>Component not found</p>
             )}

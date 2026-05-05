@@ -1,6 +1,12 @@
 // Import statements remain unchanged
 "use client";
-import React, { useRef, useState, useEffect, useCallback, useContext } from "react";
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useCallback,
+  useContext,
+} from "react";
 import Credentials from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
@@ -14,22 +20,37 @@ export default function Partners() {
   const [data, setData] = useState([]); // Initialize data state with an empty array
   const [loading, setLoading] = useState(true); // Loading state for skeleton
   const [page, setPage] = useState(100);
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef(null);
 
   const domain = typeof window !== "undefined" ? window.location.hostname : "";
 
   const { translations } = useContext(LanguageContext);
 
-
   const fetchContent = useCallback(async () => {
     setLoading(true);
     try {
       let server;
-      if (domain === `${configData.LIVE_SITE_URL}`) {
-        server = `${configData.LIVE_PRODUCTION_SERVER_ID}`;
-      } else if (domain === `${configData.STAGING_SITE_URL}`) {
-        server = `${configData.STAG_PRODUCTION_SERVER_ID}`;
+      // Match against hostnames (window.location.hostname), not full URLs
+      const liveHostname = configData.LIVE_SITE_URL.replace(
+        /^https?:\/\//,
+        "",
+      ).replace(/^www\./, "");
+      const stagingHostname = configData.STAGING_SITE_URL.replace(
+        /^https?:\/\//,
+        "",
+      ).replace(/^www\./, "");
+      const currentHostname = domain.replace(/^www\./, "");
+
+      if (
+        currentHostname === liveHostname ||
+        domain === configData.LIVE_SITE_URL_WWW
+      ) {
+        server = configData.LIVE_PRODUCTION_SERVER_ID;
+      } else if (currentHostname === stagingHostname) {
+        server = configData.STAG_PRODUCTION_SERVER_ID;
       } else {
-        server = `${configData.STAG_PRODUCTION_SERVER_ID}`;
+        server = configData.STAG_PRODUCTION_SERVER_ID;
       }
 
       const practiceAreaResponse = await fetch(
@@ -59,24 +80,48 @@ export default function Partners() {
     fetchContent();
   }, [page, fetchContent]);
 
+  // Only autoplay/scroll the carousel when this section is in the viewport.
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.2 },
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 4,
-      slidesToSlide: 4,
+      // Keep 4 cards visible, but advance only 1 card at a time.
+      slidesToSlide: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
-      slidesToSlide: 4,
+      // Keep 4 cards visible, but advance only 1 card at a time.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      // Single card visible; advance 1 per interaction.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      // Single card visible; advance 1 per interaction.
+      slidesToSlide: 1,
     },
   };
 
@@ -101,25 +146,23 @@ export default function Partners() {
   );
 
   return (
-    <div className="bg-bgDark3 py-14">
+    <div className="bg-[#082049] py-14" ref={sectionRef}>
       <div className="text-center">
-        <p className="mb-4 text-2xl font-bold tracking-wider text-custom-red">
-          {/* PARTNERS */}  {translations.aboutPartner.aboutPartnerTitle}
-        </p>
-        <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1200px] md:text-center md:text-3xl">
-          {/* The expertise of our accomplished team anchors our practice in thought
-          leadership, mentorship, and the pursuit of excellence... */}
+        <h3 className="mb-4 md:text-3xl text-2xl font-bold tracking-wider text-custom-red">
+          {/* PARTNERS */} {translations.aboutPartner.aboutPartnerTitle}
+        </h3>
+        <p className="mx-auto mb-4 px-4 leading-normal text-white md:w-[1000px] md:text-center md:text-2xl pb-2">
 
           {translations.aboutPartner.aboutPartnerPara}
         </p>
-        <div className="mx-auto container gap-4 px-4 md:px-0">
+        <div className="container mx-auto gap-4 px-4 md:px-0">
           <Credentials
             ref={sliderRef}
             responsive={responsive}
             showDots={false}
             infinite={true}
             autoPlaySpeed={3000}
-            autoPlay={true}
+            autoPlay={inView}
             itemClass="p-1"
             keyBoardControl={true}
             // removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -148,7 +191,7 @@ export default function Partners() {
                     {item.acf?.designation || "Designation not available"}
                   </p>
                   <p
-                    className="line-clamp-2 text-center text-base text-gray-700 leading-tight mb-2"
+                    className="mb-2 line-clamp-2 text-center text-base leading-tight text-gray-700"
                     dangerouslySetInnerHTML={{
                       __html: item.acf?.description || "",
                     }}
@@ -156,7 +199,8 @@ export default function Partners() {
 
                   <Link
                     href={`/team/${item.slug}`}
-                    className="mt-2 inline-block rounded bg-custom-red px-4 py-2 text-white hover:bg-red-800"
+                    className="mt-5 inline-block border border-custom-red px-4 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base cursor-pointer"
+                    // className="mt-5 border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base cursor-pointer"
                   >
                     Read More
                   </Link>

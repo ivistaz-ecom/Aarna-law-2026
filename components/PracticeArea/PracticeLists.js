@@ -1,18 +1,64 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { LanguageContext } from "../../app/context/LanguageContext";
+import config from "../../config.json";
 
 function PracticeLists({ data = [], loading = true }) {
   const { language, translations } = useContext(LanguageContext);
+  const domain = typeof window !== "undefined" ? window.location.hostname : "";
+
+  const currentServerMode = useMemo(() => {
+    const currentHostname = domain.replace(/^www\./, "");
+    const liveHostname = config.LIVE_SITE_URL.replace(/^https?:\/\//, "").replace(
+      /^www\./,
+      ""
+    );
+    const stagingHostname = config.STAGING_SITE_URL.replace(
+      /^https?:\/\//,
+      ""
+    ).replace(/^www\./, "");
+
+    if (currentHostname === liveHostname) {
+      return config.LIVE_PRODUCTION_SERVER_ID;
+    }
+
+    if (currentHostname === stagingHostname) {
+      return config.STAG_PRODUCTION_SERVER_ID;
+    }
+
+    return config.STAG_PRODUCTION_SERVER_ID;
+  }, [domain]);
+
+  const filteredData = useMemo(() => {
+    return data.filter((item) => {
+      // WordPress may return production_mode in different shapes.
+      const rawModes = item.production_mode ?? item?.acf?.production_mode;
+
+      if (!rawModes) {
+        // Keep backward compatibility with already server-filtered data.
+        return true;
+      }
+
+      const normalizedModes = (Array.isArray(rawModes) ? rawModes : [rawModes])
+        .map((mode) =>
+          typeof mode === "object" && mode !== null
+            ? String(mode.id ?? mode.term_id ?? mode.value ?? "")
+            : String(mode)
+        )
+        .filter(Boolean);
+
+      return normalizedModes.includes(String(currentServerMode));
+    });
+  }, [currentServerMode, data]);
 
   return (
     <div className="mx-auto container py-12 px-4 md:px-0">
       {/* <p className="py-4 text-center font-bold text-gray-500">
         {translations.practiceAreasTitle.practiceAreas}
       </p> */}
-      <p className="mx-auto text-center text-3xl lg:w-8/12">
+      <p className="text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px] mx-auto w-8/12 text-center">
         {translations.practiceAreaHeading.practiceAreaHeading}
       </p>
       <p className="py-5 text-justify">
@@ -30,7 +76,7 @@ function PracticeLists({ data = [], loading = true }) {
               <div className="h-[65px] bg-[#233876]"></div>
             </div>
           ))
-          : data.map((item, index) => {
+          : filteredData.map((item, index) => {
             const title =
               language === "ta" && item.acf.tamil_title
                 ? item.acf.tamil_title

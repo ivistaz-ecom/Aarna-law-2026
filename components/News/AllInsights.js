@@ -181,7 +181,7 @@ function AllNews({ searchTerm, initialData = [] }) {
             ) : (
               <button
                 onClick={loadMore}
-                className="bg-custom-red px-4 py-2 text-white hover:bg-red-600 active:bg-red-700"
+                className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
                 disabled={isLoadingMore}
               >
                 Load More

@@ -1,7 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import Banner from '../../components/Testimonials/Banner';
-import TestimonialContent from '../../components/Testimonials/TestimonialContent';
+import React from "react";
+import Head from "next/head";
+import Banner from "../../components/Testimonials/Banner";
+import TestimonialContent from "../../components/Testimonials/TestimonialContent";
 
 const Testimonials = () => {
   return (

@@ -4,7 +4,7 @@ import { initFlowbite } from "flowbite";
 import ContactModal from "@/components/ModalContact/page";
 import configData from "../../config.json";
 
-function PracticeLists() {
+function CareerLists() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(100);
@@ -55,12 +55,12 @@ function PracticeLists() {
   return (
     <div>
       <div className="mx-auto container py-12 px-4 md:px-0">
-        <p className="py-4 text-center font-bold text-gray-500">
-          CAREERS AT AARNA LAW
+        <p className="py-4 text-center font-bold text-custom-red text-2xl">
+          Careers at Aarna Law
         </p>
-        <p className="mx-auto text-center text-3xl lg:w-8/12">
-          Be a part of a dynamic law practice with an <br />
-          international outlook
+        <p className=" text-2xl font-semibold text-custom-blue md:mt-0 md:leading-10 lg:text-[32px] mx-auto md:w-8/12 w-full text-center">
+        Be a Part of a Dynamic Law Practice With an <br />
+        International Outlook
         </p>
 
         <p className="pt-6">
@@ -71,7 +71,7 @@ function PracticeLists() {
           Multinational Companies, Niche Start-ups, and Individual Interests.
         </p>
         <p className="py-6 font-semibold text-custom-blue">
-          RECRUITMENT FOR LEGAL AND ADMINISTRATIVE PROFESSIONALS
+          Recruitment for Legal and Administrative Professionals
         </p>
         <p>
           We are always interested to hear from professionals with international
@@ -83,9 +83,22 @@ function PracticeLists() {
         </p>
 
         <div className="py-6">
-          <h2 className="border-b-2 border-custom-red pb-4 text-3xl font-semibold text-custom-blue">
+          <div className="flex justify-between items-center border-b-2 border-custom-red w-full py-5 mb-5">
+          <h2 className=" text-2xl md:text-3xl font-semibold text-custom-blue">
             Current Openings
           </h2>
+          <div className="">
+              <ContactModal
+                btnName="Apply Now"
+                textColor="text-custom-red"
+                modalTitle="Current Openings"
+                modalTitleColor="text-custom-blue"
+                btnType="career"
+                id="career"
+                componentProps={{ roles: data }}
+              />
+            </div>
+            </div>
           <div
             id="accordion-flush"
             data-accordion="collapse"
@@ -150,24 +163,25 @@ function PracticeLists() {
               );
             })}
 
-
-
-            <div className="flex w-full justify-start mt-5">
-              <ContactModal
-                btnName="Apply Now"
-                textColor="text-custom-red"
-                modalTitle="Current Openings"
-                btnType="career"
-                id="career"
-              />
-            </div>
           </div>
         </div>
 
         <div>
-          <h2 className="border-b-2 border-custom-red pb-4 text-3xl font-semibold text-custom-blue">
+          <div className="flex justify-between items-center border-b-2 border-custom-red w-full py-5">
+          <h2 className=" text-2xl md:text-3xl font-semibold text-custom-blue">
             Internships
           </h2>
+          <div className="">
+          <ContactModal
+            btnName="Apply Now"
+            textColor="text-custom-red"
+            modalTitle="Internships"
+            modalTitleColor="text-custom-blue"
+            btnType="internships"
+            id="internships"
+          />
+        </div>
+            </div>
           <p className="pt-8">
             At Aarna, we offer an internship experience that is enriching and
             challenging. We look for more than a strong academic record; we seek
@@ -199,18 +213,9 @@ function PracticeLists() {
             year LLB programme.
           </p>
         </div>
-        <div className="flex w-full justify-start mt-5">
-          <ContactModal
-            btnName="Apply Now"
-            textColor="text-custom-red"
-            modalTitle="Internships"
-            btnType="internships"
-            id="internships"
-          />
-        </div>
       </div>
     </div>
   );
 }
 
-export default PracticeLists;
+export default CareerLists;

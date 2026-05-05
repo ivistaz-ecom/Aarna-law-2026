@@ -53,7 +53,7 @@ const en = {
     //About Us and Home Page
     whatWeDo: {
       title: "Ce que nous faisons",
-      headline: "Nous sommes un cabinet de résolution des litiges primé, doté d'une perspective internationale. ",
+      headline: "Nous sommes un cabinet de résolution des litiges primé, doté d'une perspective internationale ",
       para1:
         "Aarna Law a été fondé avec un engagement indéfectible à fournir des services juridiques de qualité, axés sur la valeur, tout en cultivant des relations profondes et durables avec nos clients. Nous consacrons du temps et des efforts à comprendre les activités et les objectifs commerciaux de nos clients, ce qui nous permet d’élaborer des solutions à la fois pertinentes dans leur contexte et solides sur le plan stratégique. ",
       para2:
@@ -62,7 +62,7 @@ const en = {
   
     ourLegacy: {
       legacyTitle: "Notre héritage ",
-      legacyHeadline: "À travers divers domaines, industries et frontières internationales, nos services et solutions juridiques maintiennent les normes les plus élevées d'intégrité et de confidentialité. ",
+      legacyHeadline: "À travers divers domaines, industries et frontières internationales, nos services et solutions juridiques maintiennent les normes les plus élevées d'intégrité et de confidentialité",
       legacyPara:
         "Par-dessus tout, notre cabinet primé repose sur les relations durables que nous cultivons avec chacun de nos clients. Les conseils juridiques et commerciaux que nous offrons reflètent cette compréhension consciente des intérêts commerciaux de nos clients ",
     },
@@ -108,26 +108,27 @@ const en = {
   
     testimonialDetails: [
       {
+        imageUrl: "/testimonials/op.png",
+        name: "Kunal Shah",
+        post: "",
+        desingnation: "OnePaper Research Analysts Private Limited",
+        desc: "“Nous sommes heureux de partager que OnePaper est entièrement satisfait des services fournis par Aarna Law. Vidhisha, Punti et toute l’équipe ont fait preuve d’une compétence et d’un dévouement remarquables pour répondre à nos besoins. Leurs efforts et leur assistance rapide ont joué un rôle essentiel dans l’obtention d’une décision favorable dans notre dossier. ”",
+        fullTestimonial: `Nous sommes heureux de partager que OnePaper est entièrement satisfait des services fournis par Aarna Law. Vidhisha, Punti et toute l’équipe ont fait preuve d’une compétence et d’un dévouement remarquables pour répondre à nos besoins. Leurs efforts et leur assistance rapide ont joué un rôle essentiel dans l’obtention d’une décision favorable dans notre dossier. ,
+          "Nous apprécions énormément le travail acharné de l’équipe et son engagement à obtenir des résultats satisfaisants. ",
+          " Merci encore une fois pour votre soutien. "`,
   
-        imageUrl: "/testimonials/powerplay.png",
-        name: "Naveen Reddy",
-        post: "Powerplay",
-        desingnation: "",
-        desc: "“Aarna Law m’a accompagné dans tous mes besoins juridiques, de la rédaction des contrats de travail aux accords commerciaux. Toutes les questions liées à l’entreprise ont été traitées et résolues avec aisance et un grand souci du détail. Ce sont les personnes vers qui je me tourne pour tous mes besoins juridiques.”",
-        fullTestimonial: `Aarna Law m’a accompagné dans tous mes besoins juridiques, de la rédaction des contrats de travail aux accords commerciaux. Toutes les questions liées à l’entreprise ont été traitées et résolues avec aisance et un grand souci du détail. Ce sont les personnes vers qui je me tourne pour tous mes besoins juridiques.",`,
       },
       {
-        imageUrl: "/testimonials/dummy-white.png",
-        name: "Pawan Jain",
-        post: "VP",
-        desingnation: "Finance",
-        desc: "“ Mme Kamala et toute son équipe sont extrêmement professionnelles dans leur approche et toujours ouvertes aux retours. Elles ont fait preuve d’un grand engagement envers le travail et ont respecté les délais et les attentes. Ce fut un réel plaisir de collaborer avec elles et nous espérons renouveler cette collaboration à l’avenir. ”",
-        fullTestimonial: `Mme Kamala et toute son équipe sont extrêmement professionnelles dans leur approche et toujours ouvertes aux retours. Elles ont fait preuve d’un grand engagement envers le travail et ont respecté les délais et les attentes. Ce fut un réel plaisir de collaborer avec elles et nous espérons renouveler cette collaboration à l’avenir. ,
+        imageUrl: "/testimonials/client-fabric.png",
+        name: "Pallavi Rao and Arun Kiezpadathil",
+        post: "Founders",
+        desingnation: "Client Fabric Tech Ltd. ",
+        desc: "“Nous étions à la recherche d’un cabinet juridique à la fois accessible, compétent, réactif et qui comprenne notre activité – et Aarna Law a été tout cela, et bien plus encore, pour nous. Nous avons découvert Aarna Law après une recherche à l’échelle mondiale, et nous sommes ravis de l’avoir fait. ”",
+        fullTestimonial: `Nous étions à la recherche d’un cabinet juridique à la fois accessible, compétent, réactif et qui comprenne notre activité – et Aarna Law a été tout cela, et bien plus encore, pour nous. Nous avons découvert Aarna Law après une recherche à l’échelle mondiale, et nous sommes ravis de l’avoir fait. ,
         `,
       },
-  
       {
-        imageUrl: "/testimonials/og_healthcare.jpg",
+        imageUrl: "/testimonials/og.png",
         name: "Tony Hales",
         post: "CEO",
         desingnation: "OG Healthcare",
@@ -149,25 +150,16 @@ const en = {
       `,
       },
       {
-        imageUrl: "/testimonials/client_fabric.jpg",
-        name: "Pallavi Rao and Arun Kiezpadathil",
-        post: "Founders",
-        desingnation: "Client Fabric Tech Ltd. ",
-        desc: "“Nous étions à la recherche d’un cabinet juridique à la fois accessible, compétent, réactif et qui comprenne notre activité – et Aarna Law a été tout cela, et bien plus encore, pour nous. Nous avons découvert Aarna Law après une recherche à l’échelle mondiale, et nous sommes ravis de l’avoir fait. ”",
-        fullTestimonial: `Nous étions à la recherche d’un cabinet juridique à la fois accessible, compétent, réactif et qui comprenne notre activité – et Aarna Law a été tout cela, et bien plus encore, pour nous. Nous avons découvert Aarna Law après une recherche à l’échelle mondiale, et nous sommes ravis de l’avoir fait. ,
-        `,
-      },
-      {
-        imageUrl: "/testimonials/dummy-white.png",
-        name: "Pranav Nahar",
+  
+        imageUrl: "/testimonials/power.png",
+        name: "Naveen Reddy",
         post: "",
-        desingnation: "Entrepreneur",
-        desc: "“Manjushree et l’équipe d’Aarna Law ont reçu pour mission de trouver la structure la plus optimisée et conforme à la réglementation pour mener à bien notre projet fintech dans l’immobilier. Ils ont géré cette mission avec clarté et précision. Ce qui nous a impressionnés, c’est leur patience face à nos nombreuses questions et doutes – ils ont traité tous les détails que nous avons demandés avec soin. Leur service client et leur expertise juridique étaient très professionnels. Ce fut un réel plaisir de travailler avec eux. ”",
-        fullTestimonial: `« Manjushree et l’équipe d’Aarna Law ont reçu pour mission de trouver la structure la plus optimisée et conforme à la réglementation pour mener à bien notre projet fintech dans l’immobilier. Ils ont géré cette mission avec clarté et précision. Ce qui nous a impressionnés, c’est leur patience face à nos nombreuses questions et doutes – ils ont traité tous les détails que nous avons demandés avec soin. Leur service client et leur expertise juridique étaient très professionnels. Ce fut un réel plaisir de travailler avec eux.,
-      `,
+        desingnation: "Powerplay",
+        desc: "“Aarna Law m’a accompagné dans tous mes besoins juridiques, de la rédaction des contrats de travail aux accords commerciaux. Toutes les questions liées à l’entreprise ont été traitées et résolues avec aisance et un grand souci du détail. Ce sont les personnes vers qui je me tourne pour tous mes besoins juridiques.”",
+        fullTestimonial: `Aarna Law m’a accompagné dans tous mes besoins juridiques, de la rédaction des contrats de travail aux accords commerciaux. Toutes les questions liées à l’entreprise ont été traitées et résolues avec aisance et un grand souci du détail. Ce sont les personnes vers qui je me tourne pour tous mes besoins juridiques.",`,
       },
       {
-        imageUrl: "/testimonials/mamma-miya.jpg",
+        imageUrl: "/testimonials/mam.jpg",
         name: "Aashika Abraham",
         post: "Founder",
         desingnation: "Mammamiya",
@@ -177,21 +169,10 @@ const en = {
       `,
       },
       {
-        imageUrl: "/testimonials/one_paper.jpeg",
-        name: "Kunal Shah",
-        post: "OnePaper Research Analysts Private Limited",
-        desingnation: "",
-        desc: "“Nous sommes heureux de partager que OnePaper est entièrement satisfait des services fournis par Aarna Law. Vidhisha, Punti et toute l’équipe ont fait preuve d’une compétence et d’un dévouement remarquables pour répondre à nos besoins. Leurs efforts et leur assistance rapide ont joué un rôle essentiel dans l’obtention d’une décision favorable dans notre dossier. ”",
-        fullTestimonial: `Nous sommes heureux de partager que OnePaper est entièrement satisfait des services fournis par Aarna Law. Vidhisha, Punti et toute l’équipe ont fait preuve d’une compétence et d’un dévouement remarquables pour répondre à nos besoins. Leurs efforts et leur assistance rapide ont joué un rôle essentiel dans l’obtention d’une décision favorable dans notre dossier. ,
-          "Nous apprécions énormément le travail acharné de l’équipe et son engagement à obtenir des résultats satisfaisants. ",
-          " Merci encore une fois pour votre soutien. "`,
-  
-      },
-      {
-        imageUrl: "/testimonials/novalite.jpg",
+        imageUrl: "/testimonials/nov.png",
         name: "Mukesh Shah",
-        post: "Novalite limited",
-        desingnation: "",
+        post: "",
+        desingnation: "Novalite limited",
         desc: "“Chez Novalite Limited, nous avons eu le plaisir de collaborer avec Aarna Law, et plus particulièrement avec M. Shreyas Jayasimha, sur plusieurs dossiers juridiques complexes. L’expérience a été tout simplement exceptionnelle. M. Jayasimha et son équipe ont fait preuve d’un professionnalisme, d’une expertise et d’un dévouement remarquables. ”",
         fullTestimonial: `Chez Novalite Limited, nous avons eu le plaisir de collaborer avec Aarna Law, et plus particulièrement avec M. Shreyas Jayasimha, sur plusieurs dossiers juridiques complexes. L’expérience a été tout simplement exceptionnelle. M. Jayasimha et son équipe ont fait preuve d’un professionnalisme, d’une expertise et d’un dévouement remarquables. ,
           "Ce qui distingue réellement Aarna Law, c’est leur approche holistique des services juridiques. Ils vous accompagnent non seulement dans les formalités juridiques avec précision, mais offrent aussi des conseils précieux parfaitement alignés avec notre mode de fonctionnement. Leur capacité à comprendre nos besoins spécifiques et à adapter leurs services en conséquence a fait toute la différence. ",
@@ -199,6 +180,24 @@ const en = {
           " Merci, Aarna Law, pour votre engagement constant envers l’excellence. Nous avons hâte de poursuivre notre collaboration à l’avenir.",
         `,
       },
+      {
+        imageUrl: "",
+        name: "Pranav Nahar",
+        post: "Entrepreneur",
+        desingnation: "",
+        desc: "“Manjushree et l’équipe d’Aarna Law ont reçu pour mission de trouver la structure la plus optimisée et conforme à la réglementation pour mener à bien notre projet fintech dans l’immobilier. Ils ont géré cette mission avec clarté et précision. Ce qui nous a impressionnés, c’est leur patience face à nos nombreuses questions et doutes – ils ont traité tous les détails que nous avons demandés avec soin. Leur service client et leur expertise juridique étaient très professionnels. Ce fut un réel plaisir de travailler avec eux. ”",
+        fullTestimonial: `« Manjushree et l’équipe d’Aarna Law ont reçu pour mission de trouver la structure la plus optimisée et conforme à la réglementation pour mener à bien notre projet fintech dans l’immobilier. Ils ont géré cette mission avec clarté et précision. Ce qui nous a impressionnés, c’est leur patience face à nos nombreuses questions et doutes – ils ont traité tous les détails que nous avons demandés avec soin. Leur service client et leur expertise juridique étaient très professionnels. Ce fut un réel plaisir de travailler avec eux.,
+      `,
+      },
+      {
+        imageUrl: "",
+        name: "Pawan Jain",
+        post: "VP",
+        desingnation: "Finance",
+        desc: "“ Mme Kamala et toute son équipe sont extrêmement professionnelles dans leur approche et toujours ouvertes aux retours. Elles ont fait preuve d’un grand engagement envers le travail et ont respecté les délais et les attentes. Ce fut un réel plaisir de collaborer avec elles et nous espérons renouveler cette collaboration à l’avenir. ”",
+        fullTestimonial: `Mme Kamala et toute son équipe sont extrêmement professionnelles dans leur approche et toujours ouvertes aux retours. Elles ont fait preuve d’un grand engagement envers le travail et ont respecté les délais et les attentes. Ce fut un réel plaisir de collaborer avec elles et nous espérons renouveler cette collaboration à l’avenir. ,
+        `,
+      }
     ],
   
     // Home Page
@@ -270,7 +269,7 @@ const en = {
   
     //Practice Area Main Heading
     practiceAreaHeading: {
-      practiceAreaHeading: "Our dynamic team provides experienced counsel on a diverse range of practice areas.",
+      practiceAreaHeading: "Notre équipe dynamique fournit des conseils expérimentés sur une large gamme de domaines de pratique",
     },
   
     practiceAreaPara1: {
@@ -282,7 +281,7 @@ const en = {
   
     //Industries Main Heading
     industriesHeading: {
-      industriesHeading: "Notre pratique progressive fournit une assistance experte à nos clients dans divers secteurs. ",
+      industriesHeading: "Notre pratique progressive fournit une assistance experte à nos clients dans divers secteurs",
     },
     industrieslistTitle: {
       industrieslist: "SECTEURS QUE NOUS SERVONS ",

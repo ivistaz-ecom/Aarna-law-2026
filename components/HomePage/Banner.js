@@ -49,7 +49,7 @@ export default function Banner() {
           height={0}
           sizes="100vw"
           style={{ width: "100%", height: "500px" }}
-          loading={isFirstBanner ? "eager" : "lazy"}
+          loading="eager"
           priority={isFirstBanner}
           placeholder="blur"
           blurDataURL={banner.bannerUrl}

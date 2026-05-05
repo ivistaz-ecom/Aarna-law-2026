@@ -15,11 +15,36 @@ const initial = {
 // Static list of roles
 const roleOptions = ["Legal", "Administration", "Finance"];
 
-export default function CareerForm({ id }) {
+export default function CareerForm({ id, roles = [] }) {
   const [formData, setFormData] = useState(initial);
   const [loading, setLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [fileName, setFileName] = useState("");
+  const [dynamicRoleOptions, setDynamicRoleOptions] = useState(roleOptions);
+
+  React.useEffect(() => {
+    const extractRoleTitle = (item) =>
+      item?.title?.rendered?.replace(/<[^>]*>/g, "").trim();
+
+    const normalizedRoles = (roles || [])
+      .map(extractRoleTitle)
+      .filter(Boolean);
+
+    const uniqueRoles = [...new Set(normalizedRoles)];
+
+    if (uniqueRoles.length > 0) {
+      setDynamicRoleOptions(uniqueRoles);
+    } else {
+      setDynamicRoleOptions(roleOptions);
+    }
+  }, [roles]);
+
+  const decodeHtml = (htmlText = "") => {
+    if (typeof window === "undefined") return htmlText;
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlText, "text/html");
+    return doc.documentElement.textContent || "";
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -486,10 +511,12 @@ export default function CareerForm({ id }) {
             }`}
           >
             <option value="">Please Select</option>
-            {roleOptions.map((role, index) => (
-              <option key={index} value={role}>
-                {role}
-              </option>
+            {dynamicRoleOptions.map((role, index) => (
+              <option
+                key={index}
+                value={decodeHtml(role)}
+                dangerouslySetInnerHTML={{ __html: role }}
+              />
             ))}
           </select>
           {submitStatus?.fieldErrors?.Role && (
@@ -638,7 +665,7 @@ export default function CareerForm({ id }) {
             type="submit"
             disabled={loading}
             aria-busy={loading}
-            className="w-full rounded bg-custom-blue px-6 py-2 font-semibold text-white transition-colors hover:bg-custom-red disabled:opacity-60"
+            className="w-full rounded border border-custom-red px-6 py-2 text-base text-custom-red md:px-4 md:py-1.5 md:hover:bg-custom-red md:hover:text-white lg:px-6 lg:py-2"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>

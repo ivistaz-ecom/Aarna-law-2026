@@ -51,11 +51,6 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.aarnalaw.com/disclaimer</loc>
-<lastmod>2026-02-06T11:02:13+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
 <loc>https://www.aarnalaw.com/aarna-news</loc>
 <lastmod>2026-02-06T11:02:13+00:00</lastmod>
 <priority>0.64</priority>
@@ -702,11 +697,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aarnalaw.com/insights/aarna-law-is-pleased-to-announce-the-appointment-of-meghna-talwar-as-partner</loc>
-  <lastmod>2026-02-06T11:02:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://www.aarnalaw.com/insights/art-as-collateral-a-growing-trend-in-secured-lending</loc>
   <lastmod>2026-02-06T11:02:13+00:00</lastmod>
   <priority>0.64</priority>
@@ -1191,11 +1181,7 @@
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
   </url>
-  <url>
-    <loc>https://www.aarnalaw.com/team/meghna-talwar</loc>
-    <lastmod>2026-02-06T11:02:13+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
+  
   <url>
     <loc>https://www.aarnalaw.com/team/evneet-kaur-uppal</loc>
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
@@ -1263,11 +1249,6 @@
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.aarnalaw.com/aarna-news/shreyas-jayasimha-appointed-expert-committee</loc>
-    <lastmod>2026-02-06T11:02:13+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
     <loc>https://www.aarnalaw.com/insights/importance-of-personality-rights-as-a-form-of-intellectual-property</loc>
     <lastmod>2026-02-06T11:02:13+00:00</lastmod>
     <priority>0.64</priority>
@@ -1330,6 +1311,42 @@
   <url>
     <loc>https://www.aarnalaw.com/insights/cultural-property-law-in-india-2026-repatriation-export-rules-aata-compliances/cultural-property-law-in-india-2026-repatriation-export-rules-aata-compliance-consumer-interests</loc>
     <lastmod>2026-03-02T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+   <url>
+    <loc>https://www.aarnalaw.com/insights/sebis-new-digital-compliance-rules-what-investment-advisers-must-know-in-2026</loc>
+    <lastmod>2026-03-12T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.aarnalaw.com/podcasts/cross-border-enforcement-an-arbitration-deep-dive-with-mr-james-hosking-ep-1</loc>
+    <lastmod>2026-03-16T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aarnalaw.com/insights/why-every-high-net-worth-individual-needs-a-bespoke-will-beyond-templates-form</loc>
+    <lastmod>2026-03-18T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://website.aarnalaw.com/insights/women-and-estate-planning</loc>
+    <lastmod>2026-03-23T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/from-ai-developers-to-company-boards-rethinking-corporate-liability-for-ai-failures-in-india</loc>
+    <lastmod>2026-04-01T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/procedural-safeguards-for-foreign-gi-applications</loc>
+    <lastmod>2026-04-01T11:10:30+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.aarnalaw.com/insights/can-a-woman-be-karta-of-a-hindu-undivided-family-huf</loc>
+    <lastmod>2026-04-01T11:10:30+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   

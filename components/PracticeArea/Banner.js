@@ -1,6 +1,6 @@
-"use client"
-import React, { useContext, useEffect, useState } from 'react';
-import Image from 'next/image';
+"use client";
+import React, { useContext, useEffect, useState } from "react";
+import Image from "next/image";
 import { LanguageContext } from "../../app/context/LanguageContext";
 
 export default function Banner() {
@@ -22,7 +22,7 @@ export default function Banner() {
           src="/PracticeArea/PracticeAreas.png"
           fill
           priority
-          className="hidden md:block object-cover"
+          className="hidden object-cover md:block"
           alt=""
           quality={90}
         />
@@ -31,7 +31,7 @@ export default function Banner() {
           src="/PracticeArea/PracticeAreaMobileBanner.jpg"
           fill
           priority
-          className="block md:hidden object-cover"
+          className="block object-cover md:hidden"
           alt=""
           quality={90}
         />
@@ -40,10 +40,10 @@ export default function Banner() {
         className="absolute flex w-full items-center justify-center"
         style={{
           top: navHeight ? `${(550 - navHeight) / 1.8 + navHeight}px` : "50%",
-          transform: "translateY(-50%)"
+          transform: "translateY(-50%)",
         }}
       >
-        <h1 className="md:text-3xl text-2xl font-bold text-white bg-black/50 px-4 py-2">
+        <h1 className="bg-black/50 px-4 py-2 text-2xl font-bold text-white md:text-[36px]">
           {translations.practiceAreasTitle.practiceAreas}
         </h1>
       </div>

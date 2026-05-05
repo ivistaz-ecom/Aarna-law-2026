@@ -4,6 +4,8 @@ import Link from "next/link";
 import configData from "../../config.json";
 import PublicationPopupForm from "../../utils/Forms/PublicationForms/PublicationPopupForm";
 import { useRouter } from "next/navigation";
+import { Modal } from "flowbite-react";
+import { HiX } from "react-icons/hi";
 
 function AllInsights({ searchTerm, initialData = [] }) {
   const [data, setData] = useState(initialData);
@@ -149,16 +151,7 @@ function AllInsights({ searchTerm, initialData = [] }) {
                   __html: stripHTMLAndLimit(item.content.rendered),
                 }}
               ></p>
-              {item.acf.publication_url === "https://publications2.aarnalaw.com/art-law-2026" ? (
-                <Link
-                  href={item.acf.publication_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-custom-red"
-                >
-                  Read more
-                </Link>
-              ) : item.acf.publication_url ? (
+              {item.acf.publication_url ? (
                 <Link
                   href="#"
                   className="font-semibold text-custom-red"
@@ -191,7 +184,7 @@ function AllInsights({ searchTerm, initialData = [] }) {
         <div className="col-span-1 mt-6 flex justify-center md:col-span-2">
           <button
             onClick={loadMore}
-            className="bg-custom-red px-4 py-2 text-white"
+            className="border border-custom-red px-6 py-2 text-custom-red md:hover:bg-custom-red md:hover:text-white md:px-4 md:py-1.5 md:text-sm lg:px-6 lg:py-2 lg:text-base"
           >
             Load More
           </button>
@@ -203,6 +196,31 @@ function AllInsights({ searchTerm, initialData = [] }) {
           No more details available
         </div>
       )}
+
+      <Modal show={showForm} onClose={handleCloseForm} position="center">
+        <div className="relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow dark:bg-gray-700 md:w-[700px]">
+          <div className="flex items-center justify-between border-b px-6 pb-2 pt-6 dark:border-gray-600">
+            <div className="text-xl font-semibold text-gray-900 dark:text-white">
+              Enter Your Details
+            </div>
+            <button
+              onClick={handleCloseForm}
+              className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
+              aria-label="Close popup"
+            >
+              <HiX className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="overflow-y-auto p-6" style={{ flex: "1 1 auto" }}>
+            <PublicationPopupForm
+              onSubmit={handleFormSubmit}
+              onClose={handleCloseForm}
+              item={selectedItem}
+              embedded={true}
+            />
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }
