@@ -149,31 +149,6 @@ function AllInsights({ searchTerm, initialData = [] }) {
                   __html: stripHTMLAndLimit(item.content.rendered),
                 }}
               ></p>
-<<<<<<< Updated upstream
-              {item.acf.publication_url ? (
-                <>
-                  {showForm ? (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 bg-opacity-50">
-                      <PublicationPopupForm
-                        onSubmit={handleFormSubmit}
-                        onClose={handleCloseForm}
-                        item={selectedItem}
-                      />
-                    </div>
-                  ) : (
-                    <Link
-                      href="#"
-                      className="font-semibold text-custom-red"
-                      onClick={() => {
-                        setShowForm(true);
-                        setSelectedItem(item);
-                      }}
-                    >
-                      Read more
-                    </Link>
-                  )}
-                </>
-=======
               {item.acf.publication_url === "https://publications2.aarnalaw.com/art-law-2026" ? (
                 <Link
                   href={item.acf.publication_url}
@@ -195,7 +170,6 @@ function AllInsights({ searchTerm, initialData = [] }) {
                 >
                   Read more
                 </Link>
->>>>>>> Stashed changes
               ) : (
                 <Link
                   href={`/publications/${item.slug}`}
