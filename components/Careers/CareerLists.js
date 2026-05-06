@@ -147,7 +147,7 @@ function CareerLists() {
                   </h2>
 
                   <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-auto opacity-100" : "max-h-0 opacity-0"
                       }`}
                   >
                     <div className="border-b border-gray-200 py-5 dark:border-gray-700">
