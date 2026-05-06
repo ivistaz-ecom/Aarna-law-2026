@@ -17,6 +17,15 @@ function AllInsights({ searchTerm, initialData = [] }) {
   const router = useRouter();
 
   const domain = typeof window !== "undefined" ? window.location.hostname : "";
+  const hasRecentPublicationSubmission = () => {
+    if (typeof window === "undefined") return false;
+    const storedEmail = localStorage.getItem("publication_user_email");
+    const lastSubmission = localStorage.getItem("publication_form_submission");
+    if (!storedEmail || !lastSubmission) return false;
+    const last = parseInt(lastSubmission, 10);
+    if (Number.isNaN(last)) return false;
+    return Date.now() - last < 90 * 24 * 60 * 60 * 1000;
+  };
 
   const fetchContent = useCallback(async () => {
     if (!data.length) return;
@@ -168,6 +177,10 @@ function AllInsights({ searchTerm, initialData = [] }) {
                   className="font-semibold text-custom-red"
                   onClick={(e) => {
                     e.preventDefault();
+                    if (hasRecentPublicationSubmission()) {
+                      window.location.href = item.acf.publication_url;
+                      return;
+                    }
                     setShowForm(true);
                     setSelectedItem(item);
                   }}
