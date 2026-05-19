@@ -9,6 +9,7 @@ import ErrorPage from "@/components/404/page";
 import { play, pause, sound, mute } from "@/utils/icons";
 import VideoPlayer from "@/components/Podcasts/VideoPlayer";
 import { isYoutubeUrl } from "@/utils/youtube";
+import { resolvePodcastMediaLink } from "@/utils/media";
 
 export default function PodcastPost({ params }) {
   const { slug } = params;
@@ -138,15 +139,9 @@ export default function PodcastPost({ params }) {
             setFeatureImage(null);
           }
 
-          const metaEpisodeType = post.meta?.episode_type;
-          const mediaLink =
-            post.player_link || post.meta?.audio_file || null;
-          const isYoutube = isYoutubeUrl(mediaLink);
-          setEpisodeType(
-            metaEpisodeType === "video" || isYoutube
-              ? "video"
-              : metaEpisodeType || "audio",
-          );
+          const { link: mediaLink, type: mediaType } =
+            resolvePodcastMediaLink(post);
+          setEpisodeType(mediaType);
           setPlayerLink(mediaLink);
         } else {
           setError(true);

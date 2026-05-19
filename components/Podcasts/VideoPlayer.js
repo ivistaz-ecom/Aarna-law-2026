@@ -35,7 +35,13 @@ const VideoPlayer = ({ src, poster, posterMobile, title }) => {
         <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black">
           {youtubeActive ? (
             <iframe
-              src={`${youtubeEmbedUrl}?autoplay=1`}
+              src={`${youtubeEmbedUrl}?${new URLSearchParams({
+                autoplay: "1",
+                controls: "1",
+                modestbranding: "1",
+                rel: "0",
+                iv_load_policy: "3",
+              }).toString()}`}
               title={title || "YouTube video player"}
               className="absolute inset-0 h-full w-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -110,17 +116,16 @@ const VideoPlayer = ({ src, poster, posterMobile, title }) => {
         )}
         <video
           ref={videoRef}
+          src={src}
           className="h-auto max-h-[600px] w-full rounded-lg"
           controls
+          playsInline
           poster={poster || undefined}
-          preload="none"
+          preload="metadata"
           onClick={(e) => e.stopPropagation()}
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
-        >
-          <source src={src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        />
         {!isPlaying && (
           <div
             className="absolute inset-0 hidden items-center justify-center rounded-lg bg-black/30 transition hover:bg-black/40 md:flex"
