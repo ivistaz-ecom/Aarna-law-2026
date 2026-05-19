@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import ErrorPage from "@/components/404/page";
 import { play, pause, sound, mute } from "@/utils/icons";
 import VideoPlayer from "@/components/Podcasts/VideoPlayer";
+import { isYoutubeUrl } from "@/utils/youtube";
 
 export default function PodcastPost({ params }) {
   const { slug } = params;
@@ -138,10 +139,15 @@ export default function PodcastPost({ params }) {
           }
 
           const metaEpisodeType = post.meta?.episode_type;
-          setEpisodeType(metaEpisodeType || "audio");
-
-          // Prefer explicit media file from meta, fall back to player_link
-          setPlayerLink(post.meta?.audio_file || post.player_link || null);
+          const mediaLink =
+            post.player_link || post.meta?.audio_file || null;
+          const isYoutube = isYoutubeUrl(mediaLink);
+          setEpisodeType(
+            metaEpisodeType === "video" || isYoutube
+              ? "video"
+              : metaEpisodeType || "audio",
+          );
+          setPlayerLink(mediaLink);
         } else {
           setError(true);
         }
@@ -155,7 +161,8 @@ export default function PodcastPost({ params }) {
 
   // Setup audio refs (audio episodes only)
   useEffect(() => {
-    if (!playerLink || episodeType === "video") return;
+    if (!playerLink || episodeType === "video" || isYoutubeUrl(playerLink))
+      return;
 
     audioRefs.current[0] = new Audio();
     audioRefs.current[0].addEventListener("timeupdate", () => {
